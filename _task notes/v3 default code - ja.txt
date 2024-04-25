@@ -1,0 +1,40 @@
+.stars-rating-container.es-table,
+#review_content,
+#review-title-input,
+textarea.textarea {
+    width: 100% !important;
+    box-sizing: border-box;
+}
+
+#review_content,
+#review-title-input{
+    border-radius: 5px;
+    border-color: #85888a !important;
+}
+
+---------------------------------------------------
+
+
+.es-button {
+    mso-style-priority: 100 !important;
+    text-decoration: none !important;
+}
+
+a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+
+.es-desk-hidden {
+    display: none;
+    float: left;
+    overflow: hidden;
+    width: 0;
+    max-height: 0;
+    line-height: 0;
+    mso-hide: all;
+}

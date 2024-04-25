@@ -1,0 +1,49 @@
+clipboards>script clip>change the appkey
+index.html
+
+check instances ID
+clipboard > widget clip>change also the ID
+app.js
+
+if shoppify > login shopify
+shopify full > theme reached limit
+
+sometimes, theme is duplicated in form by CSM
+
+inspect the client pdp>data-product-id
+
+reviews
+
+widget/id/?app in the URL
+
+startrating pdp og collection starrating
+
+QA> second tab
+
+SEO>
+
+Carousel>
+
+change logo
+
+create devbox>workspace template>name account>Public>/Open tickets>
+
+------------------------------------
+mm/dd/yy
+
+Store comment > GATINEAU
+
+.yotpo-main-widget-layout.yotpo-align-text * {
+    font-family: HK Grotesk, Helvetica, Arial, sans-serif !important;
+    border-radius: 3px !important;
+}
+
+yotpo-review-list - affected sa images
+
+popup
+modal-backdrop{z-index: 100000000000 !important;}
+
+responsive
+yotpo-display-l
+yotpo-display-m
+yotpo-display-s

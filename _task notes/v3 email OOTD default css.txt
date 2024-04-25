@@ -1,0 +1,10 @@
+.stars-rating-container.es-table,
+#review_content,
+#review-title-input{
+	width: 100% !important;
+}
+
+#review_content,
+#review-title-input{
+ border: solid 1px #85888a !important;
+}

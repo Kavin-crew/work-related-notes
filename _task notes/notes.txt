@@ -1,0 +1,109 @@
+#review-title-input,
+#review_content {
+    border: solid 1px #dbddde;
+    border-radius: 0px;
+}
+#in-mail-form-submit-button {
+    padding: 15px 100px !important;
+}
+
+#review-title-input,
+#review_content {
+    border: solid 1px #dbddde;
+    border-radius: 0px;
+}
+
+#review_content {
+    min-height: 220px;
+}
+
+.es-footer-body.es-table {
+    max-width: 600px;
+}
+
+media
+    .es-header-body .adapt-img {
+        max-width: 100px;
+    }
+
+.promoted-product-rating {
+    margin-top: 20px;
+}
+
+.promoted-product-rating .star-img {
+    filter: brightness(0) saturate(100%) invert(53%) sepia(62%) saturate(4155%) hue-rotate(323deg) brightness(90%) contrast(102%);
+}
+
+
+jayann-7xluu@litmusemail.com
+
+.customer-free-text-field>table {
+    max-width: 496px !important;
+    width: 100% !important;
+}
+
+
+----------------------------------------------------------------
+.field-label {
+    color: #333 !important;
+}
+
+a.esd-target-element {
+    font-weight: bold !important;
+}
+
+.es-header-body,
+.es-content-body,
+.es-footer-body {
+    max-width: 600px;
+    width: 100% !important;
+}
+
+td[esd-handler-name="esd-extension-ugcLogoBlock"],
+td[esd-handler-name="structureBlockHandler"] {
+    background-color: #fff;
+}
+
+.custom-field-title {
+    font-weight: normal !important;
+}
+
+#review-title-input,
+textarea {
+    border: solid 1px #dbddde !important;
+    border-radius: 0px !important;
+}
+
+textarea.textarea, #review_content, #review-title-input {
+    max-width: 540px !important;
+    width: 100% !important;
+}
+
+td.customer-free-text-field table {
+    width: 100%;
+}
+
+textarea.textarea {
+    padding-left: 0;
+    padding-right: 0;
+}
+.stars-block{
+    padding: 3px !important;
+}
+----------------------------------------------------------------
+
+.es-header-body, .es-content-body, .es-footer-body {
+    max-width: 600px;
+    width: 100% !important;
+}
+
+td[esd-handler-name="esd-extension-ugcLogoBlock"],
+td[esd-handler-name="structureBlockHandler"] {
+    background-color: #fff;
+    width: 100% !important;
+}
+
+input[type="text"], textarea {
+    max-width: 100% !important;
+    width: 560px !important;
+}
