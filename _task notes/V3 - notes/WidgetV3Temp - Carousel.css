@@ -48,3 +48,6 @@ label { font-family: 'GT America Extended', sans-serif !important; letter-spacin
 [class*="yotpo-reviews-carousel-widget-container"].yotpo-reviews-carousel-header { font-weight: 500 !important; } 
 [class*="yotpo-reviews-carousel-widget-container"] .review-title { font-weight: 500 !important; } 
 [class*="yotpo-reviews-carousel-widget-container"] .reviews-carousel-card-container .review-content span { font-family: var(--YotpoPrimaryFont), sans-serif !important; color: var(--YotpoAccentColor) !important; } 
+
+.reviewer-display-name { color: #282828 !important; font-weight: 500 !important;}
+.reviewer-display-name, .reviewer-status-text, .review-product-name  { font-family: inherit !important;}

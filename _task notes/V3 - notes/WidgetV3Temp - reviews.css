@@ -435,7 +435,7 @@
 [class*="yotpo-display-"][class*="yotpo-device-"].yotpo-device-mobile
  #yotpo-mobile-filters-popup
  .yotpo-mobile-filters-popup-actions
- .yotpo-filters-results-btn { position: static; height: auto; padding: 20px; } 
+ .yotpo-filters-results-btn { position: static; height: auto; padding: 20px;} 
 /* mobile filter modal */
 /* FILTER */
 
@@ -1003,6 +1003,7 @@
  footer.form-footer
  .yotpo-terms-and-conditions-container { flex-wrap: wrap; } 
 
+ [class*="yotpo-display-"][class*="yotpo-device-"] {}
 /* FORM COMPLETE */
 [class*="yotpo-display-"][class*="yotpo-device-"][style]
  #newReviewFormModal
@@ -1041,3 +1042,7 @@
  .yotpo-sr-bottom-line-summary:hover { cursor: pointer; } 
 /* FORM COMPLETE */
 /* Modal Form */
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style].yotpo-device-mobile .yotpo-review-left-panel,
+[class*="yotpo-display-"][class*="yotpo-device-"][style].yotpo-device-mobile .yotpo-review-right-panel{flex-basis: 100%}
+[class*="yotpo-display-"][class*="yotpo-device-"] .yotpo-filters-results-btn-text { font-family: inherit;  font-weight: 500;}
