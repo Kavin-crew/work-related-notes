@@ -1,3 +1,26 @@
+/*always use Website FONTS*/
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aXo.woff2) format('woff2');
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+td,
+input,
+textarea,
+button,
+div,
+label {
+    font-family: 'Arial', sans-serif !important;
+}
+
 .stars-rating-container.es-table,
 #review_content,
 #review-title-input{
@@ -7,4 +30,8 @@
 #review_content,
 #review-title-input{
  border: solid 1px #85888a !important;
+}
+
+.es-table a {
+    color: #accentColor !important;
 }
