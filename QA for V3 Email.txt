@@ -1,0 +1,2 @@
+Update fonts (use the ones on their website)
+Update <a> tags color to their accent color (refer to their website)

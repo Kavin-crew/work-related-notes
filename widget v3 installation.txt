@@ -1,0 +1,11 @@
+create repo
+get the link repo
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote set-url origin [LINK OF THE REPO] - newly create na repo nimo
+git push -u origin main
+
+
+account name + V3
