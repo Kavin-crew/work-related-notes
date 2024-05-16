@@ -1,0 +1,30 @@
+        font-family: Arial, sans-serif !important;
+color: #676a6c;
+    font-weight: 600;
+    font-size: 14px;
+
+
+-------------------
+star #000
+
+input, textarea
+caret-color: #928a8a;
+    padding: 11px 14px;
+    border: solid 1px #dbddde;
+    border-radius: 5px;
+
+button
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    background-color: #000;
+    height: 48px;
+    max-width: 327px;
+    width: 100%;
+    line-height: 14px;
+    padding: 11px 21px;
+    font-size: 14px;
+    margin-bottom: 28px;
+    font-weight: bold;
+
+checkmark #000

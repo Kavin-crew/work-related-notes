@@ -1,0 +1,46 @@
+{%- comment -%}
+<!-- Post-purchase email requesting a product review  -->
+{%- endcomment -%}
+
+<table class="form-table full-width" cellspacing="0" cellpadding="0" border="0" role="none" style="margin: 0;">
+  <tr height="30"></tr>
+  <tr>
+    <td width="30"></td>
+    <td class="form-container">
+      <table class="form-table full-width" cellspacing="0" cellpadding="0" border="0" role="none" style="margin: 0;">
+        <tr>
+          <td>
+            {%- include 'product_image(readonly)' -%}
+          </td>
+          <td>
+            <p class="description">{{ product_name }}</p>
+            <div class="yotpo-readonly-start"></div>
+            {%- include 'review_request(readonly)' -%}
+            <div class="yotpo-readonly-end"></div>
+            {%- include 'promoted_products' -%}
+            <br>
+            {%- if landing_page_link -%}
+            {%- assign landing_page_broken_email_link = landing_page_link | set_query_param: "submission_type", "broken_email" -%}
+            <table class="write-btn" cellspacing="0" cellpadding="0" border="0" role="none" align="center">
+              <tr height="7"></tr>
+              <tr align="center">
+                <td class="space" width="50"></td>
+                <td align="center">
+                  <a href="{{ landing_page_formless_link }}" target="_blank">
+                   <img src="https://cdn.shopify.com/s/files/1/0708/4605/4708/files/BDF_BTN.png?v=1709748236" target="_blank">
+                  </a>
+                </td>
+                <td class="space" width="50"></td>
+              </tr>
+              <tr height="7"></tr>
+            </table>
+            {%- endif -%}
+          </td>
+        </tr>
+        <tr height="20"></tr>
+      </table>
+    </td>
+    <td width="30"></td>
+  </tr>
+  <tr height="30"></tr>
+</table>

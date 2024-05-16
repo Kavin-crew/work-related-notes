@@ -1,0 +1,5 @@
+from #ff90b0 to #FF99B9
+updated stars and also the footer bgcolor
+
+color #020a1b
+#1b443a

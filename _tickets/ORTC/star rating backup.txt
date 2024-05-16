@@ -1,0 +1,20 @@
+[class=yotpo][data-yotpo-section-id=collection] [class=yotpo-reviews-star-ratings-] svgnot(.yotpo-anonymous-person-icon) {
+    height 10.2px;
+    width auto;
+}
+
+[class=yotpo][data-yotpo-section-id=collection] [class=yotpo-reviews-star-ratings-] .yotpo-sr-bottom-line-text--right-panel {
+    font-size .8em !important;
+    line-height 100% !important;
+    padding-top 1px;
+}
+
+[class=yotpo][data-yotpo-section-id=collection] [class=yotpo-reviews-star-ratings-] .yotpo-sr-bottom-line-summary {
+    flex-direction row !important;
+    align-items center !important;
+    margin-top 8px;
+    gap 10px !important;
+}
+
+[class=yotpo][data-yotpo-section-id=product] .yotpo-sr-bottom-line-summary .star-container {padding-block 4px;}
+[class=yotpo][data-yotpo-section-id=product] svgnot(.yotpo-anonymous-person-icon) {height 11px !important;}

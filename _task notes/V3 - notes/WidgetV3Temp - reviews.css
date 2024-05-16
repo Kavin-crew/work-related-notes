@@ -1599,3 +1599,9 @@
 [class*="yotpo-display-"].yotpo-device-mobile .yotpo-star-rating-icons {
   flex-direction: column;
 }
+
+[class*="yotpo-display-"].yotpo-device-mobile
+  .yotpo-reviews-summary-modal-container
+  svg.yotpo-close-icon.yotpo-summary-close {
+  height: 40px;
+}
