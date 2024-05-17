@@ -3,6 +3,10 @@
     color: #000;
 }
 
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-head .yotpo-reviews-by svg path{
+    fill: var(--primary-color);
+}
+
 [class*="yotpo-reviews-main-widget"][class*="yotpo-display-"][class*="yotpo-device-"][style] #modalDescription .yotpo-new-review-submit {
     font-weight: bold;
     background-color: var(--primary-color);
