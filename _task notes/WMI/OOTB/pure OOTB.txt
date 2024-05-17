@@ -45,3 +45,7 @@
 [class*="yotpo-display-"][class*="yotpo-device-"][style] #newReviewFormModal{
     z-index: 99999999;
 }
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style].yotpo-device-mobile .yotpo-review-content .sr-only {
+    display: none;
+}
