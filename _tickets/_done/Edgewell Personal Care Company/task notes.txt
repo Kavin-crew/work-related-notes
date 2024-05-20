@@ -1,0 +1,22 @@
+e9zHaApZ1LqC1o8j9l8DYMzKzmcAtQYpKlFWvTBE
+
+ArUh3qwFyRiaQiSQV4LZ6p1ik2tjWjiQhmAwvwQm - test
+
+ARR and reminders - Enabled
+
+.field-label { 
+ padding-top: 10px;
+}
+
+#review-title-input, textarea {border-radius: 10px !important;}
+
+button#in-mail-form-submit-button {
+    border-radius: 999px !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
+
+//media
+button#in-mail-form-submit-button {
+    font-size: 20px !important;
+}

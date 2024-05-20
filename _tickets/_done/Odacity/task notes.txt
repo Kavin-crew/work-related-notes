@@ -1,0 +1,8 @@
+Theme Name: NT1010 - Back in Stock fix [YOTPO Migrations v3]
+
+Homepage: https://odacite.com/?_ab=0&_fd=0&_sc=1&preview_theme_id=134543048842
+Carousel: https://odacite.com/pages/yotpo-reviews-carousel-v3?preview_theme_id=134543048842
+SEO: https://odacite.com/pages/reviews?preview_theme_id=134543048842
+PDP: https://odacite.com/products/creme-de-la-nuit?variant=44591569535114&preview_theme_id=134543048842
+
+CBAAAE

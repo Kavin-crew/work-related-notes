@@ -329,6 +329,38 @@ label {
   .yotpo-review-thumbnail-container {
   margin-bottom: 20px;
 }
+
+.modal-backdrop.yotpo-review-media-modal {
+  z-index: 99999999 !important;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"] #newReviewFormModal {
+  z-index: 999999;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"]
+  .yotpo-horizontal-pagination-container {
+  margin: 0;
+}
+
+[class*="yotpo-display-"].yotpo-device-mobile #yotpo-mobile-filters-popup {
+  z-index: 9999999;
+}
+
+[class*="yotpo-display-"].yotpo-device-mobile
+  .yotpo-terms-and-conditions-container {
+  flex-wrap: wrap;
+}
+
+[class*="yotpo-display-"].yotpo-device-mobile .yotpo-star-rating-icons {
+  flex-direction: column;
+}
+
+[class*="yotpo-display-"].yotpo-device-mobile
+  .yotpo-reviews-summary-modal-container
+  svg.yotpo-close-icon.yotpo-summary-close {
+  height: 40px;
+}
 /* common issue fixes */
 [class*="yotpo-display-"][class*="yotpo-device-"].yotpo-device-mobile
   .modal-backdrop.yotpo-media-modal {
