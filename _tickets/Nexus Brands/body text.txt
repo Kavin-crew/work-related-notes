@@ -1,0 +1,7 @@
+Subject line: {user}, we want to know what you think!
+Body text: Write a review to receive a coupon for $10 off $100 or more on your next purchase!
+Hi {user},
+
+Thanks again for shopping at {store_name}.
+
+We’d love to hear what you think about your new {product}. We'd also love product photos/videos showing others your favorite things and it helps improve the buying experience!
