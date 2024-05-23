@@ -451,8 +451,19 @@ label {
 
 [class*="yotpo-reviews-main-widget"][class*="yotpo-display-"][class*="yotpo-device-"][style]
   .yotpo-input-wrapper,
+[class*="yotpo-reviews-main-widget"][class*="yotpo-display-"][class*="yotpo-device-"][style].yotpo-device-mobile
+  [class="modal-body"]
+  .yotpo-input-wrapper,
 [class*="yotpo-reviews-main-widget"][class*="yotpo-display-"][class*="yotpo-device-"][style]
+  [class*="yotpo-name-email-wrapper"],
+[class*="yotpo-reviews-main-widget"][class*="yotpo-display-"][class*="yotpo-device-"][style].yotpo-device-mobile
+  [class="modal-body"]
   [class*="yotpo-name-email-wrapper"] {
   width: 100%;
   box-sizing: border-box;
+}
+
+[class*="yotpo-reviews-main-widget"][class*="yotpo-display-"][class*="yotpo-device-"].yotpo-device-mobile
+  .yotpo-search-label {
+  width: 100%;
 }
