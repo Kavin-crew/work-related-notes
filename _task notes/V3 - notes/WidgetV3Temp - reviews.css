@@ -1151,6 +1151,7 @@
   [class*="-pagination-container"]
   .yotpo-pagination-number {
   padding: 5px 0;
+  display: block;
 }
 
 [class*="yotpo-display-"][class*="yotpo-device-"][style]
@@ -1648,5 +1649,16 @@
 
 [class*="yotpo-reviews-main-widget"][class*="yotpo-display-"][class*="yotpo-device-"].yotpo-device-mobile
   .yotpo-search-label {
+  width: 100%;
+}
+
+[class*="yotpo-reviews-main-widget"][class*="yotpo-display-"][class*="yotpo-device-"][style]
+  .yotpo-input-wrapper
+  textarea {
+  width: 100%;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style]
+  .yotpo-custom-questions-container {
   width: 100%;
 }

@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "RRollieThin";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://www.artofskincare.com/on/demandware.static/Sites-ArtOfSkincare-Site/-/default/v1716451280153/fonts/RRollieThin.otf)
+    format("woff2");
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+td,
+input,
+textarea,
+button,
+div,
+label,
+span {
+  font-family: "RRollieThin", sans-serif !important;
+}
+
+#yotpo-questions-and-answers[class*="yotpo-display-"][class*="yotpo-device-"]
+  [id*="-widget-btn"]
+  span {
+  text-decoration: none;
+  border-bottom: none;
+  color: #6b6d76;
+  font-weight: normal;
+}
+
+[class*="yotpo-questions-and-answers"][class*="yotpo-display-"][class*="yotpo-device-"][style]
+  .modal-body {
+  padding-bottom: 20px;
+}
+
+[class*="yotpo-questions-and-answers"][class*="yotpo-display-"][class*="yotpo-device-"][style]
+  .yotpo-name-email-wrapper {
+  width: 100%;
+}
+
+[class*="yotpo-questions-and-answers"][class*="yotpo-display-"][class*="yotpo-device-"][style]
+  .yotpo-question-form
+  textarea {
+  width: 100%;
+}
+
+[class*="yotpo-questions-and-answers"][class*="yotpo-display-"][class*="yotpo-device-"][style]
+  .yotpo-question-form
+  .yotpo-new-input-validation {
+  color: #cb2222;
+}

@@ -1,0 +1,15 @@
+{
+  "se": {
+    "widget": {
+      "reviews": "Recensioner",
+      "questions": "Frågor",
+      "write-review": "Skriva en recension",
+      "ask-question": "ställa en fråga",
+      "share": "Dela",
+      "helpful": "Var denna recension till hjälp?",
+      "grouping": {
+        "grouped_review": "Bewertetes Produkt"
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "no": {
+    "widget": {
+      "reviews": "Vurderinger",
+      "helpful": "Var denne anmeldelsen nyttig",
+      "write-review": "Gi din vurdering",
+      "ask-question": "Still et spørsmål",
+      "questions": "Spørsmål"
+    }
+  },
+  "filter_and_search": {
+    "images_drop_down_button_value": " Bilder & Videoer",
+    "images_drop_down_answer": "Bilder & Videoer"
+  }
+}

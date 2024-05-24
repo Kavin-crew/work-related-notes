@@ -1,0 +1,51 @@
+{
+  "de": {
+    "widget": {
+      "reviews": "Bewertungen",
+      "questions": "Fragen",
+      "ask-question": "Stelle eine Frage",
+      "share": "Teilen",
+      "helpful": "War diese Bewertung hilfreich?",
+      "verified_buyer_title": "Verifizierter Käufer",
+      "write-review": "Schreibe eine Bewertung",
+      "required_fields": "Zeight ein Pflichtfeld an",
+      "score": "Bewertung:",
+      "title": "Titel:",
+      "review": "Schreibe etwas zu deiner Bewertung:",
+      "user_your_name": "Name:",
+      "email": "Email:",
+      "post": "Bewertung abschicken",
+      "grouping": {
+        "grouped_review": "Recenserad produkt:"
+      },
+      "filter_and_search": {
+        "filters_container": {
+          "header": "Berwertungen filtern"
+        }
+      }
+    }
+  }
+}
+
+// extracted code
+{
+  "de": {
+    "widget": {
+      "user_your_name": "Name",
+      "write-review": "Eine Bewertung schreiben",
+      "reviews": "Bewertungen",
+      "questions": "Fragen",
+      "ask-question": "Eine Frage stellen",
+      "first": {
+        "be_the_first_review": "Sei die erste Person, die eine Bewertung schreibt",
+        "be_the_first_question": "Sei die erste Person, die eine Frage stellt"
+      },
+      "empty_search_results": {
+        "text": "Entschuldigung, leider entspricht keine der bewertungen deinen filtern."
+      },
+      "grouping": {
+        "grouped_review": "bewertet bei."
+      }
+    }
+  }
+}
