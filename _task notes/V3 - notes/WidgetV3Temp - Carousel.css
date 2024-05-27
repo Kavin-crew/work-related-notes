@@ -118,3 +118,7 @@ label {
   font-weight: bold !important;
   font-family: inherit !important;
 }
+
+[class="yotpo-carousel"] .pp-product-content {
+  align-items: center;
+}
