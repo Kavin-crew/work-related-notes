@@ -113,6 +113,7 @@ label {
   font-family: inherit !important;
 }
 
+<<<<<<< HEAD
 [class*="yotpo-reviews-carousel-widget-container"] .review-title {
   color: #0f3759 !important;
 }
@@ -145,4 +146,8 @@ label {
 [class*="yotpo-reviews-carousel-widget-container"][class*="yotpo-reviews-carousel-widget-mobile-mode"]
   .reviewer-status-text {
   font-size: 12px;
+=======
+[class="yotpo-carousel"] .pp-product-content {
+  align-items: center;
+>>>>>>> d7e6cd4363cd36f0b0027567815f0d7e8939a817
 }

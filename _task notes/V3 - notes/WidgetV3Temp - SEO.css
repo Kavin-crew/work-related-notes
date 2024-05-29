@@ -295,12 +295,29 @@ label {
   .yotpo-pagination-number {
   font-family: inherit;
 }
+<<<<<<< HEAD
 [class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style].yotpo-display-mobile
   .sr-only {
   display: none;
 }
+=======
+>>>>>>> d7e6cd4363cd36f0b0027567815f0d7e8939a817
 /* for csb */
 [class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style].yotpo-display-mobile
   .yotpo-seo-page-layout.yotpo-align-text {
   margin: auto 0px;
 }
+<<<<<<< HEAD
+=======
+[class*="yotpo-widget-instance"]
+  [class*="yotpo-reviews-seo-page"][class*="yotpo-display-"].yotpo-display-mobile
+  .yotpo-review-content {
+  display: block;
+}
+[class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style].yotpo-display-mobile
+  .yotpo-review-left-panel,
+[class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style].yotpo-display-mobile
+  .yotpo-review-right-panel {
+  flex-basis: 46%;
+}
+>>>>>>> d7e6cd4363cd36f0b0027567815f0d7e8939a817

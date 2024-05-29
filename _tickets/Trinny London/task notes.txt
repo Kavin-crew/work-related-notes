@@ -1,0 +1,3 @@
+before working on account
+staging - is turn on, got it turned off
+relevant appkey - already turn off

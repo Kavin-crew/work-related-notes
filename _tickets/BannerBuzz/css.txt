@@ -1,0 +1,37 @@
+/*fix overlapping of popups*/
+.modal-backdrop.yotpo-review-media-modal {
+  z-index: 99999999 !important;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"] #newReviewFormModal {
+    z-index: 9999999999;
+}
+
+[class*="yotpo-display-"].yotpo-device-mobile #yotpo-mobile-filters-popup {
+    z-index: 9999999;
+}
+
+/*to fix the scrollable for tablet device*/
+[id*="yotpo-reviews-main-widget"][class*="yotpo-reviews-main-widget"][class*="yotpo-display-"][class*="yotpo-device-"].yotpo-device-laptop .yotpo-bottom-line {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+}
+
+[class*="yotpo-reviews-main-widget"][class*="yotpo-display-"][class*="yotpo-device-"].yotpo-device-laptop .yotpo-bottom-line-right-panel {
+    padding-right: 0;
+}
+
+[class*="yotpo-reviews-main-widget"][class*="yotpo-display-"][class*="yotpo-device-"].yotpo-device-laptop .yotpo-summary-section {
+    align-items: center;
+}
+
+[class*="yotpo-reviews-main-widget"][class*="yotpo-display-"][class*="yotpo-device-"].yotpo-device-laptop .yotpo-layout-header-wrapper {
+    flex-direction: column;
+    gap: 40px;
+}
+
+[class*="yotpo-reviews-main-widget"][class*="yotpo-display-"][class*="yotpo-device-"].yotpo-device-laptop .yotpo-star-distribution {
+    border: none !important;
+}
