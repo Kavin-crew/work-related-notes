@@ -1,8 +1,32 @@
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/rubik/v28/iJWKBXyIfDnIV7nDrXyi0A.woff2)
+    format("woff2");
+  unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+td,
+input,
+textarea,
+button,
+div,
+label {
+  font-family: "Rubik", sans-serif !important;
+}
+
 :root {
-  --YotpoPrimaryColor: #272727;
-  --YotpoSecondaryColor: #205c40;
-  --YotpoPrimaryFont: "Poppins", var(--YotpoFallbackFont);
-  --YotpoSecondaryFont: "Poppins", var(--YotpoFallbackFont);
+  --YotpoPrimaryColor: #002238;
+  --YotpoSecondaryColor: #002238;
+  --YotpoPrimaryFont: "Rubik", var(--YotpoFallbackFont);
+  --YotpoSecondaryFont: "Rubik", var(--YotpoFallbackFont);
   --YotpoFallbackFont: sans-serif;
   --YotpoLogoIconColor: var(--YotpoSecondaryColor);
   --YotpoAvatarBackgroundColor: #0f3820;
@@ -51,16 +75,29 @@
 }
 
 [class*="yotpo-display-"][class*="yotpo-device-"][style]
+  .yotpo-upload-label
+  svg {
+  margin-right: 0;
+  margin-left: 6px;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style]
   [class*="filter"]
   label {
   display: block;
 }
 
-[class*="yotpo-display-"][class*="yotpo-device-"][style] .btn-close {
+[class*="yotpo-display-"][class*="yotpo-device-"][style]
+  .modal-backdrop
+  .yotpo-basic-modal
+  .modal-close-btn-wrapper
+  .btn-close {
   width: inherit;
   height: inherit;
   opacity: 1;
   padding: inherit;
+  right: auto;
+  left: 0;
 }
 
 [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-head {
@@ -222,7 +259,7 @@
   background: #fff;
   color: var(--YotpoPrimaryColor);
   border: 1px solid var(--YotpoPrimaryColor);
-  border-radius: 0;
+  border-radius: 100px;
   width: auto;
   height: auto;
   line-height: 1;
@@ -1525,11 +1562,6 @@
   overflow: auto;
 }
 
-[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-filter-select,
-[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-media-select {
-  width: 100%;
-}
-
 /* common issue fixes */
 [class*="yotpo-display-"][class*="yotpo-device-"].yotpo-device-mobile
   .modal-backdrop.yotpo-media-modal {
@@ -1674,4 +1706,13 @@
 [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-filter-select,
 [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-media-select {
   width: 100%;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-selected-value {
+  left: auto;
+  right: 14px;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] * {
+  direction: rtl;
 }
