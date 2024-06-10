@@ -1,0 +1,7 @@
+<li class="facebook" ng-init="handlers.social.common.init('facebook')">
+    <a ng-click="handlers.social.facebook.click()" aria-label="Share on Facebook"></a>
+</li>
+
+<li class="twitter" ng-init="handlers.social.twitter.init()">
+    <a ng-href="https://twitter.com/intent/tweet?url={{shareLinks.twitter}}&amp;text=I just wrote a review on {{ product.name }}&amp;via=yotpo" aria-label="Share on Twitter" target="_blank" data-network="twitter"></a>
+</li>

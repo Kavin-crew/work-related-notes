@@ -1671,7 +1671,13 @@
   color: #cb2222;
 }
 
+<<<<<<< HEAD
+[class*="yotpo-display-"][class*="yotpo-device-"][style]
+  .yotpo-review-media-modal-body {
+  margin-top: 40px;
+=======
 [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-filter-select,
 [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-media-select {
   width: 100%;
+>>>>>>> e60df1f148af8b2450905eedd0911b2174323fb5
 }

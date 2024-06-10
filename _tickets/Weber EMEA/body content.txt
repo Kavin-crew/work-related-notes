@@ -1,0 +1,4 @@
+Subject Line: Bitte bewerte deinen jüngsten Einkauf bei Weber
+Hallo {user},
+
+wir hoffen, dass dir dein jüngster Einkauf gefallen hat. Wir würden gerne erfahren, wie dir dein neues Produkt ({product}) gefällt.
