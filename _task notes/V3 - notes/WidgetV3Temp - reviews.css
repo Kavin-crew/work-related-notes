@@ -1667,3 +1667,8 @@
   .yotpo-new-input-validation {
   color: #cb2222;
 }
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style]
+  .yotpo-review-media-modal-body {
+  margin-top: 40px;
+}
