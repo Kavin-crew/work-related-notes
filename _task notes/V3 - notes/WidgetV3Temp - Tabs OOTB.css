@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "Rutan";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://www.philipkingsley.co.uk/static/version1718090759/frontend/philipkingsley/default/en_GB/fonts/rutan.woff2)
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Rutan";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://www.philipkingsley.co.uk/static/version1718090759/frontend/philipkingsley/default/en_GB/fonts/rutan-medium.woff2)
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Rutan";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://www.philipkingsley.co.uk/static/version1718090759/frontend/philipkingsley/default/en_GB/fonts/rutan-demibold-webfont.woff2)
+    format("woff2");
+}
+
+@font-face {
+  font-family: "starling";
+  src: url("https://www.philipkingsley.co.uk/static/version1718090759/frontend/philipkingsley/default/en_GB/fonts/StarlingItalic.eot");
+  src: url("https://www.philipkingsley.co.uk/static/version1718090759/frontend/philipkingsley/default/en_GB/fonts/StarlingItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://www.philipkingsley.co.uk/static/version1718090759/frontend/philipkingsley/default/en_GB/fonts/StarlingItalic.woff2")
+      format("woff2"),
+    url("https://www.philipkingsley.co.uk/static/version1718090759/frontend/philipkingsley/default/en_GB/fonts/StarlingItalic.woff")
+      format("woff"),
+    url("https://www.philipkingsley.co.uk/static/version1718090759/frontend/philipkingsley/default/en_GB/fonts/StarlingItalic.otf")
+      format("opentype"),
+    url("https://www.philipkingsley.co.uk/static/version1718090759/frontend/philipkingsley/default/en_GB/fonts/StarlingItalic.ttf")
+      format("truetype"),
+    url("https://www.philipkingsley.co.uk/static/version1718090759/frontend/philipkingsley/default/en_GB/fonts/StarlingItalic.svg")
+      format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+td,
+input,
+textarea,
+button,
+div,
+label {
+  font-family: "Rutan", sans-serif !important;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] *,
+[class*="yotpo-display-"][class*="yotpo-device-"][style] input::placeholder,
+[class*="yotpo-display-"][class*="yotpo-device-"][style] textarea::placeholder {
+  font-family: "Rutan", sans-serif !important;
+}
+
+[class*="yotpo-reviews-tab"][class*="yotpo-display-"][class*="yotpo-display-"]
+  .yotpo-reviewer-name {
+  font-family: inherit;
+}
+
+[class*="yotpo-reviews-tab"][class*="yotpo-display-"][class*="yotpo-display-"]
+  .yotpo-reviewer-verified-buyer-text,
+[class*="yotpo-reviews-tab"][class*="yotpo-display-"][class*="yotpo-display-"]
+  .yotpo-reviews-tab-pagination-item {
+  font-family: inherit;
+}
+
+[class*="yotpo-reviews-tab"][class*="yotpo-display-"][class*="yotpo-display-"]
+  .yotpo-reviews-tab-review-content
+  .yotpo-read-more {
+  color: var(--tab-background-color);
+  font-family: inherit;
+  text-decoration: underline;
+}
+
+[class*="yotpo-reviews-tab"][class*="yotpo-display-"][class*="yotpo-display-"]
+  .yotpo-comment-title {
+  font-size: 0;
+}
+
+[class*="yotpo-reviews-tab"][class*="yotpo-display-"][class*="yotpo-display-"]
+  .yotpo-comment-title::before {
+  content: "Response from Philip Kingsley";
+  font-size: 14px;
+}
+
+[class*="yotpo-reviews-tab"][class*="yotpo-display-"][class*="yotpo-display-"]
+  .yotpo-reviews-tab-review-comment
+  .yotpo-comment-avatar {
+  max-width: 40px;
+  width: 100%;
+}
+
+[class*="yotpo-reviews-tab"][class*="yotpo-display-"][class*="yotpo-display-"]
+  .yotpo-reviews-tab-review-comment {
+  width: 100%;
+}
