@@ -1,84 +1,83 @@
 @font-face {
-  font-family: "GT America Extended";
-  font-style: normal;
-  font-weight: 300;
+  font-family: "ridley_groteskregular";
+  src: url("https://cdn.medik8.com/c8b72033-fcf3-46b6-936d-3d05b6f8a5a1/ridleygroteskregularwebfont.woff2")
+      format("woff2"),
+    url("https://cdn.medik8.com/49dcbb7e-8fa8-4356-9593-a4685a08f0d0/ridleygroteskregularwebfont.woff")
+      format("woff");
   font-display: swap;
-  src: url(//odacite.com/cdn/shop/files/GTAmerica-ExtendedLight.woff2?v=9413575482244060514)
-    format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
-    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "GT America Extended";
-  font-style: normal;
-  font-weight: 400;
+  font-family: "ridley_groteskmedium";
+  src: url("https://cdn.medik8.com/9bf21a3c-b8f5-40a1-81d7-924a9a44ac60/ridleygroteskmediumwebfont.woff2")
+      format("woff2"),
+    url("https://cdn.medik8.com/2b002eae-48c7-4558-a569-d3e51b131ae9/ridleygroteskmediumwebfont.woff")
+      format("woff");
   font-display: swap;
-  src: url(//odacite.com/cdn/shop/files/GTAmerica-Regular.woff2?v=8298495051700026298)
-    format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
-    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "GT America Extended";
-  font-style: normal;
-  font-weight: 500;
+  font-family: "ridley_groteskbold";
+  src: url("https://cdn.medik8.com/2d3f223b-2369-4632-9bcc-8d80c7886cf5/ridleygroteskboldwebfont.woff2")
+      format("woff2"),
+    url("https://cdn.medik8.com/aa9597d9-f541-4cbb-9d99-39bca33103fa/ridleygroteskboldwebfont.woff")
+      format("woff");
   font-display: swap;
-  src: url(//odacite.com/cdn/shop/files/GTAmerica-ExtendedMedium_7788929b-3fbb-4df9-983d-ced3339aa4d4.woff2?v=5618574206194773970)
-    format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
-    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "GT America Extended";
-  font-style: normal;
-  font-weight: 700;
+  font-family: "acta_displaylight";
+  src: url("https://cdn.medik8.com/11530328-2eaa-4f70-820c-792060319d98/actadisplaylightwebfont.woff2")
+      format("woff2"),
+    url("https://cdn.medik8.com/7a8766d6-c14a-4907-a4f2-9a42c158f692/actadisplaylightwebfont.woff")
+      format("woff");
   font-display: swap;
-  src: url(//odacite.com/cdn/shop/files/GTAmerica-Bold.woff2?v=7184907424623111800)
-    format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
-    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "GT America Extended";
-  font-style: normal;
-  font-weight: 800;
+  font-family: "acta_displaymedium";
+  src: url("https://cdn.medik8.com/02d189c7-c9bb-4aa0-9906-e675476b5bf3/actadisplaymediumwebfont.woff2")
+      format("woff2"),
+    url("https://cdn.medik8.com/1409d0dc-fdf0-4b76-9dbf-3dcce0a0809e/actadisplaymediumwebfont.woff")
+      format("woff");
   font-display: swap;
-  src: url(//odacite.com/cdn/shop/files/GTAmerica-ExtendedBold.woff2?v=2876967350497015039)
-    format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
-    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "GT America Extended";
-  font-style: normal;
-  font-weight: 900;
+  font-family: "Bureau Grot Comp Bd";
+  src: url("https://cloud.typenetwork.com/projectLicenseWeb/22998/fontfile/woff2/?09d609da4c72fe651aa09b453cd81ca87e2848cb")
+      format("woff2"),
+    url("https://cloud.typenetwork.com/projectLicenseWeb/22998/fontfile/woff/?09d609da4c72fe651aa09b453cd81ca87e2848cb")
+      format("woff");
   font-display: swap;
-  src: url(//odacite.com/cdn/shop/files/GTAmerica-ExtendedBlack.woff2?v=15214263075843335401)
-    format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
-    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-weight: normal;
+  font-style: normal;
 }
 
+[class*="yotpo-display-"][class*="yotpo-device-"][style] *,
+[class*="yotpo-display-"][class*="yotpo-device-"][style] input::placeholder,
+[class*="yotpo-display-"][class*="yotpo-device-"][style] textarea::placeholder {
+  font-family: "ridley_groteskregular", sans-serif !important;
+}
 :root {
   --YotpoPrimaryColor: #6a6c77;
   --YotpoSecondaryColor: #6b6d76;
-  --YotpoPrimaryFont: "GT America Extended", var(--YotpoFallbackFont);
-  --YotpoSecondaryFont: "GT America Extended", var(--YotpoFallbackFont);
+  --YotpoPrimaryFont: "ridley_groteskregular", var(--YotpoFallbackFont);
+  --YotpoSecondaryFont: "ridley_groteskregular", var(--YotpoFallbackFont);
   --YotpoFallbackFont: sans-serif;
   --YotpoLogoIconColor: var(--YotpoSecondaryColor);
-  --YotpoAccentColor: #cbaaae;
-  --YotpoAvatarBackgroundColor: #0f3820;
+  --YotpoAccentColor: #000;
+  --YotpoAvatarBackgroundColor: #1cc286;
   --YotpoVerifiedIconBackgroundColor: #fff;
   --YotpoPaginationBackground: var(--YotpoSecondaryColor);
   --YotpoCustomAvatarBackground: url(https://cdn-yotpo-images-production.yotpo.com/App/531793/179197833/thumb.png?1623250721);
@@ -95,13 +94,11 @@ textarea,
 button,
 div,
 label {
-  font-family: "GT America Extended", sans-serif !important;
-  letter-spacing: 1px !important;
+  font-family: "ridley_groteskregular", sans-serif !important;
 }
 
 /*SEO*/
 [class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style] * {
-  letter-spacing: 1px;
   font-family: var(--YotpoPrimaryFont), Helvetica, Arial, sans-serif !important;
 }
 [class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style]
@@ -143,10 +140,10 @@ label {
 [class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style] .yotpo-read-more {
   text-decoration: underline;
   text-underline-offset: 2px;
-  color: var(--YotpoSecondaryColor);
+  color: #000;
   text-decoration-thickness: 2px;
   font-size: inherit !important;
-  font-weight: 500;
+  font-weight: 600;
 }
 [class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style]
   .yotpo-verified-icon-wrapper,
@@ -172,9 +169,10 @@ label {
   .yotpo-review-center-panel
   .yotpo-review-rating-title
   .yotpo-review-title {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   margin: 0;
+  color: #000;
 }
 [class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style]
   .yotpo-review-content {
@@ -218,6 +216,7 @@ label {
   color: #000;
   font-weight: bold;
 }
+
 [class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style]
   .yotpo-horizontal-pagination
   .selected,
@@ -225,12 +224,18 @@ label {
   .yotpo-horizontal-pagination
   .yotpo-pagination-number:hover {
   font-weight: bold;
-  color: #000;
-  background-color: unset;
+  color: #333;
+}
+
+[class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style]
+  .yotpo-text-link-name {
+  font-weight: 300;
+  color: #333;
 }
 [class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style]
   .yotpo-horizontal-pagination
   .yotpo-reviews-seo-pagination-item {
+  font-weight: 300;
 }
 [class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style]
   .yotpo-base-layout
@@ -277,6 +282,16 @@ label {
   border: none;
   background-color: transparent;
 }
+
+[class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style]
+  .yotpo-reviews-seo-pagination-item:not(.yotpo-pagination-number) {
+  padding-top: 3px;
+  font-weight: 300;
+}
+
+[class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style]
+  .yotpo-pagination-number {
+}
 [class*="yotpo-reviews-seo-"][class*="yotpo-display-mobile"][style]
   .yotpo-seo-page-layout {
   margin: auto 0;
@@ -295,29 +310,117 @@ label {
   .yotpo-pagination-number {
   font-family: inherit;
 }
-<<<<<<< HEAD
 [class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style].yotpo-display-mobile
   .sr-only {
   display: none;
 }
-=======
->>>>>>> d7e6cd4363cd36f0b0027567815f0d7e8939a817
 /* for csb */
 [class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style].yotpo-display-mobile
   .yotpo-seo-page-layout.yotpo-align-text {
   margin: auto 0px;
 }
-<<<<<<< HEAD
-=======
-[class*="yotpo-widget-instance"]
-  [class*="yotpo-reviews-seo-page"][class*="yotpo-display-"].yotpo-display-mobile
-  .yotpo-review-content {
-  display: block;
+
+[class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style]
+  .yotpo-bottom-line-score {
+  font-size: 42px;
+  color: #6b6d76;
+  font-weight: 600;
 }
-[class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style].yotpo-display-mobile
-  .yotpo-review-left-panel,
-[class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style].yotpo-display-mobile
-  .yotpo-review-right-panel {
-  flex-basis: 46%;
+
+[class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style]
+  .yotpo-bottom-line-right-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
->>>>>>> d7e6cd4363cd36f0b0027567815f0d7e8939a817
+
+[class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style]
+  .yotpo-bottom-line-right-panel {
+  padding: 0;
+}
+
+[class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style]
+  .yotpo-bottom-line-text {
+  margin: 0;
+  padding-bottom: 4px;
+}
+
+[class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style]
+  .yotpo-bottom-line-basic-text {
+}
+
+[class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style]
+  .ugc-storefront-widgets-tabs-container__tab.selected {
+  font-weight: bold;
+  color: #000;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 3px;
+}
+
+[class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style]
+  .ugc-storefront-widgets-tabs-container__tab {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #6b6d76;
+}
+
+[class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style]
+  .yotpo-seo-page-tabs {
+  margin-bottom: 9px;
+}
+
+[class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style]
+  .yotpo-review-border-smooth {
+  height: 1px;
+}
+
+[class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style]
+  .yotpo-reviewer-name,
+[class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style]
+  .yotpo-reviewer-verified-buyer-text {
+  font-size: 12px;
+  color: #000;
+}
+
+[class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style]
+  .yotpo-read-more-text {
+  color: #6b6d76;
+  font-size: 14px;
+}
+
+.yotpo-verified-image-icon circle[cy*="300"] {
+  fill: #666666;
+}
+[class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style]
+  .yotpo-comment-title {
+  font-size: 0px;
+}
+[class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style]
+  .yotpo-comment-title::before {
+  font-size: 14px;
+  content: "Medik8";
+  color: #333;
+}
+
+[class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style]
+  .yotpo-modal-body-review-score
+  span {
+  display: none;
+}
+
+[class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style]
+  .yotpo-modal-body-review-title {
+  color: #000;
+}
+
+[class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style]
+  .yotpo-modal-body-review-content
+  .yotpo-read-more-text {
+  color: #6b6d76;
+  font-size: 14px;
+}
+
+[class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style]
+  .yotpo-modal-body-review-score {
+}
