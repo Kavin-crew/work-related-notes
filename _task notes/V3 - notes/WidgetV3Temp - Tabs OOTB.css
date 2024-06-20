@@ -64,6 +64,13 @@ label {
   font-family: "Rutan", sans-serif !important;
 }
 
+/*store name*/
+[class*="yotpo-reviews-tab"][class*="yotpo-display-"][class*="yotpo-display-"]
+  .yotpo-comment-title::before {
+  content: "Response from Philip Kingsley";
+  font-size: 14px;
+}
+
 [class*="yotpo-reviews-tab"][class*="yotpo-display-"][class*="yotpo-display-"]
   .yotpo-reviewer-name {
   font-family: inherit;
@@ -87,12 +94,6 @@ label {
 [class*="yotpo-reviews-tab"][class*="yotpo-display-"][class*="yotpo-display-"]
   .yotpo-comment-title {
   font-size: 0;
-}
-
-[class*="yotpo-reviews-tab"][class*="yotpo-display-"][class*="yotpo-display-"]
-  .yotpo-comment-title::before {
-  content: "Response from Philip Kingsley";
-  font-size: 14px;
 }
 
 [class*="yotpo-reviews-tab"][class*="yotpo-display-"][class*="yotpo-display-"]

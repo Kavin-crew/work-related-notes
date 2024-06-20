@@ -21,3 +21,8 @@
   path {
   fill: var(--tab-background-color);
 }
+
+[class*="yotpo-reviews-tab"][class*="yotpo-display-"][class*="yotpo-display-"]
+  .yotpo-headline {
+  margin-inline: auto;
+}
