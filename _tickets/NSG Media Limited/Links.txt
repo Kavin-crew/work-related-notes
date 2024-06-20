@@ -1,0 +1,11 @@
+PLP US: https://us.cernucci.com/collections/mens-jewelry
+PDP US: https://us.cernucci.com/products/5mm-tennis-chain-white-gold?nosto_source=cmp&nosto=881356998
+
+PLP: https://www.cernucci.com/collections/mens-jewellery
+PDP: https://www.cernucci.com/products/bandana-rhinestone-hoodie-black
+
+.ProductMeta .yotpo .text-m::before {content:"(";}
+.ProductMeta .yotpo .text-m::after {content:")";}
+/*hide the rating in PLP*/
+.ProductItem .yotpo .text-m {display: none;}
+/**/

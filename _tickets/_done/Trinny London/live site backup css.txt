@@ -1,0 +1,130 @@
+@font-face {
+    font-family:"sofia-pro";
+    src:url("https://use.typekit.net/af/5855b2/00000000000000003b9b1a98/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/5855b2/00000000000000003b9b1a98/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/5855b2/00000000000000003b9b1a98/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:400;
+}
+@font-face {
+    font-family:"sofia-pro";
+    src:url("https://use.typekit.net/af/7158ff/00000000000000003b9b1a9c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/7158ff/00000000000000003b9b1a9c/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/7158ff/00000000000000003b9b1a9c/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:600;
+}
+@font-face {
+    font-family:"sofia-pro";
+    src:url("https://use.typekit.net/af/30420e/00000000000000003b9b1a9e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/30420e/00000000000000003b9b1a9e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/30420e/00000000000000003b9b1a9e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+    font-display:auto;font-style:normal;font-weight:700;
+}
+
+.main-table {
+  border: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0; 
+}
+body, td, input, textarea, button {
+  font-family: 'sofia-pro', sans-serif;
+  color:#000;
+  font-size:14px;
+}
+/* Your custom CSS overrides for emails */
+.product-review-image {
+	padding:0;
+    margin:0;
+    width:100%;
+}
+.stars-radio-button{
+ 	margin: 0;
+}
+.powered-by.gray-text-centered{
+  display:none;
+}
+.link-image{
+  padding: 0 10px;
+}
+.review-btn {
+  background-color: #ffff00;
+  border: 1px solid #ffff00;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #222222;
+}
+.submit{
+  min-width:180px;
+  padding: 15px 10px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+  border-radius: 0;
+}
+.main-form {
+padding: 0;
+}
+.hello-user-h1 {
+  margin:0;
+  line-height:42px;
+  font-size:26px;
+  font-style:normal;
+  padding-left: 15px;
+  padding-top: 26px;
+  padding-right: 15px;
+  font-weight: 600;
+  color: #6F6F6F;
+  text-align:center;
+}
+.product-review-title {
+  text-transform: uppercase;
+}
+.input-field-title{
+  font-size:18px;
+  /*text-transform: uppercase;*/
+  font-weight: 600;
+}
+.textarea{
+  height: 100%;
+  resize: none;
+}
+.hello-user-intro{
+Margin:0;
+  -webkit-text-size-adjust:none;
+  -ms-text-size-adjust:none;
+  font-size: 18px;
+  line-height:150%;
+  padding-left: 10px;
+  padding-right: 10px;
+  color:#888888;
+  font-weight: 400;
+  text-align:center;
+}
+
+input[type=text]:focus, textarea:focus {
+  outline-color: #ffff00;
+  border: 1px solid #ffff00;
+}
+.stars-container {
+  color:  #555;
+}
+.formless-star-value{
+	font-size:12px;
+}
+span.confirmation-link {
+    color: #000;
+    background-color: #ffff00;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+a {color: #555;}
+span.underline a { text-decoration: underline; }
+.btn_cont { padding: 25px 0; background: white; margin-top: 25px; }
+input.text-field, textarea.textarea {border-radius: 0;border-color: #BBB;}
+.header-logo { display: none; }
+.banner {text-align: center;}
+.banner img {max-width: 100%;}
+.main-table {border: none;}
+.main-div {background: #fff}
+.main-td {background: #F7F7F7}
+.content-bottom.gray-text-centered {background: #fff; padding: 15px; border-color: #000}
+span.stars-container-top { width: 55%; }
+span.stars-container-bottom { width: 44%; }
+span.stars-container-bottom span.stars-radio-button { width: 50%; }
+span.stars-container-top span.stars-radio-button { width: 33%; }
+span.stars-radio-button span.stars-input { font-size: 18px; letter-spacing: 0.02em; color: #555; }

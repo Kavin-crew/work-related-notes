@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'yotpo-widget-font';
+    src: url("//staticw2.yotpo.com/assets/yotpo-widget-font.eot?version=2021-08-03_15-38-05");
+    src: url("//staticw2.yotpo.com/assets/yotpo-widget-font.eot?version=2021-08-03_15-38-05#iefix") format("embedded-opentype"),url("//staticw2.yotpo.com/assets/yotpo-widget-font.woff?version=2021-08-03_15-38-05") format("woff"),url("//staticw2.yotpo.com/assets/yotpo-widget-font.ttf?version=2021-08-03_15-38-05") format("truetype"),url("//staticw2.yotpo.com/assets/yotpo-widget-font.svg?version=2021-08-03_15-38-05") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+.accordion-body #yotpo-questions-and-answers.yotpo-device-desktop {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#yotpo-questions-and-answers .yotpo-main-layout .yotpo-layout-header-wrapper ~ .yotpo-border-smooth {display: none;}
+
+#yotpo-questions-and-answers .yotpo-main-layout {
+    width: 100% !important;
+}
+
+
+#yotpo-questions-and-answers .yotpo-verified-image-icon svg{width: 45px;height: 45px;aspect-ratio: 1/1;border-radius: 50%;}
+#yotpo-questions-and-answers .yotpo-verified-image-icon svg circle {fill: #83B6DD;height: 45px;}
+
+#yotpo-questions-and-answers .yotpo-verified-icon-wrapper svg {
+    width: 17px;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+#yotpo-questions-and-answers  .yotpo-verified-icon-wrapper{
+    top: 26px;
+}
+#yotpo-questions-and-answers.yotpo-device-mobile  .yotpo-verified-icon-wrapper{
+   left: 28px;
+}
+#yotpo-questions-and-answers .yotpo-verified-icon-wrapper svg circle{fill: #000;}
+#yotpo-questions-and-answers .yotpo-verified-icon-wrapper svg path{stroke: #fff;}
+#yotpo-questions-and-answers .yotpo-avatar-initials-text {
+    transform: translate(0px,3px);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#yotpo-questions-and-answers  .yotpo-question-content .yotpo-read-more-text {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#yotpo-questions-and-answers .yotpo-shopper-name {
+    font-size: 12px;
+    font-weight: 600;
+    padding-top: 4px;
+}
+
+#yotpo-questions-and-answers .yotpo-verified-text {
+    font-size: 12px;
+}
+
+#yotpo-questions-and-answers.yotpo-device-desktop .yotpo-shopper-details-verified {flex-direction: row;align-items: center;padding: 0;gap: 8px;}
+
+#yotpo-questions-and-answers .yotpo-question .yotpo-question-shopper {
+    align-items: flex-start;
+}
+
+#yotpo-questions-and-answers.yotpo-device-desktop .yotpo-question-center-panel {
+    margin-top: 0;
+    margin-left: 20px !important;
+    flex-basis: 100%;
+}
+
+#yotpo-questions-and-answers .yotpo-question-answers {
+    margin-left: 0;
+    margin-top: 50px;
+}
+
+#yotpo-questions-and-answers.yotpo-device-desktop .yotpo-question-content {
+    padding-left: 35px;
+}
+
+#yotpo-questions-and-answers .yotpo-answers-answer {border-left: 2px solid #accee9;position: relative;padding: 25px 0 25px 72px !important;}
+#yotpo-questions-and-answers.yotpo-device-mobile .yotpo-answers-answer {padding: 25px 0 25px 60px !important;}
+
+#yotpo-questions-and-answers .yotpo-answer-content .yotpo-read-more-text {font-size: 14px;line-height: 17px;font-weight: 300;}
+
+#yotpo-questions-and-answers .yotpo-answer-data {
+    flex-direction: column-reverse;
+    row-gap: 24px;
+}
+#yotpo-questions-and-answers .yotpo-answer-data::before {content:"\e600";font-family: "yotpo-widget-font" !important;position: relative;width: 45px;height: 45px;margin-right: 8px;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;background: #83b6dd;color: #000;text-align: center;line-height: 45px;position: absolute;top: 30px;left: 20px;font-weight: bold;}
+#yotpo-questions-and-answers .yotpo-answer-data::after {content: "\e619";font-family: "yotpo-widget-font" !important;color: #000;position: absolute;top: 60px;left: 47px;background-color: #fff;border-radius: 50%;}
+
+#yotpo-questions-and-answers.yotpo-device-mobile .yotpo-answer-data::before{
+    left: 8px;
+}
+#yotpo-questions-and-answers.yotpo-device-mobile .yotpo-answer-data::after{left: 38px;}
+
+#yotpo-questions-and-answers .yotpo-answerer-title {
+    text-transform: initial;
+    font-weight: 600;
+    color: #000;
+    font-size: 12px;
+}
+
+#yotpo-questions-and-answers .yotpo-answer-content {}
+
+#yotpo-questions-and-answers .yotpo-pagination-number.selected {}
+#yotpo-questions-and-answers .yotpo-pagination-number{
+    min-height: 44px;
+}
+
+#yotpo-questions-and-answers .yotpo-horizontal-pagination .yotpo-pagination-item:not(.yotpo-pagination-number) {width: 70px;min-height: 44px;font-size: 12px;border-radius: 5px;background-color: #F6F6F6;padding-top: 10px;}
+#yotpo-questions-and-answers .yotpo-horizontal-pagination .yotpo-pagination-item:not(.yotpo-pagination-number):hover svg path { fill: #599dd2;}
+#yotpo-questions-and-answers .yotpo-horizontal-pagination .yotpo-pagination-item:not(.yotpo-pagination-number):hover { background-color: transparent;}
+
+
+.yotpo-pagination-item {}
+
+#yotpo-questions-and-answers .yotpo-question {
+    margin: 30px 0;
+}

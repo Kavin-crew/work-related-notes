@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "ridley_groteskregular";
+  src: url("https://cdn.medik8.com/c8b72033-fcf3-46b6-936d-3d05b6f8a5a1/ridleygroteskregularwebfont.woff2")
+      format("woff2"),
+    url("https://cdn.medik8.com/49dcbb7e-8fa8-4356-9593-a4685a08f0d0/ridleygroteskregularwebfont.woff")
+      format("woff");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ridley_groteskmedium";
+  src: url("https://cdn.medik8.com/9bf21a3c-b8f5-40a1-81d7-924a9a44ac60/ridleygroteskmediumwebfont.woff2")
+      format("woff2"),
+    url("https://cdn.medik8.com/2b002eae-48c7-4558-a569-d3e51b131ae9/ridleygroteskmediumwebfont.woff")
+      format("woff");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ridley_groteskbold";
+  src: url("https://cdn.medik8.com/2d3f223b-2369-4632-9bcc-8d80c7886cf5/ridleygroteskboldwebfont.woff2")
+      format("woff2"),
+    url("https://cdn.medik8.com/aa9597d9-f541-4cbb-9d99-39bca33103fa/ridleygroteskboldwebfont.woff")
+      format("woff");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "acta_displaylight";
+  src: url("https://cdn.medik8.com/11530328-2eaa-4f70-820c-792060319d98/actadisplaylightwebfont.woff2")
+      format("woff2"),
+    url("https://cdn.medik8.com/7a8766d6-c14a-4907-a4f2-9a42c158f692/actadisplaylightwebfont.woff")
+      format("woff");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "acta_displaymedium";
+  src: url("https://cdn.medik8.com/02d189c7-c9bb-4aa0-9906-e675476b5bf3/actadisplaymediumwebfont.woff2")
+      format("woff2"),
+    url("https://cdn.medik8.com/1409d0dc-fdf0-4b76-9dbf-3dcce0a0809e/actadisplaymediumwebfont.woff")
+      format("woff");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bureau Grot Comp Bd";
+  src: url("https://cloud.typenetwork.com/projectLicenseWeb/22998/fontfile/woff2/?09d609da4c72fe651aa09b453cd81ca87e2848cb")
+      format("woff2"),
+    url("https://cloud.typenetwork.com/projectLicenseWeb/22998/fontfile/woff/?09d609da4c72fe651aa09b453cd81ca87e2848cb")
+      format("woff");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] *,
+[class*="yotpo-display-"][class*="yotpo-device-"][style] input::placeholder,
+[class*="yotpo-display-"][class*="yotpo-device-"][style] textarea::placeholder {
+  font-family: "ridley_groteskregular", sans-serif !important;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-sr-bottom-line-text {
+    font-size: 14px !important;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-sr-bottom-line-summary {
+    flex-direction: row !important;
+}
+[data-yotpo-section-id="collection"] [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-sr-bottom-line-summary  {
+    gap: 10px !important;
+}

@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'yotpo-widget-font';
+    src: url("//staticw2.yotpo.com/assets/yotpo-widget-font.eot?version=2022-09-05_12-47-25");
+    src: url("//staticw2.yotpo.com/assets/yotpo-widget-font.eot?version=2022-09-05_12-47-25#iefix") format("embedded-opentype"),url("//staticw2.yotpo.com/assets/yotpo-widget-font.woff?version=2022-09-05_12-47-25") format("woff"),url("//staticw2.yotpo.com/assets/yotpo-widget-font.ttf?version=2022-09-05_12-47-25") format("truetype"),url("//staticw2.yotpo.com/assets/yotpo-widget-font.svg?version=2022-09-05_12-47-25") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][class*="star-rating"] .star-container {
+    margin: 0 !important;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][class*="star-rating"] .star-container svg {
+    display: none;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][class*="star-rating"] .star-container::before {
+    font-family: "yotpo-widget-font" !important;
+    content: '';
+    color: #fec600;
+    font-size: 12px;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][class*="star-rating"] .star-container[class*="full"]::before {
+    content: "\e60e";
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][class*="star-rating"] .star-container[class*="empty"]::before {
+    content: "\e61b"
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][class*="star-rating"] .star-container[class*="half"]::before {
+    content: "\e61a"
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"] .yotpo-sr-bottom-line-summary > div[aria-label*="out of 5 star rating"] {
+    margin-right: 6px !important;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-sr-bottom-line-text.yotpo-sr-bottom-line-text--right-panel {
+    font-weight: 400!important;
+    font-size: 14px !important;
+    font-family: 'Hind', sans-serif !important;
+    color: #4A4A4A !important;
+    line-height: 16px !important;
+    letter-spacing: 0;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style].yotpo-device-mobile .yotpo-sr-bottom-line-text.yotpo-sr-bottom-line-text--right-panel {
+    font-size: 12px !important;
+}
+
+.product-single__vendor-sku:has(.yotpo-reviews-star-ratings-widget) {
+    margin: 0;
+}
+
+.product-single__vendor-sku:has(.yotpo-reviews-star-ratings-widget.yotpo-device-mobile) {
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.product-single__vendor-sku:has(.yotpo-reviews-star-ratings-widget) .product-single__barcode {
+    padding: 0;
+}
+
+.product-single__vendor-sku:has(.yotpo-reviews-star-ratings-widget.yotpo-device-mobile) .product-single__barcode {
+    margin-top: 0;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"] .yotpo-sr-bottom-line-summary {
+    align-items: start !important;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"].yotpo-device-mobile .yotpo-sr-bottom-line-summary {
+    align-items: center !important;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"] .yotpo-bottom-line-scroll-panel:hover {
+    cursor: pointer;
+}
+
+.yotpo-widget-instance[data-url*="/collections/"] {}
+
+.yotpo-widget-instance[data-url*="/collections/"] .yotpo-sr-bottom-line-summary,
+.grid-view-item__reviews .yotpo-sr-bottom-line-summary {
+    flex-direction: column !important;
+    align-items: start !important;
+    gap: 5px;
+}
+
+.product-single__vendor-sku:has(.yotpo-reviews-star-ratings-widget) .product-avlibility-outer {
+    width: 60%;
+    width: auto;
+}
+
+/*for fixing the pdp star ratings base on client design*/
+.product-single__vendor-sku:has([class*="yotpo-star-rating-reviews-summary"]) .yotpo-widget-instance {width: 100%;}
+[class*="yotpo-display-"][class*="yotpo-device-"] .yotpo-star-rating-reviews-summary-icon {width: 13px;}
+[class*="yotpo-"] [class*="yotpo-display-"][class*="yotpo-device-"].yotpo-device-mobile .yotpo-star-rating-reviews-summary-text{font-size: 12px;} 
+[class*="yotpo-"] [class*="yotpo-display-"][class*="yotpo-device-"] .yotpo-star-rating-reviews-summary-text {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    font-family: 'Hind', sans-serif !important;
+}
+
+.product-single__vendor-sku:has(.yotpo-reviews-star-ratings-widget) .yotpo-widget-instance{margin-right: 10px;}
+.product-single__vendor-sku:has([class*="yotpo-star-rating-reviews-summary"]) .product-avlibility-outer {
+    order: 1;
+    width: 100%;
+    padding: 0;
+}
