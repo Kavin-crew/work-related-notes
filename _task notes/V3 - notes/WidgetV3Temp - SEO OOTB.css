@@ -119,3 +119,8 @@ label {
   .yotpo-reviewer-verified-buyer-text {
   font-size: 12px;
 }
+
+[class*="yotpo-reviews-seo-"][class*="yotpo-display-"][style].yotpo-display-mobile
+  .sr-only {
+  display: none;
+}
