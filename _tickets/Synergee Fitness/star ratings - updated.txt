@@ -94,7 +94,6 @@
 
 .product-single__vendor-sku:has(.yotpo-reviews-star-ratings-widget) .product-avlibility-outer {
     width: 60%;
-    width: auto;
 }
 
 /*for fixing the pdp star ratings base on client design*/
@@ -114,3 +113,18 @@
     width: 100%;
     padding: 0;
 }
+.product-single__vendor-sku:has(.yotpo-widget-instance + .product-freeshipp-outer) .product-freeshipp-outer {
+    padding-left: 0;
+}
+
+.product-single__vendor-sku:has(.yotpo-widget-instance + .product-avlibility-outer) .product-freeshipp-outer {
+    padding-left: 0;
+}
+
+.product-single__vendor-sku:has(.yotpo-widget-instance [class*="yotpo-star-rating-reviews-summary"]) .product-freeshipp-outer{padding-left: 16px;}
+
+.product-single__vendor-sku:has(.yotpo-widget-instance:not([class*="yotpo-star-rating-reviews-summary"]) + .product-single__barcode) .product-freeshipp-outer {
+    padding-left: 0;
+}
+
+.product-single__vendor-sku:has(.yotpo-widget-instance [class*="yotpo-star-rating-reviews-summary"]):not(.product-single__barcode) .product-freeshipp-outer{padding-left: 0;}
