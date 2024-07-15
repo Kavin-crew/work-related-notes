@@ -363,6 +363,12 @@ label {
   height: 40px;
 }
 /* common issue fixes */
+[class*="yotpo-display-"][class*="yotpo-device-"][style]
+  .yotpo-delete-image-icon {
+  height: 8px;
+  width: 8px;
+}
+
 [class*="yotpo-display-"][class*="yotpo-device-"].yotpo-device-mobile
   .modal-backdrop.yotpo-media-modal {
   background-color: #fff;

@@ -1,16 +1,15 @@
 @font-face {
-  font-family: "Rutan";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://www.philipkingsley.co.uk/static/version1718090759/frontend/philipkingsley/default/en_GB/fonts/rutan.woff2)
-    format("woff2");
+  font-family: Gotham;
+  src: url("https://cdn.shopify.com/s/files/1/0701/1670/4540/files/Gotham-UltraItalic.otf")
+    format("opentype");
+  font-weight: 900;
+  font-style: italic;
 }
 
 [class*="yotpo-display-"][class*="yotpo-device-"][style] *,
 [class*="yotpo-display-"][class*="yotpo-device-"][style] input::placeholder,
 [class*="yotpo-display-"][class*="yotpo-device-"][style] textarea::placeholder {
-  font-family: "Rutan", sans-serif !important;
+  font-family: "Gotham", sans-serif !important;
 }
 
 :root {
@@ -728,4 +727,19 @@
   .yotpo-review-questions-mobile-panel
   .yotpo-custom-questions-range-question {
   justify-content: flex-start;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style][class*="mobile"]
+  .yotpo-star-rating-text {
+  width: 100%;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style][class*="mobile"]
+  .yotpo-star-rating-icons-wrapper {
+  padding-inline: 0;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style][class*="mobile"]
+  .yotpo-matched-reviews {
+  text-align: left;
 }
