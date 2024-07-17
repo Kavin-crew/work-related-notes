@@ -1,4 +1,14 @@
 [class*="yotpo-reviews-tab"][class*="yotpo-display-"][class*="yotpo-display-"]
+  .yotpo-comment-title {
+  font-size: 0;
+}
+[class*="yotpo-reviews-tab"][class*="yotpo-display-"][class*="yotpo-display-"]
+  .yotpo-comment-title::before {
+  content: "Account Name";
+  font-size: 14px;
+}
+
+[class*="yotpo-reviews-tab"][class*="yotpo-display-"][class*="yotpo-display-"]
   .yotpo-reviewer-name {
   font-family: inherit;
 }
