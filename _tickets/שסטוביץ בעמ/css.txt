@@ -1,0 +1,7 @@
+/*hide the star ratings in PLP if no reviews*/
+.products-container [class*="yotpo-reviews-star-ratings-widget"][class*="yotpo-device-"][class*="yotpo-display-"] .yotpo-bottom-line-scroll-panel:has([class*="empty"]){
+    display: none !important;
+}
+.products-container [class*="yotpo-reviews-star-ratings-widget"][class*="yotpo-device-"][class*="yotpo-display-"]:has([class*="empty"]) .yotpo-widget-clear{
+    margin-top: 18px;
+}
