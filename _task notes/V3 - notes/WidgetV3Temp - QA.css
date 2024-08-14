@@ -7,19 +7,10 @@
     format("woff2");
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-td,
-input,
-textarea,
-button,
-div,
-label,
-span {
-  font-family: "RRollieThin", sans-serif !important;
+[class*="yotpo-display-"][class*="yotpo-device-"][style] *,
+[class*="yotpo-display-"][class*="yotpo-device-"][style] input::placeholder,
+[class*="yotpo-display-"][class*="yotpo-device-"][style] textarea::placeholder {
+  font-family: "Gotham", sans-serif !important;
 }
 
 #yotpo-questions-and-answers[class*="yotpo-display-"][class*="yotpo-device-"]
