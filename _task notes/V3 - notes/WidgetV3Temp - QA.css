@@ -18,7 +18,7 @@
   span {
   text-decoration: none;
   border-bottom: none;
-  color: #6b6d76;
+  color: var(--text-color);
   font-weight: normal;
 }
 
