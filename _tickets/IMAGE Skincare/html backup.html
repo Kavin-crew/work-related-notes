@@ -1,0 +1,84 @@
+{%- comment -%}
+<!-- Email notification sent when a review is commented on -->
+{%- endcomment -%} {%- include 'product_image(readonly)' -%}
+
+<table
+  class="form-table full-width menu"
+  cellspacing="0"
+  cellpadding="0"
+  border="0"
+  role="none"
+  style="max-width: 600px; width: 100%"
+>
+  <tr>
+    <td width="5%"></td>
+    <td>
+      <a
+        href="https://imageskincare.com/collections/best-sellers?y_b_lid=2"
+        target="_blank"
+        >Bestsellers</a
+      >
+      <a
+        href="https://imageskincare.com/collections/new-arrivals?y_b_lid=3"
+        target="_blank"
+        >New Arrivals</a
+      >
+      <a
+        href="https://imageskincare.com/pages/skin-quiz?y_b_lid=4"
+        target="_blank"
+        >Regimen Builder</a
+      >
+    </td>
+    <td width="5%"></td>
+  </tr>
+</table>
+
+<table
+  class="form-table full-width"
+  cellspacing="0"
+  cellpadding="0"
+  border="0"
+  role="none"
+>
+  <tr>
+    <td class="form-container">
+      <table width="100%" role="none">
+        <tr>
+          <td width="5%"></td>
+          <td class="content-header comment-header">
+            <span class="hello-user">Hi, {{ user_name }},</span>
+            <br />
+            Thank you for submitting a product review for Image Skincare's {{
+            product_name }}! We appreciate all feedback and hope you enjoy your
+            skincare purchase!<br /><br />
+            <p class="comment">
+              <q>{{ comment.content }}</q>
+            </p>
+          </td>
+          <td width="5%"></td>
+        </tr>
+        <tr align="center">
+          <td width="5%"></td>
+          <td width="90%" align="center" valign="middle">
+            <a href="{{ store_url }}">
+              <button class="submit comment-button">Go to store</button>
+            </a>
+          </td>
+          <td width="5%"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+{%- include 'promoted_products' -%}
+
+<div class="content-bottom gray-text-centered">
+  <p>
+    Thanks again for the review, and we hope to see you again soon!
+    <br />
+    {{ store_name | link_to: store_url }}
+    <br />
+    {{ store_email | mail_to: store_email }}
+  </p>
+</div>
