@@ -1,0 +1,22 @@
+/*update 8-2-2024*/
+.product-single__vendor-sku
+  .yotpo-widget-instance
+  + .product-avlibility-outer
+  + .product-single__barcode
+  + .product-freeshipp-outer,
+.product-single__vendor-sku
+  .yotpo-widget-instance
+  + .product-avlibility-outer
+  + .product-single__barcode
+  + .product-freeshipp-outer
+  .product-freeshipp-wrapp {
+  margin: 0;
+}
+
+.product-single__vendor-sku .yotpo-widget-instance + .product-freeshipp-outer,
+.product-single__vendor-sku
+  .yotpo-widget-instance
+  + .product-freeshipp-outer
+  .product-freeshipp-wrapp {
+  margin: 0;
+}

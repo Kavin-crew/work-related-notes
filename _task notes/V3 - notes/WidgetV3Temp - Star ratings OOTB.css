@@ -10,23 +10,11 @@
     U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-td,
-input,
-textarea,
-button,
-div,
-label {
-  font-family: "Mulish", sans-serif !important;
-}
-
-[class*="yotpo-display-"][class*="yotpo-device-"][style] *,
-[class*="yotpo-display-"][class*="yotpo-device-"][style] input::placeholder,
-[class*="yotpo-display-"][class*="yotpo-device-"][style] textarea::placeholder {
+[class*="yotpo-display-"][class*="yotpo-reviews-star-ratings-"][style] *,
+[class*="yotpo-display-"][class*="yotpo-reviews-star-ratings-"][style]
+  input::placeholder,
+[class*="yotpo-display-"][class*="yotpo-reviews-star-ratings-"][style]
+  textarea::placeholder {
   font-family: "Mulish", sans-serif !important;
 }
 
@@ -39,7 +27,7 @@ label {
   align-items: center !important;
 }
 [data-yotpo-section-id="collection"]
-  [class*="yotpo-display-"][class*="yotpo-device-"][style]
+  [class*="yotpo-display-"][class*="yotpo-reviews-star-ratings-"][style]
   .yotpo-sr-bottom-line-summary {
   flex-direction: row !important;
   gap: 10px !important;
