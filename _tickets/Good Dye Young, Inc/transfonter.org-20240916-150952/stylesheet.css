@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Acumin Pro";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/AcuminPro-Regular.woff?v=1726499468")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Integral CF";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/IntegralCF-Heavy.woff?v=1726499468")
+    format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+h2,
+h3,
+h4,
+p,
+td,
+input,
+textarea,
+div,
+label {
+  font-family: "Acumin Pro", sans-serif !important;
+}
+
+.stars-rating-container.es-table,
+#review_content,
+#review-title-input,
+textarea.textarea {
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+#review_content,
+#review-title-input {
+  border-radius: 5px;
+  border-color: #85888a !important;
+}
+
+.es-table a {
+  color: #000 !important;
+}
+
+h5,
+button {
+  font-family: "Integral CF", sans-serif !important;
+}

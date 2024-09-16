@@ -743,3 +743,24 @@
   .yotpo-matched-reviews {
   text-align: left;
 }
+
+/*8-28-2024 update on mobile popup images too big*/
+.yotpo-reviews-main-widget:not([class*="desktop"])
+  .yotpo-review-media-modal
+  .yotpo-modal[id*="yotpo-modal"]
+  .yotpo-review-media-modal-body
+  .yotpo-modal-body-left-side
+  .yotpo-review-media-modal-preview-container
+  .yotpo-review-media-modal-media-container
+  .yotpo-modal-preview-media {
+  max-width: 320px;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+}
+
+.yotpo-review-media-modal
+  .yotpo-modal[id*="yotpo-modal"]
+  .yotpo-review-media-modal-body
+  .yotpo-review-media-modal-preview-container {
+  justify-content: center;
+}

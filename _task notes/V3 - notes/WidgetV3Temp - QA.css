@@ -13,6 +13,11 @@
   font-family: "Gotham", sans-serif !important;
 }
 
+/*for vercel only*/
+.accordion [class*="yotpo-questions-and-answers"] .yotpo-main-layout {
+  width: 100% !important;
+}
+
 #yotpo-questions-and-answers[class*="yotpo-display-"][class*="yotpo-device-"]
   [id*="-widget-btn"]
   span {
@@ -48,6 +53,12 @@
   #yotpo-widget-btn.yotpo-question-btn
   span {
   color: inherit;
+  padding-inline: 10px;
+}
+
+[class*="yotpo-questions-and-answers"][class*="yotpo-display-"][class*="yotpo-device-"][style]
+  #yotpo-widget-btn.yotpo-question-btn {
+  text-decoration: none;
 }
 
 [class*="yotpo-questions-and-answers"][class*="yotpo-display-"][class*="yotpo-device-"][style]
@@ -89,4 +100,8 @@
 [class*="yotpo-questions-and-answers"][class*="yotpo-display-"][class*="yotpo-device-"]
   .yotpo-qna-empty-state {
   margin-top: 30px;
+}
+
+[class*="yotpo-questions-and-answers"] .ugc-storefront-widgets-tabs-container {
+  margin-bottom: 50px;
 }
