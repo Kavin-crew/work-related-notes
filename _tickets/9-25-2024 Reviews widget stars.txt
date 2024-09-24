@@ -1,0 +1,64 @@
+/*9-25-2024 Reviews widget stars*/
+@font-face {
+    font-family: 'yotpo-widget-font';
+    src: url("//staticw2.yotpo.com/assets/yotpo-widget-font.eot?version=2021-08-03_15-38-05");
+    src: url("//staticw2.yotpo.com/assets/yotpo-widget-font.eot?version=2021-08-03_15-38-05#iefix") format("embedded-opentype"),url("//staticw2.yotpo.com/assets/yotpo-widget-font.woff?version=2021-08-03_15-38-05") format("woff"),url("//staticw2.yotpo.com/assets/yotpo-widget-font.ttf?version=2021-08-03_15-38-05") format("truetype"),url("//staticw2.yotpo.com/assets/yotpo-widget-font.svg?version=2021-08-03_15-38-05") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+[class*="yotpo-reviews-star-ratings-widget"] .star-container .yotpo-sr-star-half svg,
+[class*="yotpo-reviews-star-ratings-widget"] .star-container .yotpo-sr-star-full svg,
+[class*="yotpo-reviews-star-ratings-widget"] .star-container .yotpo-sr-star-empty svg{
+    display: none;
+}
+
+[class*="yotpo-reviews-main-widget"] .star-container .yotpo-sr-star-half,
+[class*="yotpo-reviews-main-widget"] .star-container .yotpo-sr-star-full,
+[class*="yotpo-reviews-main-widget"] .star-container .yotpo-sr-star-empty{
+    display: none;
+}
+
+[class*="yotpo-reviews-main-widget"]  .star-container {
+    font-family: "yotpo-widget-font" !important;
+}
+
+[class*="yotpo-reviews-main-widget"] .star-container:has(.yotpo-sr-star-half):before {
+    content: "\e61a";
+}
+
+[class*="yotpo-reviews-main-widget"] .star-container:has(.yotpo-sr-star-full):before {
+    content: "\e60e";
+}
+
+[class*="yotpo-reviews-main-widget"] .star-container:has(.yotpo-sr-star-empty):before {
+    content: "\e61b"
+}
+
+.star-container.yotpo-sr-star-empty, .star-container.yotpo-sr-star-half, .star-container.yotpo-sr-star-full {
+    line-height: 100%;
+    margin-right: 1px !important;
+}
+
+.yotpo-sr-bottom-line-summary {
+    align-items: center !important;
+}
+
+.star-container.yotpo-sr-star-full:before, 
+.star-container.yotpo-sr-star-half:before,
+.star-container.yotpo-sr-star-empty:before {
+    font-family: "yotpo-widget-font" !important;
+    color: rgb(0,0,0);
+}
+
+.star-container.yotpo-sr-star-half:before {
+    content: "\e61a";
+}
+
+.star-container.yotpo-sr-star-full:before {
+    content: "\e60e";
+}
+
+.star-container.yotpo-sr-star-empty:before {
+    content: "\e61b"
+}
