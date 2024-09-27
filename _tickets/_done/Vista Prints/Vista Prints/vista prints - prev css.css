@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Graphik";
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/graphic_regular.woff2?v=1724424292")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/Graphik-Medium.woff2?v=1724424528")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+td,
+input,
+textarea,
+button,
+div,
+label {
+  font-family: "Graphik", sans-serif !important;
+}
+
+.email-message-block h2,
+.field-label,
+button,
+.submit,
+.submit span {
+  font-weight: 500 !important;
+}
+
+.stars-rating-container.es-table,
+#review_content,
+#review-title-input,
+textarea.textarea {
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+#review_content,
+#review-title-input {
+  border-radius: 8px !important;
+  border-color: #838383 !important;
+}
+
+input.stars-radio {
+  accent-color: #6fd0f5;
+}
+
+.es-content-body p strong {
+  background-color: #f2f3f4;
+  border: 1px solid #d2d3da;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 500 !important;
+}
