@@ -32,3 +32,8 @@
   flex-direction: row !important;
   gap: 10px !important;
 }
+
+/**/
+.yotpo-sr-bottom-line-summary {
+  text-decoration: none;
+}

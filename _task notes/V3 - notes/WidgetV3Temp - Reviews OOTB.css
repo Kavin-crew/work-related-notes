@@ -764,3 +764,9 @@
   .yotpo-review-media-modal-preview-container {
   justify-content: center;
 }
+
+/*min-width of date*/
+[class*="yotpo-display-"][class*="yotpo-device-"][style]
+  .yotpo-review-right-panel {
+  min-width: auto !important;
+}

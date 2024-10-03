@@ -19,8 +19,14 @@
 }
 
 [class*="yotpo-reviews-seo-page"][class*="yotpo-display-"]
+  #yotpo-seo-reviews-container
+  .yotpo-comment-title {
+  font-size: 0;
+}
+
+[class*="yotpo-reviews-seo-page"][class*="yotpo-display-"]
   .yotpo-comment-title::before {
-  content: "Rockford Art Deli";
+  content: "Account name";
   font-size: 16px;
 }
 
@@ -34,11 +40,6 @@
   .yotpo-custom-icon {
   width: 100%;
   max-width: 40px;
-}
-[class*="yotpo-reviews-seo-page"][class*="yotpo-display-"]
-  #yotpo-seo-reviews-container
-  .yotpo-comment-title {
-  font-size: 0;
 }
 
 [class*="yotpo-reviews-seo-page"][class*="yotpo-display-"] .yotpo-reviewer-name,
