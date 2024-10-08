@@ -1,0 +1,1536 @@
+Delivered-To: clodagh.flood@yotpo.com
+Received: by 2002:a05:7208:5096:b0:89:74cc:6882 with SMTP id i22csp105791rbb;
+        Thu, 3 Oct 2024 17:09:05 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IFUq3CBLmwNp/1YKx+rqDqhpD0zfrdf7ieJFXU38T5IOe9Q0xfGoOgWt0W4DtDgUcwsHPlD
+X-Received: by 2002:a05:6214:5708:b0:6cb:3ca5:c3e8 with SMTP id 6a1803df08f44-6cb9a49b541mr13791226d6.52.1728000545624;
+        Thu, 03 Oct 2024 17:09:05 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1728000545; cv=pass;
+        d=google.com; s=arc-20240605;
+        b=Owx5SCcX7vNOG25/W8y+pHUFlFFciqqoccsDNcGvfHtojgq9tO9s9UO2otdzRIawn/
+         qHd5/stdU1ISa3itbpUuWzpkLhne3bAlsc8hTGIffPIrxSu8aIKVADB4XsER8cLvy9/n
+         rHC6WimQt+unpti/JdS8+e3vOnTCXaJIBRcoLKIJT6rubF5eIdc0TdYY5+rcDFi3052D
+         CJQTe4DrgpJvWqfGf9VKarlnzkq/s030YJQ2GeL92tOy9eSvPfPciwwL1CUY0Jt4Hf4W
+         gBYzqzIe1jMzn5ZZJ3qkDs3ZGGTDuzrF9dIIiL/HQol+JaFtNENKi/fiOTEZRiQvD1zw
+         td5Q==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=8MF6r2OepGpEB7zzIVdJkdEZqrS1MzRmkVcsn2gNp0Y=;
+        fh=Rd6hfnax08pPyLH7lybRyoivTMHLExlV/NQItUiMX+s=;
+        b=BTHte2fUTWYFfHouxPVfPl4PooZQZrg17vBzKJ5XYNpbzEhEk2Eufctw3tWEXOKTMK
+         /2arFK9Sq6oNWcc2yG35cx7m9T2TbbqS6+k/0C0wNvBFhyvjvGo+XwfxP7es/xX18l68
+         N0xOvEqpE5jIypDjWUxDz9AHU2Rpi8yBHaManyVbsmrkVvlRhXXwQtzqw0/j8LrLPYKt
+         pchuoXg1ESGotVKZB2wJIe6fYcwfyOF0pMjFENfcvP3tjBdsUrNd8ZXO1uHlH6kNG2WL
+         Hba6KLz4dvWCWU3Zke603X1NqC7YJEsUpxrgXMsc2zz4p+ZseQIO4J0ZyW1reyo8aDTs
+         ctGg==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@olivelouisesocial-com.20230601.gappssmtp.com header.s=20230601 header.b=bZB2YIyE;
+       arc=pass (i=1 dkim=pass dkdomain=olivelouisesocial-com.20230601.gappssmtp.com);
+       gateway.spf=pass (google.com: domain yotpo.com configured 54.227.64.76 as internal address) smtp.mailfrom=jess@olivelouisesocial.com smtp.remote-ip=54.227.64.76 policy.d=yotpo.com;
+       dara=fail header.i=@yotpo.com
+Return-Path: <jess@olivelouisesocial.com>
+Received: from nat.perception-point.io (nat.perception-point.io. [54.227.64.76])
+        by mx.google.com with ESMTPS id 6a1803df08f44-6cb93844249si25238086d6.489.2024.10.03.17.09.05
+        for <clodagh.flood@yotpo.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Thu, 03 Oct 2024 17:09:05 -0700 (PDT)
+Received-SPF: pass (google.com: domain yotpo.com configured 54.227.64.76 as internal address)
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@olivelouisesocial-com.20230601.gappssmtp.com header.s=20230601 header.b=bZB2YIyE;
+       arc=pass (i=1 dkim=pass dkdomain=olivelouisesocial-com.20230601.gappssmtp.com);
+       gateway.spf=pass (google.com: domain yotpo.com configured 54.227.64.76 as internal address) smtp.mailfrom=jess@olivelouisesocial.com smtp.remote-ip=54.227.64.76 policy.d=yotpo.com;
+       dara=fail header.i=@yotpo.com
+Authentication-Results: amazonses.com;
+ spf=Scan bypassed
+ dmarc=none;
+X-PERCEPTION-POINT-VERDICT: CLN
+X-PERCEPTION-POINT-SUB-VERDICT: CLN
+X-PERCEPTION-POINT-SPF: PASS
+X-PERCEPTION-POINT-SPAM: PASS
+X-PERCEPTION-POINT-BEC-VERDICT: PASS
+X-PERCEPTION-POINT-DKIM: 
+Return-Path: <jess@olivelouisesocial.com>
+Received: from mail-pl1-f198.google.com (mail-pl1-f198.google.com [209.85.214.198])
+ by inbound-smtp.us-east-1.amazonaws.com with SMTP id us6gcis55gk35atumk0ath9mcu32hsv3bg885f01
+ for clodagh.flood@yotpo.com;
+ Fri, 04 Oct 2024 00:08:56 +0000 (UTC)
+X-SES-Spam-Verdict: PASS
+X-SES-Virus-Verdict: PASS
+Received-SPF: Scan bypassed
+X-SES-RECEIPT: AEFBQUFBQUFBQUFHaWQwc0FUcXRKQjUvdE85Y0hyUWdSRC9LZ0g3b2VlV2pzMHNjODBOQnJER0QwQUtnZElmcVF0MDN5WGs2bHkwUmJkY01xQzFMSXUrUjc5RmJxeVlhUmRTSnVKL0taV3hkMXpaWGhQVnlpV3pSc2ptT05XNkZEb2xwZXdrNHRhOEVrWW9SWHZZM3NSbTVoeHc1L3hGcVIwL04vZ2o5MjBBL0wwUWFVd29rVW54U0NqKzVOQTFneFY4QzdiTFc2Tk1HNEJNcklZUXBHMTJCTWpTcTgza0oycVFKRU5YMDVpSXRtU3NBWU9pZ3NjbGcrTGFaZUR3MEpWaGd6cGs1cWI3RkR2NmxDUm1BenlZUThWWnhUdWRDT3pMM05mYmhSdEYxVzdmNzlEQ2RRS3JVU3hoSTZuSjFvdm1meWFMdml6MUU9
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=PjGKK4KLEDPSI0peYxWjmd2A3G5GBziLBNS2Ha+87q+DDEbkePtlU2qBUHwfFNbrGYm3/+gXBCcBwlj9xC5wcSkBVWJgN4Ca7dQicJsgbIthAqMlqDMc7p4o7nZL8E2gcMXHYFS/7i6WJAnS1MdbKqLJ2l97NdWYX75Qs4xrVXo=; c=relaxed/simple; s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1728000537; v=1; bh=R4Oy4UfULQszgzMA2zMNCmNA+M7ZJeXrusqZXET9VPQ=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+Received: by mail-pl1-f198.google.com with SMTP id d9443c01a7336-20b4bb1edc0so13023305ad.3
+        for <clodagh.flood@yotpo.com>; Thu, 03 Oct 2024 17:08:56 -0700 (PDT)
+X-Gm-Message-State: AOJu0YzJfkbgbl3RUM+Y2qhRqolPxTOT0/wmiZUF2fyEBk1D4xJZG4+v
+	Zh7sSwFkr6BrgrYYAGyxrhF2TTs6j3iarR6VLk9LCqod1Lix/ATMIyUIfe41nnesg0zl21Cjvo/
+	ezi/ZzKN5qO+j8s3OLInqoRvkrtdlj5iw4p0x3yQ4YZxckLKVZhmkIZvUtJ8Y6xxG4DEcjf8mKD
+	nSEdYx9ui8
+X-Received: by 2002:a17:903:22cf:b0:20b:751f:c9ca with SMTP id d9443c01a7336-20bfde5785emr14204265ad.5.1728000535216;
+        Thu, 03 Oct 2024 17:08:55 -0700 (PDT)
+X-Received: by 2002:a17:903:22cf:b0:20b:751f:c9ca with SMTP id d9443c01a7336-20bfde5785emr14203335ad.5.1728000534010;
+        Thu, 03 Oct 2024 17:08:54 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1728000533; cv=none;
+        d=google.com; s=arc-20240605;
+        b=g+fqwuKq2UwrPbEu6t4xz+O5kiZAOyBcFQdFo/eBVkrJmB/PPjl/U+hNHQnamF+2pO
+         L66+XDP1a5wpTFRfZTCyEe3TLMXaSQeK2zdihEEJtJ+h26d6p6Z+dvAVRqabzDSSwtp7
+         L2Dv80QauEDizaSXiGzUTk2sQ1W+RNMtjuv1F5t9Ea46P2Jafkb3dX7eUH6/YlrGXszN
+         +O3RZiZJyiHoFiO1r4m3OUuhCH+kjthibq7u5eGuVc9+rG79V0YhmC25/EVdFZ0MeW8r
+         zZccI+nZ5pVfc9WPnVVNrcvSRuNkhJIpCEPlXmRJy1TUJ67zWSXIFXZi6HgDmgsQvUwq
+         jSJw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=8MF6r2OepGpEB7zzIVdJkdEZqrS1MzRmkVcsn2gNp0Y=;
+        fh=Rd6hfnax08pPyLH7lybRyoivTMHLExlV/NQItUiMX+s=;
+        b=QlJ2NrvOCR6WDhX+maqgKzfV+UzAryFhdRG3KylvifewqsHQjjVISlc996ABd+CLN/
+         YIZOJhp+H4wznxVa0g/70I3dpLpIVORpa/GvfA/yGQPp0s6GDuRNHXrbtI8xbSXquekG
+         at8S3I4TxlvmUM41Fh7zGSzdCmwbeZ93rMhDZ9e+M9CTQMDlXKOfCca1BWo75QlrdDlX
+         o4reKG7ydaKh216npMP93ya/fMpEwS4XFmvg5olK3kJNjQOkSHbYU840LnYpXvLbm8jP
+         g1EN7g50eY+vwOj6G9OD1h6EJm6fgItshQppXKR6+v7GC7ln4NLllyDvqbaH8BK+ovuZ
+         CGbQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@olivelouisesocial-com.20230601.gappssmtp.com header.s=20230601 header.b=bZB2YIyE;
+       gateway.spf=pass (google.com: domain yotpo.com configured 209.85.220.41 as internal address) smtp.mailfrom=jess@olivelouisesocial.com smtp.remote-ip=209.85.220.41 policy.d=yotpo.com;
+       dara=neutral header.i=@yotpo.com
+Return-Path: <jess@olivelouisesocial.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id d9443c01a7336-20be976b5e2sor14934845ad.2.2024.10.03.17.08.53
+        for <clodagh.flood@yotpo.com>
+        (Google Transport Security);
+        Thu, 03 Oct 2024 17:08:53 -0700 (PDT)
+Received-SPF: pass (google.com: domain yotpo.com configured 209.85.220.41 as internal address)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=olivelouisesocial-com.20230601.gappssmtp.com; s=20230601; t=1728000533; x=1728605333; darn=yotpo.com;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=8MF6r2OepGpEB7zzIVdJkdEZqrS1MzRmkVcsn2gNp0Y=;
+        b=bZB2YIyEkexXw88ubATkKLRxv90f69PzxAg9ePVcSLuYY3/I0iH6aerIBdhmGwQkOY
+         bbSklIX1gQqrkhIGAlK4NdfmPfWY59IdyO4FcL31TeaOVHuOTGNLt3amU/uH1vrBbAtS
+         1PejNjv4m9tKlF8VgQpdaPHiyDUu4Tbsg1TGaVjMusKI21Sqtx9RJe4g1cA575e8IC6g
+         HTqVewUFvoeRFhMELw31wmqnsWfSgsDDyA+apE3BYMlXUQT1RDPUnEFFnLlCc3gRrcI7
+         wDQq9f6PP0hUbFZ2bWhcHgTLNF9NoipSWFZrBHPOmBN7Xjs6ldtq7dVLkQ7935j6t9lH
+         nmMw==
+X-Received: by 2002:a17:90a:e7cd:b0:2e1:a81f:5520 with SMTP id
+ 98e67ed59e1d1-2e1e620daa6mr1052154a91.1.1728000532867; Thu, 03 Oct 2024
+ 17:08:52 -0700 (PDT)
+MIME-Version: 1.0
+References: <66fcb3f0df67a_213139842637@7ef16572-48fb-4bb2-91f1-000bb03bd3ca.mail>
+ <CADk9n3qrA6dETyky7KiLxF=dc2gsr6FCG5LbzGNb3j32udMAZA@mail.gmail.com>
+In-Reply-To: <CADk9n3qrA6dETyky7KiLxF=dc2gsr6FCG5LbzGNb3j32udMAZA@mail.gmail.com>
+From: Jess Ndenda <jess@olivelouisesocial.com>
+Date: Fri, 4 Oct 2024 10:08:12 +1000
+Message-ID: <CADr8RxmkdtKUbsnkNmUPtefkPbE4=vwySmv4728FogJ50kD=Tg@mail.gmail.com>
+Subject: Fwd: How's it going?
+To: Clodagh Flood <clodagh.flood@yotpo.com>
+Content-Type: multipart/alternative; boundary="000000000000ef097106239b79dc"
+X-PERCEPTION-POINT-ROUTING: xFc9Vjxg3R+nUq*8
+X-Gm-Spam: 0
+X-Gm-Phishy: 0
+
+--000000000000ef097106239b79dc
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+*Jessica Ndenda*
+
+*CEO & DIRECTOR*
+
+*Olive Louise Social*
+
+*m: 0405283268*
+
+*e: jess@olivelouisesocial.com <jess@olivelouisesocial.com>*
+
+*www.olivelouisesocial.com* <http://www.olivelouisesocial.com/>
+
+[image: Facebook icon] <https://www.facebook.com/olivelouisesocial>*
+[image: LinkedIn icon]
+<https://www.linkedin.com/in/jessica-ndenda-220980a3/> [image: Instagram
+icon]https://www.instagram.com/olivelouisesocial/?hl=3Den
+<https://www.instagram.com/olivelouisesocial/?hl=3Den> *
+
+*The content of this email is confidential and intended for the recipient
+specified in the message only. It is strictly forbidden to share any part
+of this message with any third party, without the written consent of the
+sender. If you received this message by mistake, please reply to this
+message and follow with its deletion, so that we can ensure such a mistake
+does not occur in the future.*
+
+
+
+
+
+---------- Forwarded message ---------
+From: Loren from Pablo & Co. Boutique <noreply@fera.ai>
+Date: Wed, Oct 2, 2024 at 12:46=E2=80=AFPM
+Subject: How's it going?
+To: <sales@pabloandco.net>
+
+
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfKB2Er6eYn=
+a6MmQx-2BqPMwn4-3DNjMb_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3b=
+RdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8=
+dgpNeBhOeaHUhWfPELDl61VWM5cSqw-2Bp0XicMxmXx-2FW-2FsY-2BMgggJUvgRVmTrvLh2g7M=
+Z3MnAoT-2B-2FbZZ7TqBL4LEtBMYMmT-2Fp-2BdeOOZxgLGuJSoSl4iin1iRunH6awlWI2EJwWw=
+1hChT7E2Acr-2Blc9SzeyCwfFNwhyRZb0Ymi5SVtdPc4zanM-3D>
+
+Hi ,
+
+How was your last order?
+
+Here's what you bought:
+
+   - Baby Blue: Adjustable Harness - S
+   <https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgI=
+IOyWcFRy4tUVDksIeJgCsIFlM8CBhQZV5wx6N8Ixvfp-2B0WXQFdZxkqPBbnjjeGY4s-2Bii-2F=
+Q9C-2BZfwWp58-3DIKN1_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRd=
+MLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dg=
+pNeBhOeaHUhWfPELDl61VWM5cSqw3fMJOuFKbF19TVRB4CnT13YuQ6bwKNXxqm2PfNjvGpmdh0v=
+f69wlGeyx2fWjGMjeTm8gbID2g4RkX6mS-2F00RjAHDrltiejC7ACHqjG0WvN5b8r-2FxsB8e-2=
+FPdkGZkieTWbIKIPDpDpFYpeYJcLBSEtLk-3D>
+   - Sea Salt: Waterproof Collar - S
+   <https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgI=
+IOyWcFRy4tUVDksKhOcL7lwqCrn0fcDuUbI-2FcHH-2BGL6dptsWgcs-2BVUTnTPwU9n9DMGHTi=
+56IVVWovn2I-3D8RPC_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdML=
+t5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpN=
+eBhOeaHUhWfPELDl61VWM5cSqw3XtM3dg2GDAo72-2Fu8Sp-2FqOFZiB0ifcqQAdBqPMiaufuVY=
+OhbF8vCnjwr2WM7VukivWyPDNGGCM-2FxqG1VyXJLVDNdjA1izQpreadyq3THcMCg8oU8YAotUh=
+l5TKXWIbxoxnSZG3STLAR1EfP1-2BDHpMo-3D>
+   - Pink Houndstooth: Adjustable Harness - XL
+   <https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgI=
+IOyWcFRy4tUVDksKtdEajOH5U7VRmncocXEBBuZ5WTpsmaOJU8gMDB5I3Pa4MSuaGET6Yu-2BLP=
+pqQyajY-3DZB9Y_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5Ap=
+yXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhO=
+eaHUhWfPELDl61VWM5cSqwwnXsyjc9oxk8rsKhypysH88Za4JIfzSo5jmdJ33dI5UhTcq2myL9H=
+WkcQv-2BUa8k-2BYLCmuceoVt36DWlgU3GuoogbFpc0ev9tVb3v27klk1jQ0r1K-2BZdLYYuHMm=
+FgvWLgLwIGE3PVBStacSRdO8ExEU-3D>
+   - Bubblegum: Waterproof Collar - L
+   <https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgI=
+IOyWcFRy4tUVDksLbkMVVNi-2BQehlbWGNFxwfiRbe9UOnFcn5ZMwsbvj9KLelb8eZ-2FUDy9uW=
+XJxuDxWBQ-3D1_NL_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5=
+ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeB=
+hOeaHUhWfPELDl61VWM5cSqw3kwRQuiLaw-2FiebzJv1fuOdD38uxzMD7u4hOcYXY5o-2BrlZoL=
+WpFdFn5ZnfAPq1KT-2Bnl2DGEPDnmVPzPTbF8-2FkQGNZaX85DoIm8VpmxuANQMqd67H2XBF0m5=
+uqtNDh7-2BpJ-2F0MttxHWELamR-2BHs2Ikgtw-3D>
+
+[image: Product Image]
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksIeJgCsIFlM8CBhQZV5wx6N8Ixvfp-2B0WXQFdZxkqPBbnnwqbjP495tkwXSvj6x=
+enjNKTyvppzwjf86fLICe8weS9Le6jXzV02pxI-2BlNlVluCEVPsFVqODnWVV6ofgARUmkZbNZE=
+byJFeB-2Fead8RB1-2BGDBaYCy22QFseJMJrJEBcsLgfku-2BF6A-2FLnnzQA29123WZsOfSGG6=
+oLnJFYtuQZGH9ozIVrXSWBPGElr1v2SLepWi-2BJIaQLDjwWcaAyYmvRDhgnAxop61-2FPBKvAQ=
+QSvdhX47F3_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOt=
+mLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHU=
+hWfPELDl61VWM5cSqw2c-2BeZPqmRgnxhpKRM-2FXZWyc7eg2w5XxH9XqA80zBK7z1zTyQXvvJQ=
+bMeM6Y1lIHWP11OBDtTbEJBq43OTVh542rjFcA4gPp49id92yptQ53LLgwnUxnH3d6dVakoxUr8=
+jTH5rRbnTmldD7sqoyfraM-3D>
+Baby Blue: Adjustable Harness...
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksIeJgCsIFlM8CBhQZV5wx6N8Ixvfp-2B0WXQFdZxkqPBbnnwqbjP495tkwXSvj6x=
+enjNKTyvppzwjf86fLICe8weS9Le6jXzV02pxI-2BlNlVluCEVPsFVqODnWVV6ofgARUmkZbNZE=
+byJFeB-2Fead8RB1-2BGDBaYCy22QFseJMJrJEBcsLgfku-2BF6A-2FLnnzQA29123WZsOfSGG6=
+oLnJFYtuQZGH9ozIVrXSWBPGElr1v2SLepWi-2BJIaQLDjwWcaAyYmvRDhgnAxop61-2FPBKvAQ=
+QSvdhXVdzD_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOt=
+mLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHU=
+hWfPELDl61VWM5cSqw4OUQZrvtuRYmZH2vykiuQYykYGYFCopPRoE8T9KqaN5VmNofGO3gPCRKw=
+1sGGPujYb43lygpjByWu-2FqvsPstB9DTNJ1tyFpBcbxxWtXyKFCo-2BpnJokXsTtU213pz7JA5=
+AdqdVCgcoyC0ZpM-2Fkx9KiY-3D>
+[image: 1 star]
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksIeJgCsIFlM8CBhQZV5wx6N8Ixvfp-2B0WXQFdZxkqPBbnnwqbjP495tkwXSvj6x=
+enjNKTyvppzwjf86fLICe8weS9Le6jXzV02pxI-2BlNlVluCEVPsFVqODnWVV6ofgARUmkZbNZE=
+byJFeB-2Fead8RB1-2BGDBaYCy22QFseJMJrJEBcsLgfku-2BF6A-2FLnnzQA29123WZsOfSGG6=
+oLnJFYtuQZGH9ozIVrXSWBPGElr1v2SLepWi-2BJIaQLDjwWcaAyYmvRDhgHo0dbJpzEwIQFyF4=
+B-2BEPc7AC52IG4nIeZ7lZQQVbHw-3D-3DJr7Y_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kx=
+QzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5T=
+iqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw9qJWUPUz10lTVkOO1iYU2Ijnj8tyc=
+QI54TxqcPEATS1YCv-2FfMd6rq-2FXavs9-2FPSd98QefNkWKnhZ6h5uYkjoIJvB6EJK-2FPUQk=
+ipQQhoQ18q90yqmGQLj04c9Yp0Rji7yRdkxpVpZw9ZA5MuHgqNZY6Y-3D>
+[image:
+2 stars]
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksIeJgCsIFlM8CBhQZV5wx6N8Ixvfp-2B0WXQFdZxkqPBbnnwqbjP495tkwXSvj6x=
+enjNKTyvppzwjf86fLICe8weS9Le6jXzV02pxI-2BlNlVluCEVPsFVqODnWVV6ofgARUmkZbNZE=
+byJFeB-2Fead8RB1-2BGDBaYCy22QFseJMJrJEBcsLgfku-2BF6A-2FLnnzQA29123WZsOfSGG6=
+oLnJFYtuQZGH9ozIVrXSWBPGElr1v2SLepWi-2BJIaQLDjwWcaAyYmvRDhgHo0dbJpzEwIQFyF4=
+B-2BEPypokFB-2FlOzKmHsyhHi0ChA-3D-3DMR9U_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1=
+kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe=
+5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw97M3jUn7Z0DZy2LdAnTvc-2F6SC=
+258-2BY-2Bqg1TueLlGlJ4k6zHntTqN3gHpOjhh7BoAmIV9QMkE8xwZW-2BJdCx8rjFx5NrGc1p=
+rvfkaQEt-2F1VY2FUTq-2BdhT7tzXeNioZxBAgbaS6JJsCZKI3hvlxZa6Qc8-3D>
+[image:
+3 stars]
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksIeJgCsIFlM8CBhQZV5wx6N8Ixvfp-2B0WXQFdZxkqPBbnnwqbjP495tkwXSvj6x=
+enjNKTyvppzwjf86fLICe8weS9Le6jXzV02pxI-2BlNlVluCEVPsFVqODnWVV6ofgARUmkZbNZE=
+byJFeB-2Fead8RB1-2BGDBaYCy22QFseJMJrJEBcsLgfku-2BF6A-2FLnnzQA29123WZsOfSGG6=
+oLnJFYtuQZGH9ozIVrXSWBPGElr1v2SLepWi-2BJIaQLDjwWcaAyYmvRDhgHo0dbJpzEwIQFyF4=
+B-2BEP8WZkCjUj-2BFlPzJd4-2BaK21g-3D-3DfycE_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8r=
+b1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NK=
+he5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw7c2uJg1-2FlGn-2FrRkmDNy2W=
+5knyT7w7YoeRs11cpYelP9mxBfg53rAhg94fSHVsDQYdkMXlgG7Sj6xNIawCflxuKUu2VSWkOeB=
+3jX1xqysKFUEUL5DIFrpAIkbptlguKlufw6SRWvHKJHJPIgynr8yfI-3D>
+[image:
+4 stars]
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksIeJgCsIFlM8CBhQZV5wx6N8Ixvfp-2B0WXQFdZxkqPBbnnwqbjP495tkwXSvj6x=
+enjNKTyvppzwjf86fLICe8weS9Le6jXzV02pxI-2BlNlVluCEVPsFVqODnWVV6ofgARUmkZbNZE=
+byJFeB-2Fead8RB1-2BGDBaYCy22QFseJMJrJEBcsLgfku-2BF6A-2FLnnzQA29123WZsOfSGG6=
+oLnJFYtuQZGH9ozIVrXSWBPGElr1v2SLepWi-2BJIaQLDjwWcaAyYmvRDhgHo0dbJpzEwIQFyF4=
+B-2BEPc8mBa2WlqY4HYDqVu9FfSw-3D-3DTUB1_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kx=
+QzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5T=
+iqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw4DOYTQxP6A6g0H1RUFG9r5pikOzlX=
+5FSGkwBc1wkBHvvBdCkvoZGjCH24jJLKh0Hfn9-2B-2FhU36809ogVJJls-2BMusBPlnjcbz00T=
+EvoKK15iPbgoIydxxVqKV8t8tYWWw66G2CgCIAbfHKglI1DCY3dI-3D>
+[image:
+5 stars]
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksIeJgCsIFlM8CBhQZV5wx6N8Ixvfp-2B0WXQFdZxkqPBbnnwqbjP495tkwXSvj6x=
+enjNKTyvppzwjf86fLICe8weS9Le6jXzV02pxI-2BlNlVluCEVPsFVqODnWVV6ofgARUmkZbNZE=
+byJFeB-2Fead8RB1-2BGDBaYCy22QFseJMJrJEBcsLgfku-2BF6A-2FLnnzQA29123WZsOfSGG6=
+oLnJFYtuQZGH9ozIVrXSWBPGElr1v2SLepWi-2BJIaQLDjwWcaAyYmvRDhgHo0dbJpzEwIQFyF4=
+B-2BEP9fJC-2BCqfxANZf85hhDI0-2Fw-3D-3Db-7t_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8r=
+b1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NK=
+he5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw3tMHI9tQ1wMZwuHyHf7FWQh39=
+M-2F7Jv2EX4ZJOcQ4F0vYe3j4GiAnioR2LniKSnNFQtUbvGuFYD7aqpCCBdY75RzkfUpEKG9ovW=
+jxaEg3Amc3ckcrBobiJcOPD0yPVXmIjcmz9SECqDXn-2FNC2PtS1mQ-3D>
+[image: Product Image]
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksKhOcL7lwqCrn0fcDuUbI-2FcHH-2BGL6dptsWgcs-2BVUTnTP5PRAWMEQ2VHASf=
+T9pBUuvb9SaanBZB38fBzTRSyPr9gcwEan9Bg6Tl9xyrXvBd5MRK7-2Fx663KMbry6BN8qVRetr=
+wwnoZjb9kyWFYvwU9FoQmtTWfSstLd0rpiR4TKIRDI9V4LrvOlUxVrB-2BMEvaCw68KJFxhdcHa=
+JioByBlH0kwF-2F45We00hh5-2BrPelrG4yL2x8PdZRHj4T9lSDochJgUbedRbFh1RbzUN6Dt2y=
+8jHrejeX_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmL=
+xfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhW=
+fPELDl61VWM5cSqw6iYugj64ccjd-2B6YMZGNc0PelUgZph6Zcbo5ykIhlq4m4jN8XPR1HDAht9=
+WR93QPUxC4CpbP9q1VZyijiIoa0X3qRjLHeQOGs-2FsprX-2BXpKlgDDuFnAbuc9YWJ0tIX0yYt=
+n-2Fqh5YEdXUDDZT73JBUoE8-3D>
+Sea Salt: Waterproof Collar - S
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksKhOcL7lwqCrn0fcDuUbI-2FcHH-2BGL6dptsWgcs-2BVUTnTP5PRAWMEQ2VHASf=
+T9pBUuvb9SaanBZB38fBzTRSyPr9gcwEan9Bg6Tl9xyrXvBd5MRK7-2Fx663KMbry6BN8qVRetr=
+wwnoZjb9kyWFYvwU9FoQmtTWfSstLd0rpiR4TKIRDI9V4LrvOlUxVrB-2BMEvaCw68KJFxhdcHa=
+JioByBlH0kwF-2F45We00hh5-2BrPelrG4yL2x8PdZRHj4T9lSDochJgUbedRbFh1RbzUN6Dt2y=
+8jHrut_K_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmL=
+xfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhW=
+fPELDl61VWM5cSqw74YJ4esfCyWn9xnR0K67Kxkg-2F5iM3aPyid5OnFsgFFoD2hrd6dFK-2BHe=
+6aIPNAsvsEhv5EhRsRv4L053PFmzcRJHvPH-2Fnl8Yx1cCJuCMPejaepxM1qfMAoZVim6rpqtvA=
+fhzONjb9hWdfBgmQRtV-2FK4-3D>
+[image: 1 star]
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksKhOcL7lwqCrn0fcDuUbI-2FcHH-2BGL6dptsWgcs-2BVUTnTP5PRAWMEQ2VHASf=
+T9pBUuvb9SaanBZB38fBzTRSyPr9gcwEan9Bg6Tl9xyrXvBd5MRK7-2Fx663KMbry6BN8qVRetr=
+wwnoZjb9kyWFYvwU9FoQmtTWfSstLd0rpiR4TKIRDI9V4LrvOlUxVrB-2BMEvaCw68KJFxhdcHa=
+JioByBlH0kwF-2F45We00hh5-2BrPelrG4yL2x8PdZRHj4T9lSDochJgUYQY7mKvQgqssHtFAsM=
+2rb4EqbbfWiCkenlNs8Bcli49g-3D-3D4e6W_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQz=
+Qpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5Tiq=
+KcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw6qcfKDEY9AqVT-2FMNvbewKCuMzxT7s=
+JXhlUMan2DCNOG0AnL6bbhQYwpZDw77onDCIUiKeP8oTiu6ljGiJQF4QoHVoZft52-2BcxCibYU=
+io7KBRcIXjUIWk1VmuyX4kItOTcImHSAHIzh2yXovkA-2F-2B9-2F8-3D>
+[image:
+2 stars]
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksKhOcL7lwqCrn0fcDuUbI-2FcHH-2BGL6dptsWgcs-2BVUTnTP5PRAWMEQ2VHASf=
+T9pBUuvb9SaanBZB38fBzTRSyPr9gcwEan9Bg6Tl9xyrXvBd5MRK7-2Fx663KMbry6BN8qVRetr=
+wwnoZjb9kyWFYvwU9FoQmtTWfSstLd0rpiR4TKIRDI9V4LrvOlUxVrB-2BMEvaCw68KJFxhdcHa=
+JioByBlH0kwF-2F45We00hh5-2BrPelrG4yL2x8PdZRHj4T9lSDochJgUYQY7mKvQgqssHtFAsM=
+2rb4h9LS-2BfSHORWfHZjFlQbtBw-3D-3DFzg-_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kx=
+QzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5T=
+iqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw4CmY3REf9-2BMuzViuciRBq5WnfTR=
+fDMG-2FDXeEd7IB9hhwdmHPd-2BveJguSkFKtIY-2BDuQNHxcP7YTF6e-2Bi-2Bux8oo1tBS5Pm=
+-2BLFMfCwIVU9Rzdnv6X0R0m-2BCCsDPPnLMFDx-2Br2MSpOP3kWF1amJL0fO7iI-3D>
+[image:
+3 stars]
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksKhOcL7lwqCrn0fcDuUbI-2FcHH-2BGL6dptsWgcs-2BVUTnTP5PRAWMEQ2VHASf=
+T9pBUuvb9SaanBZB38fBzTRSyPr9gcwEan9Bg6Tl9xyrXvBd5MRK7-2Fx663KMbry6BN8qVRetr=
+wwnoZjb9kyWFYvwU9FoQmtTWfSstLd0rpiR4TKIRDI9V4LrvOlUxVrB-2BMEvaCw68KJFxhdcHa=
+JioByBlH0kwF-2F45We00hh5-2BrPelrG4yL2x8PdZRHj4T9lSDochJgUYQY7mKvQgqssHtFAsM=
+2rb4apl5OsyrDYayr6EBqG1VWg-3D-3Dv2Fq_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQz=
+Qpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5Tiq=
+KcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw2anQSw7Bnn-2FU6RBnZkTKvHX8JQswV=
+rPxKASLz-2FoNBwAJ1AfB25-2BYfi3keWl0L2VREibQ-2Fvn4UiOOVylUWZcDFDgqZ6BtazYu3-=
+2B20CBRxOAW9-2FzF8R5WyqIGyUoE-2FRzeORXKJkYvMO1-2BvwkpeoMtdf0-3D>
+[image:
+4 stars]
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksKhOcL7lwqCrn0fcDuUbI-2FcHH-2BGL6dptsWgcs-2BVUTnTP5PRAWMEQ2VHASf=
+T9pBUuvb9SaanBZB38fBzTRSyPr9gcwEan9Bg6Tl9xyrXvBd5MRK7-2Fx663KMbry6BN8qVRetr=
+wwnoZjb9kyWFYvwU9FoQmtTWfSstLd0rpiR4TKIRDI9V4LrvOlUxVrB-2BMEvaCw68KJFxhdcHa=
+JioByBlH0kwF-2F45We00hh5-2BrPelrG4yL2x8PdZRHj4T9lSDochJgUYQY7mKvQgqssHtFAsM=
+2rb4xWxZskTMUSWFt0fcimH-2FTw-3D-3DiTJQ_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kx=
+QzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5T=
+iqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw3WChMhVLvYhqsRq63ht61gZsSszFJ=
+bEYVicyzI2Cos5KDfqIiz-2Ff1sbvxJLtYw0oVWYi4Q0YpiWarNhdBU3zQ-2Bw31992fCOiAUqB=
+ZyPYEapBWPFJz-2BATIip-2FwKjSOSIKV91THFfMcCzpYVncqJIGm4-3D>
+[image:
+5 stars]
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksKhOcL7lwqCrn0fcDuUbI-2FcHH-2BGL6dptsWgcs-2BVUTnTP5PRAWMEQ2VHASf=
+T9pBUuvb9SaanBZB38fBzTRSyPr9gcwEan9Bg6Tl9xyrXvBd5MRK7-2Fx663KMbry6BN8qVRetr=
+wwnoZjb9kyWFYvwU9FoQmtTWfSstLd0rpiR4TKIRDI9V4LrvOlUxVrB-2BMEvaCw68KJFxhdcHa=
+JioByBlH0kwF-2F45We00hh5-2BrPelrG4yL2x8PdZRHj4T9lSDochJgUYQY7mKvQgqssHtFAsM=
+2rb4iy-2BXdC04q-2FwZJss29-2FKFrw-3D-3DtRzq_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8r=
+b1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NK=
+he5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw70LU-2BKZ5TuvjVoP5bpgswpQ=
+8MVlFonBKwxS8wA-2FfsBT3yA4HttOSS5RuH3IKOsZFaQZKwoMjHUH2BFZjQdqruBYmB9NUrzxU=
+yviR2VAfkVeFEs59zjqdMb9aM039D6RNRBBLiLuVsksmOU-2FqHOTViw-3D>
+[image: Product Image]
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksKtdEajOH5U7VRmncocXEBBuZ5WTpsmaOJU8gMDB5I3PcA5BI7g34ecZNc660suA=
+jwQuRyCjO63QyGM2pV83toMOPFUbHhuOSHfwJnYGxqE9LDH1iLuG6Ikw2rCiF2lxyQp5nrRjjdR=
+5jm8ZUfiXZ9FCGatf8Cr5lukVBELev3ALCBzsLs-2Fa5sjs4eorV5sDalOzP0pWvLthVHM70Snu=
+lRSZ-2FabE71WbZmGIogRnv-2FZ4iq1yNPW6YwjR9dZVG97u7zRodNBfuv7blL3g6VTMte2icIb=
+FSeCc7TwSEdTs3zuSg-3D-3DsYNI_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9C=
+t1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4=
+SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw54pnME64OOMYcUIPF7nau24PE72uIXw4P7yG1bS=
+Lji8fR4Bk7GPd2Us3-2FEoGJjpT4GznTHJPWcuEcNEExXSQSeD29yr4QyEDTdYETh1b88uxXxMM=
+Lj-2BmNNPM3F-2FUAW0696V5FIlEPd0-2FddC-2BPWw7hE-3D>
+Pink Houndstooth: Adjustable ...
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksKtdEajOH5U7VRmncocXEBBuZ5WTpsmaOJU8gMDB5I3PcA5BI7g34ecZNc660suA=
+jwQuRyCjO63QyGM2pV83toMOPFUbHhuOSHfwJnYGxqE9LDH1iLuG6Ikw2rCiF2lxyQp5nrRjjdR=
+5jm8ZUfiXZ9FCGatf8Cr5lukVBELev3ALCBzsLs-2Fa5sjs4eorV5sDalOzP0pWvLthVHM70Snu=
+lRSZ-2FabE71WbZmGIogRnv-2FZ4iq1yNPW6YwjR9dZVG97u7zRodNBfuv7blL3g6VTMte2icIb=
+FSeCc7TwSEdTs3zuSg-3D-3DtDIW_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9C=
+t1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4=
+SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw8gK64lNkpYzGTiB164R6lcmNsLY-2BKo-2BQ920=
+LC2seqzhRey98uq0vKDYyk-2FdrT-2Fmm7m-2FK0rVuHsGhFJk6rVTTWT3zq41Fr24xmA589AUe=
+a3v6j7UALA3JUAacdiu7Ogswc0C4ERg8hjLozwDHqYV2N8-3D>
+[image: 1 star]
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksKtdEajOH5U7VRmncocXEBBuZ5WTpsmaOJU8gMDB5I3PcA5BI7g34ecZNc660suA=
+jwQuRyCjO63QyGM2pV83toMOPFUbHhuOSHfwJnYGxqE9LDH1iLuG6Ikw2rCiF2lxyQp5nrRjjdR=
+5jm8ZUfiXZ9FCGatf8Cr5lukVBELev3ALCBzsLs-2Fa5sjs4eorV5sDalOzP0pWvLthVHM70Snu=
+lRSZ-2FabE71WbZmGIogRnv-2FZ4iq1yNPW6YwjR9dZVG97u7zRodNBfuv7blL3g6VTMte2emXK=
+o-2FxwrtChkoTH2W6qMP-2BXo4i6wlyNxRW6J58mQFE-3DTbEm_6-2BBKni6sDtwyUScw4c6eaY=
+PUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-=
+2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw3ZWtUQzlLHPJYc11N=
+4ErAcFV1amtFct-2BtMJ0oZNdwhOZ2J1CE0wfysFZpb2M14PJPF-2BP339OchRczQnCTIaxuS5O=
+dbNsORTOqNO-2FG69iO0FeXUrjo4eN0xECjNayJVuzM-2BjCJtSekna-2FDdlLj07YmI-3D>
+[image:
+2 stars]
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksKtdEajOH5U7VRmncocXEBBuZ5WTpsmaOJU8gMDB5I3PcA5BI7g34ecZNc660suA=
+jwQuRyCjO63QyGM2pV83toMOPFUbHhuOSHfwJnYGxqE9LDH1iLuG6Ikw2rCiF2lxyQp5nrRjjdR=
+5jm8ZUfiXZ9FCGatf8Cr5lukVBELev3ALCBzsLs-2Fa5sjs4eorV5sDalOzP0pWvLthVHM70Snu=
+lRSZ-2FabE71WbZmGIogRnv-2FZ4iq1yNPW6YwjR9dZVG97u7zRodNBfuv7blL3g6VTMte2emXK=
+o-2FxwrtChkoTH2W6qMMswLgahFma9tbmN-2FIEHHEI-3DGZ6E_6-2BBKni6sDtwyUScw4c6eaY=
+PUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-=
+2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw2yowelmgbb1UKG-2F=
+wz-2BSVCh7qdxpXW8NyrcIbuNNWx39xNwM4r0B3abfX-2F9-2FJHTAFy-2FULMR6XltrY9eehvB=
+Yn3YE4TbTMZpvL3PrhcX-2FnTyYacbiqPdovfH3OFA4DODzgASPscmxuJ2ToK8hfBrAzgk-3D>
+[image:
+3 stars]
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksKtdEajOH5U7VRmncocXEBBuZ5WTpsmaOJU8gMDB5I3PcA5BI7g34ecZNc660suA=
+jwQuRyCjO63QyGM2pV83toMOPFUbHhuOSHfwJnYGxqE9LDH1iLuG6Ikw2rCiF2lxyQp5nrRjjdR=
+5jm8ZUfiXZ9FCGatf8Cr5lukVBELev3ALCBzsLs-2Fa5sjs4eorV5sDalOzP0pWvLthVHM70Snu=
+lRSZ-2FabE71WbZmGIogRnv-2FZ4iq1yNPW6YwjR9dZVG97u7zRodNBfuv7blL3g6VTMte2emXK=
+o-2FxwrtChkoTH2W6qMJ75GSSHk6XL-2BUF0a2WXwZA-3DcuKE_6-2BBKni6sDtwyUScw4c6eaY=
+PUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-=
+2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw-2B0uXgGjXNpR48fb=
+ZnZYjJNLD1LxJqm9vHkovxmhty6zQBAgZDpdIZm8FNGFMIwVctF26lOaibAelUH3vYvOr-2FMJP=
+yDTq-2BRXkXwOz-2FO92CdClwduOmoVBX-2B2059Imh3-2FASh29xOhmycrle-2Forfs-2BBBU-=
+3D>
+[image:
+4 stars]
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksKtdEajOH5U7VRmncocXEBBuZ5WTpsmaOJU8gMDB5I3PcA5BI7g34ecZNc660suA=
+jwQuRyCjO63QyGM2pV83toMOPFUbHhuOSHfwJnYGxqE9LDH1iLuG6Ikw2rCiF2lxyQp5nrRjjdR=
+5jm8ZUfiXZ9FCGatf8Cr5lukVBELev3ALCBzsLs-2Fa5sjs4eorV5sDalOzP0pWvLthVHM70Snu=
+lRSZ-2FabE71WbZmGIogRnv-2FZ4iq1yNPW6YwjR9dZVG97u7zRodNBfuv7blL3g6VTMte2emXK=
+o-2FxwrtChkoTH2W6qMIGyzVKfQPn3Z-2Ftj2g63BJY-3DkEEs_6-2BBKni6sDtwyUScw4c6eaY=
+PUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-=
+2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqwxyfkrAPFTKrf1DDiV=
+MPJu-2BSywy1uYledL1jrd9fvxVACFPb69WFfB0ItxSH5pooEQerdQeO-2BILxC77t-2FWuPlEH=
+aFII04NZhWjxwDkDO6cNWwRKbuFNbX-2F2GO0NyZHGkAoMwfYEAy3g16h-2B-2BfC31No8-3D>
+[image:
+5 stars]
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksKtdEajOH5U7VRmncocXEBBuZ5WTpsmaOJU8gMDB5I3PcA5BI7g34ecZNc660suA=
+jwQuRyCjO63QyGM2pV83toMOPFUbHhuOSHfwJnYGxqE9LDH1iLuG6Ikw2rCiF2lxyQp5nrRjjdR=
+5jm8ZUfiXZ9FCGatf8Cr5lukVBELev3ALCBzsLs-2Fa5sjs4eorV5sDalOzP0pWvLthVHM70Snu=
+lRSZ-2FabE71WbZmGIogRnv-2FZ4iq1yNPW6YwjR9dZVG97u7zRodNBfuv7blL3g6VTMte2emXK=
+o-2FxwrtChkoTH2W6qMPjQJfUE0-2FRFIf4aTvK7emQ-3DBCVB_6-2BBKni6sDtwyUScw4c6eaY=
+PUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-=
+2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw3IsXybRRNLzQWTd2T=
+lU82VEj-2FS9a3UoiGbjbyG4J6L9ybhu0OHSeWm2hctZ7cOiN8oAcd1dNkGSIVlM6XBEXwKrRS-=
+2BPLY-2F-2BX1ed0zqoQFzJMXgLhNSl-2FjFpW2-2BcDocCIEc3gjEuQXplxk8VIEdRtrU-3D>
+[image: Product Image]
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksLbkMVVNi-2BQehlbWGNFxwfiRbe9UOnFcn5ZMwsbvj9KLXj6bNT8KwZ-2BKVrte=
+HHuA2fXQIrNaZYXfqWOwMyFfmo0qw-2Ffafj3PRBRQx1HM4pu-2F8RMNTLceJe-2B6g9Pz7qH9B=
+aVElOmo6fxl53cFoLVlyNBj7XPFhSwdWONn29WIV794Mq2XyyDbG-2BvRjKJWeDyzW8jABu3h4z=
+E-2F93hagES6sT5L-2F-2B37SSLo1zqPksapxiUnIrCp19gTNqPxrWX8dkOS4cshkStvCbXSOHu=
+z-2FmLax2xzE9D_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5Ap=
+yXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhO=
+eaHUhWfPELDl61VWM5cSqw5ionrCaKXMGNzp53T-2BmbqSj8psV7OQJ3FyS09Z-2BAYsh2LkfZb=
+mS8ROXat-2BsQXWAjfC0u95qvfjBS58Uozc5h-2F5IhCKqz9Ja6wIoFoQHkpoPE-2FzDnTeYOGt=
+QPO5cCzc35KC9UwNMem42wA8oN7kV6YY-3D>
+Bubblegum: Waterproof Collar - L
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksLbkMVVNi-2BQehlbWGNFxwfiRbe9UOnFcn5ZMwsbvj9KLXj6bNT8KwZ-2BKVrte=
+HHuA2fXQIrNaZYXfqWOwMyFfmo0qw-2Ffafj3PRBRQx1HM4pu-2F8RMNTLceJe-2B6g9Pz7qH9B=
+aVElOmo6fxl53cFoLVlyNBj7XPFhSwdWONn29WIV794Mq2XyyDbG-2BvRjKJWeDyzW8jABu3h4z=
+E-2F93hagES6sT5L-2F-2B37SSLo1zqPksapxiUnIrCp19gTNqPxrWX8dkOS4cshkStvCbXSOHu=
+z-2FmLax2xhurn_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5Ap=
+yXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhO=
+eaHUhWfPELDl61VWM5cSqwwT9JTEg5QRicBAgngPo3kwMYlEzjvVdKkkHXmbgMUOg-2B7-2FP37=
+vpgiwSmVzUCGqtKKx4-2F6JbBgtC-2BC-2BnWXOgCKH9MnSsvWxFpzy0IuagVJvOnoQzdWNRDBK=
+s70KeQZ1-2F0zAYWtu82bE81GaC83-2FRnhw-3D>
+[image: 1 star]
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksLbkMVVNi-2BQehlbWGNFxwfiRbe9UOnFcn5ZMwsbvj9KLXj6bNT8KwZ-2BKVrte=
+HHuA2fXQIrNaZYXfqWOwMyFfmo0qw-2Ffafj3PRBRQx1HM4pu-2F8RMNTLceJe-2B6g9Pz7qH9B=
+aVElOmo6fxl53cFoLVlyNBj7XPFhSwdWONn29WIV794Mq2XyyDbG-2BvRjKJWeDyzW8jABu3h4z=
+E-2F93hagES6sT5L-2F-2B37SSLo1zqPksapxiUnIrCp19gTNqPxrWX8dkOS4fayUSMuFznxO2Q=
+fiZYsX9XJJ8U-2F5-2FwUT3AXYQIYAIqLg-3D-3DxKC8_6-2BBKni6sDtwyUScw4c6eaYPUn7qE=
+8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5=
+NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw8x4XrH1-2BTi8G6lYZzd8pu=
+mZ2mbFj75rZo7Jr9ia3RZYPgix8GdrOFDfZufSMrvxvKyjqfIvZp8yTOyiGgESHpdjZ7JHKF1S7=
+uia5EMhBnMaY6PedYKC-2FmOmC6CGKQ6mhn4R3SWxB1YNNeEh8t5aEp0-3D>
+[image:
+2 stars]
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksLbkMVVNi-2BQehlbWGNFxwfiRbe9UOnFcn5ZMwsbvj9KLXj6bNT8KwZ-2BKVrte=
+HHuA2fXQIrNaZYXfqWOwMyFfmo0qw-2Ffafj3PRBRQx1HM4pu-2F8RMNTLceJe-2B6g9Pz7qH9B=
+aVElOmo6fxl53cFoLVlyNBj7XPFhSwdWONn29WIV794Mq2XyyDbG-2BvRjKJWeDyzW8jABu3h4z=
+E-2F93hagES6sT5L-2F-2B37SSLo1zqPksapxiUnIrCp19gTNqPxrWX8dkOS4fayUSMuFznxO2Q=
+fiZYsX9XC7pE3t1fMiVIaqUAJOjD7Q-3D-3DFATr_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1=
+kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe=
+5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqwyfLAQXDIBeJAUyFlglo4Y0vwgb9=
+szTdwRAJmAKju38d82v3lm-2B8L4yApCE278VmF8Y5DNCR-2BArHJWjxUNkoJCNz67zOEopQCFy=
+Ax6kBnsRsqs7qJDxM5xdfuCJ2-2BOmFlOI7YeQKnJygvt9911I1JTw-3D>
+[image:
+3 stars]
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksLbkMVVNi-2BQehlbWGNFxwfiRbe9UOnFcn5ZMwsbvj9KLXj6bNT8KwZ-2BKVrte=
+HHuA2fXQIrNaZYXfqWOwMyFfmo0qw-2Ffafj3PRBRQx1HM4pu-2F8RMNTLceJe-2B6g9Pz7qH9B=
+aVElOmo6fxl53cFoLVlyNBj7XPFhSwdWONn29WIV794Mq2XyyDbG-2BvRjKJWeDyzW8jABu3h4z=
+E-2F93hagES6sT5L-2F-2B37SSLo1zqPksapxiUnIrCp19gTNqPxrWX8dkOS4fayUSMuFznxO2Q=
+fiZYsX9XPUMNhWa033qOOr-2BuHfNUnA-3D-3DoYAC_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8r=
+b1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NK=
+he5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw7q-2FUBbnPoxOnGDLnht-2BKF=
+kKZ83xa-2B2vLmXb9QtcND53nm-2FC7O9jbOZUGCT60QjkNi-2F3khonPCn9WPnCyJtO-2FfEXB=
+2yjt-2B15CEuhe1Psua-2F9SNDXDCQ37WVQYi4-2F0JksqJc7eSHJUzojc6-2F8l3jBNZs-3D>
+[image:
+4 stars]
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksLbkMVVNi-2BQehlbWGNFxwfiRbe9UOnFcn5ZMwsbvj9KLXj6bNT8KwZ-2BKVrte=
+HHuA2fXQIrNaZYXfqWOwMyFfmo0qw-2Ffafj3PRBRQx1HM4pu-2F8RMNTLceJe-2B6g9Pz7qH9B=
+aVElOmo6fxl53cFoLVlyNBj7XPFhSwdWONn29WIV794Mq2XyyDbG-2BvRjKJWeDyzW8jABu3h4z=
+E-2F93hagES6sT5L-2F-2B37SSLo1zqPksapxiUnIrCp19gTNqPxrWX8dkOS4fayUSMuFznxO2Q=
+fiZYsX9XdBBjgxoUJwumNLkNL4eg-2BQ-3D-3D5q6c_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8r=
+b1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NK=
+he5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqwwo2Fgz23LvN-2F-2BhwXH69eE=
+QDma6rQDb1LwTzqnt6jcalfcUaf0f-2Fm0-2F5A0sQsIK5AH-2BsddsdrTIvhELbQyZiFJ2qK3K=
+mj2SbRHUXEf3Z7rorjuEO-2BCb4nTl5bm661qVAHJ-2F4LL9Skv6Q14n0mmq3nZ8-3D>
+[image:
+5 stars]
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOy=
+WcFRy4tUVDksLbkMVVNi-2BQehlbWGNFxwfiRbe9UOnFcn5ZMwsbvj9KLXj6bNT8KwZ-2BKVrte=
+HHuA2fXQIrNaZYXfqWOwMyFfmo0qw-2Ffafj3PRBRQx1HM4pu-2F8RMNTLceJe-2B6g9Pz7qH9B=
+aVElOmo6fxl53cFoLVlyNBj7XPFhSwdWONn29WIV794Mq2XyyDbG-2BvRjKJWeDyzW8jABu3h4z=
+E-2F93hagES6sT5L-2F-2B37SSLo1zqPksapxiUnIrCp19gTNqPxrWX8dkOS4fayUSMuFznxO2Q=
+fiZYsX9XrzgcUmSNGF3qdn2u3wECFg-3D-3D1Ed9_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1=
+kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe=
+5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqwzk-2FIYT-2F66AEKOUga2G-2FcE=
+Q6SFVXQU7DaOA15sf-2F-2Fpu6pTYXnrGbWGJ-2FKBq0KkdLVbzh7TXjTnB2PXECXnhxYLIiW7T=
+NNnI3eM78mEaNku2-2BrxSVKcPN6v1oDr7do5LiZ1P2YWNJ-2Fpj-2FuWBjRAeanpo-3D>
+
+Submit your review, photos and videos *here*
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfGUVUkEKHa=
+FIPP8Xg-2Bes8vb23uneowbhdsateSY88txw9MiRgI3X96O5jd09PdZdiycUViJ-2BjeDGyX1oP=
+R9LzwAgnNk-2Bpdwo-2BX9MV9OhIZ0PEFyw59fFJxP8M-2BaFfyNaF1bgT9DA9oP7SvCOYgSKzg=
+fo5TgvLbmQG1EKdBSthkdZbYaXCeEMAPZjA3Q2v6LZ36dOjsJzROm-2FXUD3NXyILvwUk3rHzij=
+iYOWsrdcKVvbkqg7-2B9sZahfEu7wKIKoieSQ-3D-3DVAmN_6-2BBKni6sDtwyUScw4c6eaYPUn=
+7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FA=
+fm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw6U-2BF2wq2KZtbleUbHH=
+DQa-2FRr13Pd03BBD5PLSh9BmijLe6XbQt89cO8kN7Q1RlJ0oxvncdfFmLy47yAKs9GFd-2F8lZ=
+Hgh-2BttJypE-2BT0sqeyikD4MjFhzoIiDUfNEa6Vh6n9xzecn7hVw1okrgrWj9Jw-3D>
+please.
+
+You'll get a 10%-off discount when your submission is approved.
+
+Thanks!
+[image: Triangle]
+[image: Arrow down]
+[image: Sender display picture] Loren from Pablo & Co. Boutique
+Click here
+<https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfIBbVzLDH7=
+BFR8tjQbh30Iy0UUZl3sLSXGuOlKR2sK9QCUIKhrIWyVgEAkTfPvo06dW-2B2DKxgGAvjb0yFDz=
+Fs8egDDA7mpgLgPBzd2pOlxIbUNRCY2sn6owL7uwvQdK3sT3I9PgBP9IRAiQNPZbrE4s-3D2Hof=
+_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-=
+2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61=
+VWM5cSqwz45NGfGN4ayMrYm4VMy8NtIEiPdb6RxLj-2FnYrYN84swyhjB34s2-2FJxaeLtroAc-=
+2F1vWP9f-2BbHT5nyuyH7sWwLW4-2Ba7v76U1Dph-2BmjKuQQ9hb-2Bqw1S5vXkNJ44wGEu0WA7=
+pgwXHfWsw1wYtQDZhSbEOs-3D>
+to stop receiving messages like this.
+
+--000000000000ef097106239b79dc
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><br clear=3D"all"><div><div dir=3D"ltr" class=3D"gmail_sig=
+nature" data-smartmail=3D"gmail_signature"><div dir=3D"ltr"><span><div dir=
+=3D"ltr" style=3D"margin-left:0pt" align=3D"left"><table style=3D"border:no=
+ne;border-collapse:collapse"><colgroup><col width=3D"383"><col width=3D"132=
+"></colgroup><tbody><tr style=3D"height:36pt"><td colspan=3D"2" style=3D"bo=
+rder-bottom:0.75pt solid rgb(140,82,255);vertical-align:top;padding:0pt 0pt=
+ 8pt;overflow:hidden"><p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0=
+pt;margin-bottom:0pt"><span style=3D"font-size:14pt;font-family:Arial;backg=
+round-color:transparent;font-weight:700;vertical-align:baseline;white-space=
+:pre-wrap"><font color=3D"#000000"><i>Jessica Ndenda</i></font></span></p><=
+p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt"><=
+span style=3D"font-size:10pt;font-family:Arial;color:rgb(92,225,230);backgr=
+ound-color:transparent;vertical-align:baseline;white-space:pre-wrap"><b><i>=
+CEO &amp; DIRECTOR</i></b></span></p></td></tr><tr style=3D"height:42.75pt"=
+><td colspan=3D"2" style=3D"border-top:solid #8c52ff 0.75pt;vertical-align:=
+top;padding:8pt 0pt 0pt 0pt;overflow:hidden"><p dir=3D"ltr" style=3D"line-h=
+eight:1.38;margin-top:0pt;margin-bottom:0pt"><span style=3D"font-size:10pt;=
+font-family:Arial;color:rgb(44,44,44);background-color:transparent;font-wei=
+ght:700;vertical-align:baseline;white-space:pre-wrap"><i>Olive Louise Socia=
+l</i></span></p><p dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;mar=
+gin-bottom:0pt"><span style=3D"font-size:10pt;font-family:Arial;color:rgb(4=
+4,44,44);background-color:transparent;vertical-align:baseline;white-space:p=
+re-wrap"><i>m: 0405283268</i></span></p><p dir=3D"ltr" style=3D"line-height=
+:1.38;margin-top:0pt;margin-bottom:0pt"><span style=3D"font-size:10pt;font-=
+family:Arial;color:rgb(44,44,44);background-color:transparent;vertical-alig=
+n:baseline;white-space:pre-wrap"><i>e: <a href=3D"mailto:jess@olivelouiseso=
+cial.com" target=3D"_blank">jess@olivelouisesocial.com</a></i></span></p></=
+td></tr><tr style=3D"height:27.75pt"><td style=3D"vertical-align:top;paddin=
+g:8pt 0pt 8pt 0pt;overflow:hidden"><p dir=3D"ltr" style=3D"line-height:1.38=
+;margin-top:0pt;margin-bottom:0pt"><a href=3D"http://www.olivelouisesocial.=
+com/" target=3D"_blank"><span style=3D"font-size:10pt;font-family:Arial;col=
+or:rgb(140,82,255);background-color:transparent;font-weight:700;vertical-al=
+ign:baseline;white-space:pre-wrap"><i>www.olivelouisesocial.com</i></span><=
+/a></p></td><td style=3D"vertical-align:top;padding:8pt 0pt 8pt 0pt;overflo=
+w:hidden"><p dir=3D"ltr" style=3D"line-height:1.38;text-align:right;margin-=
+top:0pt;margin-bottom:0pt"><a href=3D"https://www.facebook.com/olivelouises=
+ocial" target=3D"_blank"><img alt=3D"Facebook icon" src=3D"https://lh4.goog=
+leusercontent.com/re3_iiKzbiXVD9sBu0oMpQGGpaTWRi0xB3Om5wv1V-Ens0bGX6GhuZm6C=
+nvSI6XZXj4ZlHiL7oi3r3a9skxzNSYKAc053XSIdkk9Clh03hvF7UXDu8iPF-YqpiMyQBeICVbI=
+DIAE_ZGNCoJVq8L4mL5hfb-xBWziEbsYa2ydyGKuooz2u15_ZHV34YftAg" width=3D"16" he=
+ight=3D"16" style=3D"margin-left:0px;margin-top:0px"></a><i><span style=3D"=
+font-size:10pt;font-family:Arial;color:rgb(68,68,68);background-color:trans=
+parent;vertical-align:baseline;white-space:pre-wrap"> </span><span style=3D=
+"font-size:10pt;font-family:Arial;color:rgb(68,68,68);background-color:tran=
+sparent;vertical-align:baseline;white-space:pre-wrap"><span style=3D"border=
+:none;display:inline-block;overflow:hidden;width:16px;height:16px"><a href=
+=3D"https://www.linkedin.com/in/jessica-ndenda-220980a3/" target=3D"_blank"=
+><img alt=3D"LinkedIn icon" src=3D"https://lh3.googleusercontent.com/2pUYJ7=
+vcqGFKWeyCe3wl4Vc6lXHaOoU75__t3YGnKkOGnv5umwTj0ZcUuyvNVZq5URW88nZOOX7-5PmOX=
+058TjW-5HyHsu7jhUW7WggP7tTlsMISO8PZeMm02cwGzV7fmwOzyroUT6YeDy_nhIPUedCamiF5=
+GdHcHOrRXjbC0T1ZgmZAbuvFpTmcrG-6Fg" width=3D"16" height=3D"16" style=3D"mar=
+gin-left:0px;margin-top:0px"></a></span></span><span style=3D"font-size:10p=
+t;font-family:Arial;color:rgb(68,68,68);background-color:transparent;vertic=
+al-align:baseline;white-space:pre-wrap"> </span><span style=3D"font-size:10=
+pt;font-family:Arial;color:rgb(68,68,68);background-color:transparent;verti=
+cal-align:baseline;white-space:pre-wrap"><span style=3D"border:none;display=
+:inline-block;overflow:hidden;width:16px;height:16px"><img alt=3D"Instagram=
+ icon" src=3D"https://lh6.googleusercontent.com/eYU_MFU1y_2aKVedz9LsWrCpMVr=
+m-M9jq_VYavabcSSlOWzYlcsR7Wq4OvykuO7teagCumZDtzx2ve9yhMOTZHLkxEpYBYBvE8Ihzi=
+i9X7LdALvNN9qT3Ya4JjbQwEjPZiC9ZWFesHeRgV5i_JuZCtaZruvKwbO26oSs9sn6_AKns8S6C=
+Mi-yabKD1zuog" width=3D"16" height=3D"16" style=3D"margin-left:0px;margin-t=
+op:0px"><a href=3D"https://www.instagram.com/olivelouisesocial/?hl=3Den" ta=
+rget=3D"_blank">https://www.instagram.com/olivelouisesocial/?hl=3Den</a></s=
+pan></span><span style=3D"font-size:10pt;font-family:Arial;color:rgb(68,68,=
+68);background-color:transparent;vertical-align:baseline;white-space:pre-wr=
+ap">=C2=A0</span></i></p></td></tr><tr style=3D"height:15pt"><td colspan=3D=
+"2" style=3D"vertical-align:top;padding:8pt 0pt 8pt 0pt;overflow:hidden"><p=
+ dir=3D"ltr" style=3D"line-height:1.38;margin-top:0pt;margin-bottom:0pt"><s=
+pan style=3D"font-size:10pt;font-family:Arial;color:rgb(68,68,68);backgroun=
+d-color:transparent;vertical-align:baseline;white-space:pre-wrap"><span sty=
+le=3D"border:none;display:inline-block;overflow:hidden;width:591px;height:1=
+77px"><i><img width=3D"420" height=3D"165" src=3D"https://ci3.googleusercon=
+tent.com/mail-sig/AIorK4w-KsMRtbNnTDZvfznI10FsSzF6tkusv43_psbS80028NfFp5nVR=
+Q1dMOGMFA7QLUuXk1vJFYk"></i></span></span></p></td></tr><tr style=3D"height=
+:49.5pt"><td colspan=3D"2" style=3D"vertical-align:top;padding:8pt 0pt 0pt =
+0pt;overflow:hidden"><p dir=3D"ltr" style=3D"line-height:1.38;text-align:ju=
+stify;margin-top:0pt;margin-bottom:0pt"><span style=3D"font-size:9pt;font-f=
+amily:Arial;color:rgb(44,44,44);background-color:transparent;vertical-align=
+:baseline;white-space:pre-wrap"><i>The content of this email is confidentia=
+l and intended for the recipient specified in the message only. It is stric=
+tly forbidden to share any part of this message with any third party, witho=
+ut the written consent of the sender. If you received this message by mista=
+ke, please reply to this message and follow with its deletion, so that we c=
+an ensure such a mistake does not occur in the future.</i></span></p></td><=
+/tr></tbody></table></div></span><div><div dir=3D"ltr"><div><div dir=3D"ltr=
+"><div><div dir=3D"ltr"><div><div dir=3D"ltr"><div><div dir=3D"ltr"><div><d=
+iv dir=3D"ltr"><div><div dir=3D"ltr"><div><div dir=3D"ltr"><div><div dir=3D=
+"ltr"><div><div><div dir=3D"ltr"><div></div><div></div></div></div></div></=
+div></div></div></div></div></div></div></div></div></div></div></div></div=
+></div></div></div></div></div></div></div></div><br><br><div class=3D"gmai=
+l_quote"><div dir=3D"ltr" class=3D"gmail_attr"><br></div><div dir=3D"ltr"><=
+div><br><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr=
+">---------- Forwarded message ---------<br>From: <strong class=3D"gmail_se=
+ndername" dir=3D"auto">Loren from Pablo &amp; Co. Boutique</strong> <span d=
+ir=3D"auto">&lt;<a href=3D"mailto:noreply@fera.ai" target=3D"_blank">norepl=
+y@fera.ai</a>&gt;</span><br>Date: Wed, Oct 2, 2024 at 12:46=E2=80=AFPM<br>S=
+ubject: How&#39;s it going?<br>To:  &lt;<a href=3D"mailto:sales@pabloandco.=
+net" target=3D"_blank">sales@pabloandco.net</a>&gt;<br></div><br><br><div><=
+u></u>
+
+
+ =20
+ =20
+ =20
+ =20
+
+
+
+
+
+<div style=3D"width:100%!important;margin:0;padding:0" bgcolor=3D"#f9f9f9">
+
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"center" st=
+yle=3D"border-collapse:collapse;line-height:100%!important;width:100%!impor=
+tant;table-layout:fixed;margin:0;padding:0" bgcolor=3D"#f9f9f9">
+  <tbody>
+  <tr>
+    <td style=3D"border-collapse:collapse">
+      <table style=3D"border-collapse:collapse;max-width:635px;min-width:32=
+0px;width:100%;table-layout:fixed;margin:auto">
+        <tbody>
+        <tr>
+          <td valign=3D"top" style=3D"border-collapse:collapse">
+            <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=
+=3D"border-collapse:collapse;color:#c0c0c0;font-family:&#39;Helvetica Neue&=
+#39;,Arial,sans-serif;font-size:13px;line-height:26px;width:100%;table-layo=
+ut:fixed;margin:0 auto 26px">
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td valign=3D"top" style=3D"border-collapse:collapse;padding:0 20=
+px">
+
+            <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=
+=3D"center" style=3D"background-clip:padding-box;border-collapse:collapse;b=
+order-radius:3px;color:#545454;font-family:&#39;Helvetica Neue&#39;,Arial,s=
+ans-serif;font-size:13px;line-height:20px;width:100%;table-layout:fixed;mar=
+gin:0 auto">
+              <tbody>
+              <tr>
+                <td valign=3D"top" style=3D"border-collapse:collapse">
+                  <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" s=
+tyle=3D"border-collapse:separate;font-size:1px;height:2px;line-height:3px;w=
+idth:100%;table-layout:fixed;border:none">
+                    <tbody>
+                    <tr>
+                      <td valign=3D"top" style=3D"font-size:0;width:100%;bo=
+rder-collapse:collapse;font-family:&#39;Helvetica Neue&#39;,Arial,sans-seri=
+f;border:none" bgcolor=3D"#f9b28c"></td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" s=
+tyle=3D"background-clip:padding-box;border-collapse:collapse;border-radius:=
+0 0 3px 3px;width:100%;table-layout:fixed;border-color:#dddddd;border-style=
+:solid solid none;border-width:0 1px 1px">
+                    <tbody>
+                    <tr>
+                      <td style=3D"background-clip:padding-box;border-radiu=
+s:0 0 3px 3px;color:#525252;font-family:&#39;Helvetica Neue&#39;,Arial,sans=
+-serif;font-size:15px;line-height:22px;overflow:hidden;border-collapse:coll=
+apse;padding:40px 40px 30px" bgcolor=3D"white">
+                        <p style=3D"display:block;width:100%;line-height:1.=
+5;padding-top:0!important;margin:0 auto" align=3D"center"><a href=3D"https:=
+//url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0kFPhvINOTfKB2Er6eYna6MmQx-=
+2BqPMwn4-3DNjMb_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5A=
+pyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBh=
+OeaHUhWfPELDl61VWM5cSqw-2Bp0XicMxmXx-2FW-2FsY-2BMgggJUvgRVmTrvLh2g7MZ3MnAoT=
+-2B-2FbZZ7TqBL4LEtBMYMmT-2Fp-2BdeOOZxgLGuJSoSl4iin1iRunH6awlWI2EJwWw1hChT7E=
+2Acr-2Blc9SzeyCwfFNwhyRZb0Ymi5SVtdPc4zanM-3D" style=3D"text-decoration:unde=
+rline;color:#f9b28c!important" target=3D"_blank"><img style=3D"width:120px;=
+height:auto;text-align:center;max-width:100%;margin:0 auto;padding:0" src=
+=3D"https://cdn.pic1.co/19107578/images/000/077/804/original/Pablo_Co._Logo=
+_COLOUR_500x.png?1689396785"></a></p>
+                        <div>
+<p style=3D"line-height:1.5;margin:0 0 17px">Hi ,</p>
+<p style=3D"line-height:1.5;margin:0 0 17px">How was your last order?</p>
+<p style=3D"line-height:1.5;margin:0 0 17px">Here&#39;s what you bought:</p=
+>
+<ul style=3D"list-style-type:disc;margin:0 0 20px 40px;padding:0">
+   =20
+    <li style=3D"color:#fff!important;margin-bottom:15px">
+        <a style=3D"display:flex;vertical-align:middle;text-decoration:unde=
+rline;color:#f9b28c!important" href=3D"https://url7914.fera.ai/ls/click?upn=
+=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksIeJgCsIFlM8CBhQZV5wx6N8Ix=
+vfp-2B0WXQFdZxkqPBbnjjeGY4s-2Bii-2FQ9C-2BZfwWp58-3DIKN1_6-2BBKni6sDtwyUScw4=
+c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8=
+pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw3fMJOuFKbF19=
+TVRB4CnT13YuQ6bwKNXxqm2PfNjvGpmdh0vf69wlGeyx2fWjGMjeTm8gbID2g4RkX6mS-2F00Rj=
+AHDrltiejC7ACHqjG0WvN5b8r-2FxsB8e-2FPdkGZkieTWbIKIPDpDpFYpeYJcLBSEtLk-3D" t=
+arget=3D"_blank"><img src=3D"https://cdn.shopify.com/s/files/1/1879/1395/pr=
+oducts/2022-10-31-PabloandCo-Harnesses-7072_150x150.jpg?v=3D1694401274" sty=
+le=3D"vertical-align:middle;height:75px;width:auto;max-width:100%;margin:0 =
+10px 0 0;padding:0">Baby Blue: Adjustable Harness - S</a>
+    </li>
+   =20
+    <li style=3D"color:#fff!important;margin-bottom:15px">
+        <a style=3D"display:flex;vertical-align:middle;text-decoration:unde=
+rline;color:#f9b28c!important" href=3D"https://url7914.fera.ai/ls/click?upn=
+=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksKhOcL7lwqCrn0fcDuUbI-2FcH=
+H-2BGL6dptsWgcs-2BVUTnTPwU9n9DMGHTi56IVVWovn2I-3D8RPC_6-2BBKni6sDtwyUScw4c6=
+eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pf=
+L7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw3XtM3dg2GDAo72=
+-2Fu8Sp-2FqOFZiB0ifcqQAdBqPMiaufuVYOhbF8vCnjwr2WM7VukivWyPDNGGCM-2FxqG1VyXJ=
+LVDNdjA1izQpreadyq3THcMCg8oU8YAotUhl5TKXWIbxoxnSZG3STLAR1EfP1-2BDHpMo-3D" t=
+arget=3D"_blank"><img src=3D"https://cdn.shopify.com/s/files/1/1879/1395/fi=
+les/PabloandCo_Jul2023_-1627_150x150.jpg?v=3D1691642461" style=3D"vertical-=
+align:middle;height:75px;width:auto;max-width:100%;margin:0 10px 0 0;paddin=
+g:0">Sea Salt: Waterproof Collar - S</a>
+    </li>
+   =20
+    <li style=3D"color:#fff!important;margin-bottom:15px">
+        <a style=3D"display:flex;vertical-align:middle;text-decoration:unde=
+rline;color:#f9b28c!important" href=3D"https://url7914.fera.ai/ls/click?upn=
+=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksKtdEajOH5U7VRmncocXEBBuZ5=
+WTpsmaOJU8gMDB5I3Pa4MSuaGET6Yu-2BLPpqQyajY-3DZB9Y_6-2BBKni6sDtwyUScw4c6eaYP=
+Un7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2=
+FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqwwnXsyjc9oxk8rsKhyp=
+ysH88Za4JIfzSo5jmdJ33dI5UhTcq2myL9HWkcQv-2BUa8k-2BYLCmuceoVt36DWlgU3GuoogbF=
+pc0ev9tVb3v27klk1jQ0r1K-2BZdLYYuHMmFgvWLgLwIGE3PVBStacSRdO8ExEU-3D" target=
+=3D"_blank"><img src=3D"https://cdn.shopify.com/s/files/1/1879/1395/files/P=
+abloandCo_May2024_-9546_150x150.jpg?v=3D1720143101" style=3D"vertical-align=
+:middle;height:75px;width:auto;max-width:100%;margin:0 10px 0 0;padding:0">=
+Pink Houndstooth: Adjustable Harness - XL</a>
+    </li>
+   =20
+    <li style=3D"color:#fff!important;margin-bottom:15px">
+        <a style=3D"display:flex;vertical-align:middle;text-decoration:unde=
+rline;color:#f9b28c!important" href=3D"https://url7914.fera.ai/ls/click?upn=
+=3Du001.Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksLbkMVVNi-2BQehlbWGNFxwfiR=
+be9UOnFcn5ZMwsbvj9KLelb8eZ-2FUDy9uWXJxuDxWBQ-3D1_NL_6-2BBKni6sDtwyUScw4c6ea=
+YPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7=
+-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw3kwRQuiLaw-2Fieb=
+zJv1fuOdD38uxzMD7u4hOcYXY5o-2BrlZoLWpFdFn5ZnfAPq1KT-2Bnl2DGEPDnmVPzPTbF8-2F=
+kQGNZaX85DoIm8VpmxuANQMqd67H2XBF0m5uqtNDh7-2BpJ-2F0MttxHWELamR-2BHs2Ikgtw-3=
+D" target=3D"_blank"><img src=3D"https://cdn.shopify.com/s/files/1/1879/139=
+5/files/PabloandCo_Jul2023_-1641_150x150.jpg?v=3D1691642322" style=3D"verti=
+cal-align:middle;height:75px;width:auto;max-width:100%;margin:0 10px 0 0;pa=
+dding:0">Bubblegum: Waterproof Collar - L</a>
+    </li>
+   =20
+</ul>
+<p style=3D"line-height:1.5;margin:0 0 17px"></p>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" border=3D"0" styl=
+e=3D"table-layout:fixed">
+     =20
+
+     =20
+        <tbody><tr>
+          <td style=3D"border-collapse:collapse">
+            <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=
+=3D"table-layout:fixed">
+              <tbody><tr>
+                <td valign=3D"middle" align=3D"left" style=3D"border-collap=
+se:collapse">
+                  <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du001.Rn=
+tv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksIeJgCsIFlM8CBhQZV5wx6N8Ixvfp-2B0WXQ=
+FdZxkqPBbnnwqbjP495tkwXSvj6xenjNKTyvppzwjf86fLICe8weS9Le6jXzV02pxI-2BlNlVlu=
+CEVPsFVqODnWVV6ofgARUmkZbNZEbyJFeB-2Fead8RB1-2BGDBaYCy22QFseJMJrJEBcsLgfku-=
+2BF6A-2FLnnzQA29123WZsOfSGG6oLnJFYtuQZGH9ozIVrXSWBPGElr1v2SLepWi-2BJIaQLDjw=
+WcaAyYmvRDhgnAxop61-2FPBKvAQQSvdhX47F3_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kx=
+QzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5T=
+iqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw2c-2BeZPqmRgnxhpKRM-2FXZWyc7e=
+g2w5XxH9XqA80zBK7z1zTyQXvvJQbMeM6Y1lIHWP11OBDtTbEJBq43OTVh542rjFcA4gPp49id9=
+2yptQ53LLgwnUxnH3d6dVakoxUr8jTH5rRbnTmldD7sqoyfraM-3D" style=3D"text-decora=
+tion:underline;color:#f9b28c!important" target=3D"_blank"><img src=3D"https=
+://cdn.shopify.com/s/files/1/1879/1395/products/2022-10-31-PabloandCo-Harne=
+sses-7072_150x150.jpg?v=3D1694401274" height=3D"62" width=3D"62" alt=3D"Pro=
+duct Image" style=3D"max-width:100%;margin:17px 0"></a>
+                </td>
+                <td style=3D"border-collapse:collapse">
+                  <div>
+                    <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du001.=
+Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksIeJgCsIFlM8CBhQZV5wx6N8Ixvfp-2B0W=
+XQFdZxkqPBbnnwqbjP495tkwXSvj6xenjNKTyvppzwjf86fLICe8weS9Le6jXzV02pxI-2BlNlV=
+luCEVPsFVqODnWVV6ofgARUmkZbNZEbyJFeB-2Fead8RB1-2BGDBaYCy22QFseJMJrJEBcsLgfk=
+u-2BF6A-2FLnnzQA29123WZsOfSGG6oLnJFYtuQZGH9ozIVrXSWBPGElr1v2SLepWi-2BJIaQLD=
+jwWcaAyYmvRDhgnAxop61-2FPBKvAQQSvdhXVdzD_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1=
+kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe=
+5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw4OUQZrvtuRYmZH2vykiuQYykYGY=
+FCopPRoE8T9KqaN5VmNofGO3gPCRKw1sGGPujYb43lygpjByWu-2FqvsPstB9DTNJ1tyFpBcbxx=
+WtXyKFCo-2BpnJokXsTtU213pz7JA5AdqdVCgcoyC0ZpM-2Fkx9KiY-3D" style=3D"text-de=
+coration:underline;color:#f9b28c!important" target=3D"_blank">Baby Blue: Ad=
+justable Harness...</a>
+                  </div>
+
+                  <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" s=
+tyle=3D"table-layout:fixed;width:200px;line-height:1;margin-bottom:17px">
+                    <tbody><tr>
+                      <td valign=3D"bottom" align=3D"left" style=3D"border-=
+collapse:collapse;width:34px">
+                        <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du=
+001.Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksIeJgCsIFlM8CBhQZV5wx6N8Ixvfp-=
+2B0WXQFdZxkqPBbnnwqbjP495tkwXSvj6xenjNKTyvppzwjf86fLICe8weS9Le6jXzV02pxI-2B=
+lNlVluCEVPsFVqODnWVV6ofgARUmkZbNZEbyJFeB-2Fead8RB1-2BGDBaYCy22QFseJMJrJEBcs=
+Lgfku-2BF6A-2FLnnzQA29123WZsOfSGG6oLnJFYtuQZGH9ozIVrXSWBPGElr1v2SLepWi-2BJI=
+aQLDjwWcaAyYmvRDhgHo0dbJpzEwIQFyF4B-2BEPc7AC52IG4nIeZ7lZQQVbHw-3D-3DJr7Y_6-=
+2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8=
+CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM=
+5cSqw9qJWUPUz10lTVkOO1iYU2Ijnj8tycQI54TxqcPEATS1YCv-2FfMd6rq-2FXavs9-2FPSd9=
+8QefNkWKnhZ6h5uYkjoIJvB6EJK-2FPUQkipQQhoQ18q90yqmGQLj04c9Yp0Rji7yRdkxpVpZw9=
+ZA5MuHgqNZY6Y-3D" style=3D"text-decoration:none;color:#f9b28c!important;fon=
+t-size:35px" target=3D"_blank">
+                          <img src=3D"https://uploads.fera.ai/email/icons/r=
+eview-star.png" alt=3D"1 star" style=3D"max-width:100%;margin:17px 0">
+                        </a>
+                      </td>
+                      <td valign=3D"bottom" align=3D"left" style=3D"border-=
+collapse:collapse;width:34px">
+                        <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du=
+001.Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksIeJgCsIFlM8CBhQZV5wx6N8Ixvfp-=
+2B0WXQFdZxkqPBbnnwqbjP495tkwXSvj6xenjNKTyvppzwjf86fLICe8weS9Le6jXzV02pxI-2B=
+lNlVluCEVPsFVqODnWVV6ofgARUmkZbNZEbyJFeB-2Fead8RB1-2BGDBaYCy22QFseJMJrJEBcs=
+Lgfku-2BF6A-2FLnnzQA29123WZsOfSGG6oLnJFYtuQZGH9ozIVrXSWBPGElr1v2SLepWi-2BJI=
+aQLDjwWcaAyYmvRDhgHo0dbJpzEwIQFyF4B-2BEPypokFB-2FlOzKmHsyhHi0ChA-3D-3DMR9U_=
+6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2=
+B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61V=
+WM5cSqw97M3jUn7Z0DZy2LdAnTvc-2F6SC258-2BY-2Bqg1TueLlGlJ4k6zHntTqN3gHpOjhh7B=
+oAmIV9QMkE8xwZW-2BJdCx8rjFx5NrGc1prvfkaQEt-2F1VY2FUTq-2BdhT7tzXeNioZxBAgbaS=
+6JJsCZKI3hvlxZa6Qc8-3D" style=3D"text-decoration:none;color:#f9b28c!importa=
+nt;font-size:35px" target=3D"_blank">
+                          <img src=3D"https://uploads.fera.ai/email/icons/r=
+eview-star.png" alt=3D"2 stars" style=3D"max-width:100%;margin:17px 0">
+                        </a>
+                      </td>
+                      <td valign=3D"bottom" align=3D"left" style=3D"border-=
+collapse:collapse;width:34px">
+                        <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du=
+001.Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksIeJgCsIFlM8CBhQZV5wx6N8Ixvfp-=
+2B0WXQFdZxkqPBbnnwqbjP495tkwXSvj6xenjNKTyvppzwjf86fLICe8weS9Le6jXzV02pxI-2B=
+lNlVluCEVPsFVqODnWVV6ofgARUmkZbNZEbyJFeB-2Fead8RB1-2BGDBaYCy22QFseJMJrJEBcs=
+Lgfku-2BF6A-2FLnnzQA29123WZsOfSGG6oLnJFYtuQZGH9ozIVrXSWBPGElr1v2SLepWi-2BJI=
+aQLDjwWcaAyYmvRDhgHo0dbJpzEwIQFyF4B-2BEP8WZkCjUj-2BFlPzJd4-2BaK21g-3D-3Dfyc=
+E_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s=
+-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl6=
+1VWM5cSqw7c2uJg1-2FlGn-2FrRkmDNy2W5knyT7w7YoeRs11cpYelP9mxBfg53rAhg94fSHVsD=
+QYdkMXlgG7Sj6xNIawCflxuKUu2VSWkOeB3jX1xqysKFUEUL5DIFrpAIkbptlguKlufw6SRWvHK=
+JHJPIgynr8yfI-3D" style=3D"text-decoration:none;color:#f9b28c!important;fon=
+t-size:35px" target=3D"_blank">
+                          <img src=3D"https://uploads.fera.ai/email/icons/r=
+eview-star.png" alt=3D"3 stars" style=3D"max-width:100%;margin:17px 0">
+                        </a>
+                      </td>
+                      <td valign=3D"bottom" align=3D"left" style=3D"border-=
+collapse:collapse;width:34px">
+                        <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du=
+001.Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksIeJgCsIFlM8CBhQZV5wx6N8Ixvfp-=
+2B0WXQFdZxkqPBbnnwqbjP495tkwXSvj6xenjNKTyvppzwjf86fLICe8weS9Le6jXzV02pxI-2B=
+lNlVluCEVPsFVqODnWVV6ofgARUmkZbNZEbyJFeB-2Fead8RB1-2BGDBaYCy22QFseJMJrJEBcs=
+Lgfku-2BF6A-2FLnnzQA29123WZsOfSGG6oLnJFYtuQZGH9ozIVrXSWBPGElr1v2SLepWi-2BJI=
+aQLDjwWcaAyYmvRDhgHo0dbJpzEwIQFyF4B-2BEPc8mBa2WlqY4HYDqVu9FfSw-3D-3DTUB1_6-=
+2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8=
+CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM=
+5cSqw4DOYTQxP6A6g0H1RUFG9r5pikOzlX5FSGkwBc1wkBHvvBdCkvoZGjCH24jJLKh0Hfn9-2B=
+-2FhU36809ogVJJls-2BMusBPlnjcbz00TEvoKK15iPbgoIydxxVqKV8t8tYWWw66G2CgCIAbfH=
+KglI1DCY3dI-3D" style=3D"text-decoration:none;color:#f9b28c!important;font-=
+size:35px" target=3D"_blank">
+                          <img src=3D"https://uploads.fera.ai/email/icons/r=
+eview-star.png" alt=3D"4 stars" style=3D"max-width:100%;margin:17px 0">
+                        </a>
+                      </td>
+                      <td valign=3D"bottom" align=3D"left" style=3D"border-=
+collapse:collapse;width:34px">
+                        <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du=
+001.Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksIeJgCsIFlM8CBhQZV5wx6N8Ixvfp-=
+2B0WXQFdZxkqPBbnnwqbjP495tkwXSvj6xenjNKTyvppzwjf86fLICe8weS9Le6jXzV02pxI-2B=
+lNlVluCEVPsFVqODnWVV6ofgARUmkZbNZEbyJFeB-2Fead8RB1-2BGDBaYCy22QFseJMJrJEBcs=
+Lgfku-2BF6A-2FLnnzQA29123WZsOfSGG6oLnJFYtuQZGH9ozIVrXSWBPGElr1v2SLepWi-2BJI=
+aQLDjwWcaAyYmvRDhgHo0dbJpzEwIQFyF4B-2BEP9fJC-2BCqfxANZf85hhDI0-2Fw-3D-3Db-7=
+t_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s=
+-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl6=
+1VWM5cSqw3tMHI9tQ1wMZwuHyHf7FWQh39M-2F7Jv2EX4ZJOcQ4F0vYe3j4GiAnioR2LniKSnNF=
+QtUbvGuFYD7aqpCCBdY75RzkfUpEKG9ovWjxaEg3Amc3ckcrBobiJcOPD0yPVXmIjcmz9SECqDX=
+n-2FNC2PtS1mQ-3D" style=3D"text-decoration:none;color:#f9b28c!important;fon=
+t-size:35px" target=3D"_blank">
+                          <img src=3D"https://uploads.fera.ai/email/icons/r=
+eview-star.png" alt=3D"5 stars" style=3D"max-width:100%;margin:17px 0">
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody></table>
+                </td>
+              </tr>
+            </tbody></table>
+          </td>
+        </tr>
+     =20
+        <tr>
+          <td style=3D"border-collapse:collapse">
+            <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=
+=3D"table-layout:fixed">
+              <tbody><tr>
+                <td valign=3D"middle" align=3D"left" style=3D"border-collap=
+se:collapse">
+                  <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du001.Rn=
+tv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksKhOcL7lwqCrn0fcDuUbI-2FcHH-2BGL6dpt=
+sWgcs-2BVUTnTP5PRAWMEQ2VHASfT9pBUuvb9SaanBZB38fBzTRSyPr9gcwEan9Bg6Tl9xyrXvB=
+d5MRK7-2Fx663KMbry6BN8qVRetrwwnoZjb9kyWFYvwU9FoQmtTWfSstLd0rpiR4TKIRDI9V4Lr=
+vOlUxVrB-2BMEvaCw68KJFxhdcHaJioByBlH0kwF-2F45We00hh5-2BrPelrG4yL2x8PdZRHj4T=
+9lSDochJgUbedRbFh1RbzUN6Dt2y8jHrejeX_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQz=
+Qpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5Tiq=
+KcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw6iYugj64ccjd-2B6YMZGNc0PelUgZph=
+6Zcbo5ykIhlq4m4jN8XPR1HDAht9WR93QPUxC4CpbP9q1VZyijiIoa0X3qRjLHeQOGs-2FsprX-=
+2BXpKlgDDuFnAbuc9YWJ0tIX0yYtn-2Fqh5YEdXUDDZT73JBUoE8-3D" style=3D"text-deco=
+ration:underline;color:#f9b28c!important" target=3D"_blank"><img src=3D"htt=
+ps://cdn.shopify.com/s/files/1/1879/1395/files/PabloandCo_Jul2023_-1627_150=
+x150.jpg?v=3D1691642461" height=3D"62" width=3D"62" alt=3D"Product Image" s=
+tyle=3D"max-width:100%;margin:17px 0"></a>
+                </td>
+                <td style=3D"border-collapse:collapse">
+                  <div>
+                    <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du001.=
+Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksKhOcL7lwqCrn0fcDuUbI-2FcHH-2BGL6d=
+ptsWgcs-2BVUTnTP5PRAWMEQ2VHASfT9pBUuvb9SaanBZB38fBzTRSyPr9gcwEan9Bg6Tl9xyrX=
+vBd5MRK7-2Fx663KMbry6BN8qVRetrwwnoZjb9kyWFYvwU9FoQmtTWfSstLd0rpiR4TKIRDI9V4=
+LrvOlUxVrB-2BMEvaCw68KJFxhdcHaJioByBlH0kwF-2F45We00hh5-2BrPelrG4yL2x8PdZRHj=
+4T9lSDochJgUbedRbFh1RbzUN6Dt2y8jHrut_K_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kx=
+QzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5T=
+iqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw74YJ4esfCyWn9xnR0K67Kxkg-2F5i=
+M3aPyid5OnFsgFFoD2hrd6dFK-2BHe6aIPNAsvsEhv5EhRsRv4L053PFmzcRJHvPH-2Fnl8Yx1c=
+CJuCMPejaepxM1qfMAoZVim6rpqtvAfhzONjb9hWdfBgmQRtV-2FK4-3D" style=3D"text-de=
+coration:underline;color:#f9b28c!important" target=3D"_blank">Sea Salt: Wat=
+erproof Collar - S</a>
+                  </div>
+
+                  <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" s=
+tyle=3D"table-layout:fixed;width:200px;line-height:1;margin-bottom:17px">
+                    <tbody><tr>
+                      <td valign=3D"bottom" align=3D"left" style=3D"border-=
+collapse:collapse;width:34px">
+                        <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du=
+001.Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksKhOcL7lwqCrn0fcDuUbI-2FcHH-2B=
+GL6dptsWgcs-2BVUTnTP5PRAWMEQ2VHASfT9pBUuvb9SaanBZB38fBzTRSyPr9gcwEan9Bg6Tl9=
+xyrXvBd5MRK7-2Fx663KMbry6BN8qVRetrwwnoZjb9kyWFYvwU9FoQmtTWfSstLd0rpiR4TKIRD=
+I9V4LrvOlUxVrB-2BMEvaCw68KJFxhdcHaJioByBlH0kwF-2F45We00hh5-2BrPelrG4yL2x8Pd=
+ZRHj4T9lSDochJgUYQY7mKvQgqssHtFAsM2rb4EqbbfWiCkenlNs8Bcli49g-3D-3D4e6W_6-2B=
+BKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8Cs=
+YsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5c=
+Sqw6qcfKDEY9AqVT-2FMNvbewKCuMzxT7sJXhlUMan2DCNOG0AnL6bbhQYwpZDw77onDCIUiKeP=
+8oTiu6ljGiJQF4QoHVoZft52-2BcxCibYUio7KBRcIXjUIWk1VmuyX4kItOTcImHSAHIzh2yXov=
+kA-2F-2B9-2F8-3D" style=3D"text-decoration:none;color:#f9b28c!important;fon=
+t-size:35px" target=3D"_blank">
+                          <img src=3D"https://uploads.fera.ai/email/icons/r=
+eview-star.png" alt=3D"1 star" style=3D"max-width:100%;margin:17px 0">
+                        </a>
+                      </td>
+                      <td valign=3D"bottom" align=3D"left" style=3D"border-=
+collapse:collapse;width:34px">
+                        <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du=
+001.Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksKhOcL7lwqCrn0fcDuUbI-2FcHH-2B=
+GL6dptsWgcs-2BVUTnTP5PRAWMEQ2VHASfT9pBUuvb9SaanBZB38fBzTRSyPr9gcwEan9Bg6Tl9=
+xyrXvBd5MRK7-2Fx663KMbry6BN8qVRetrwwnoZjb9kyWFYvwU9FoQmtTWfSstLd0rpiR4TKIRD=
+I9V4LrvOlUxVrB-2BMEvaCw68KJFxhdcHaJioByBlH0kwF-2F45We00hh5-2BrPelrG4yL2x8Pd=
+ZRHj4T9lSDochJgUYQY7mKvQgqssHtFAsM2rb4h9LS-2BfSHORWfHZjFlQbtBw-3D-3DFzg-_6-=
+2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8=
+CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM=
+5cSqw4CmY3REf9-2BMuzViuciRBq5WnfTRfDMG-2FDXeEd7IB9hhwdmHPd-2BveJguSkFKtIY-2=
+BDuQNHxcP7YTF6e-2Bi-2Bux8oo1tBS5Pm-2BLFMfCwIVU9Rzdnv6X0R0m-2BCCsDPPnLMFDx-2=
+Br2MSpOP3kWF1amJL0fO7iI-3D" style=3D"text-decoration:none;color:#f9b28c!imp=
+ortant;font-size:35px" target=3D"_blank">
+                          <img src=3D"https://uploads.fera.ai/email/icons/r=
+eview-star.png" alt=3D"2 stars" style=3D"max-width:100%;margin:17px 0">
+                        </a>
+                      </td>
+                      <td valign=3D"bottom" align=3D"left" style=3D"border-=
+collapse:collapse;width:34px">
+                        <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du=
+001.Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksKhOcL7lwqCrn0fcDuUbI-2FcHH-2B=
+GL6dptsWgcs-2BVUTnTP5PRAWMEQ2VHASfT9pBUuvb9SaanBZB38fBzTRSyPr9gcwEan9Bg6Tl9=
+xyrXvBd5MRK7-2Fx663KMbry6BN8qVRetrwwnoZjb9kyWFYvwU9FoQmtTWfSstLd0rpiR4TKIRD=
+I9V4LrvOlUxVrB-2BMEvaCw68KJFxhdcHaJioByBlH0kwF-2F45We00hh5-2BrPelrG4yL2x8Pd=
+ZRHj4T9lSDochJgUYQY7mKvQgqssHtFAsM2rb4apl5OsyrDYayr6EBqG1VWg-3D-3Dv2Fq_6-2B=
+BKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8Cs=
+YsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5c=
+Sqw2anQSw7Bnn-2FU6RBnZkTKvHX8JQswVrPxKASLz-2FoNBwAJ1AfB25-2BYfi3keWl0L2VREi=
+bQ-2Fvn4UiOOVylUWZcDFDgqZ6BtazYu3-2B20CBRxOAW9-2FzF8R5WyqIGyUoE-2FRzeORXKJk=
+YvMO1-2BvwkpeoMtdf0-3D" style=3D"text-decoration:none;color:#f9b28c!importa=
+nt;font-size:35px" target=3D"_blank">
+                          <img src=3D"https://uploads.fera.ai/email/icons/r=
+eview-star.png" alt=3D"3 stars" style=3D"max-width:100%;margin:17px 0">
+                        </a>
+                      </td>
+                      <td valign=3D"bottom" align=3D"left" style=3D"border-=
+collapse:collapse;width:34px">
+                        <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du=
+001.Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksKhOcL7lwqCrn0fcDuUbI-2FcHH-2B=
+GL6dptsWgcs-2BVUTnTP5PRAWMEQ2VHASfT9pBUuvb9SaanBZB38fBzTRSyPr9gcwEan9Bg6Tl9=
+xyrXvBd5MRK7-2Fx663KMbry6BN8qVRetrwwnoZjb9kyWFYvwU9FoQmtTWfSstLd0rpiR4TKIRD=
+I9V4LrvOlUxVrB-2BMEvaCw68KJFxhdcHaJioByBlH0kwF-2F45We00hh5-2BrPelrG4yL2x8Pd=
+ZRHj4T9lSDochJgUYQY7mKvQgqssHtFAsM2rb4xWxZskTMUSWFt0fcimH-2FTw-3D-3DiTJQ_6-=
+2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8=
+CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM=
+5cSqw3WChMhVLvYhqsRq63ht61gZsSszFJbEYVicyzI2Cos5KDfqIiz-2Ff1sbvxJLtYw0oVWYi=
+4Q0YpiWarNhdBU3zQ-2Bw31992fCOiAUqBZyPYEapBWPFJz-2BATIip-2FwKjSOSIKV91THFfMc=
+CzpYVncqJIGm4-3D" style=3D"text-decoration:none;color:#f9b28c!important;fon=
+t-size:35px" target=3D"_blank">
+                          <img src=3D"https://uploads.fera.ai/email/icons/r=
+eview-star.png" alt=3D"4 stars" style=3D"max-width:100%;margin:17px 0">
+                        </a>
+                      </td>
+                      <td valign=3D"bottom" align=3D"left" style=3D"border-=
+collapse:collapse;width:34px">
+                        <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du=
+001.Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksKhOcL7lwqCrn0fcDuUbI-2FcHH-2B=
+GL6dptsWgcs-2BVUTnTP5PRAWMEQ2VHASfT9pBUuvb9SaanBZB38fBzTRSyPr9gcwEan9Bg6Tl9=
+xyrXvBd5MRK7-2Fx663KMbry6BN8qVRetrwwnoZjb9kyWFYvwU9FoQmtTWfSstLd0rpiR4TKIRD=
+I9V4LrvOlUxVrB-2BMEvaCw68KJFxhdcHaJioByBlH0kwF-2F45We00hh5-2BrPelrG4yL2x8Pd=
+ZRHj4T9lSDochJgUYQY7mKvQgqssHtFAsM2rb4iy-2BXdC04q-2FwZJss29-2FKFrw-3D-3DtRz=
+q_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s=
+-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl6=
+1VWM5cSqw70LU-2BKZ5TuvjVoP5bpgswpQ8MVlFonBKwxS8wA-2FfsBT3yA4HttOSS5RuH3IKOs=
+ZFaQZKwoMjHUH2BFZjQdqruBYmB9NUrzxUyviR2VAfkVeFEs59zjqdMb9aM039D6RNRBBLiLuVs=
+ksmOU-2FqHOTViw-3D" style=3D"text-decoration:none;color:#f9b28c!important;f=
+ont-size:35px" target=3D"_blank">
+                          <img src=3D"https://uploads.fera.ai/email/icons/r=
+eview-star.png" alt=3D"5 stars" style=3D"max-width:100%;margin:17px 0">
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody></table>
+                </td>
+              </tr>
+            </tbody></table>
+          </td>
+        </tr>
+     =20
+        <tr>
+          <td style=3D"border-collapse:collapse">
+            <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=
+=3D"table-layout:fixed">
+              <tbody><tr>
+                <td valign=3D"middle" align=3D"left" style=3D"border-collap=
+se:collapse">
+                  <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du001.Rn=
+tv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksKtdEajOH5U7VRmncocXEBBuZ5WTpsmaOJU8=
+gMDB5I3PcA5BI7g34ecZNc660suAjwQuRyCjO63QyGM2pV83toMOPFUbHhuOSHfwJnYGxqE9LDH=
+1iLuG6Ikw2rCiF2lxyQp5nrRjjdR5jm8ZUfiXZ9FCGatf8Cr5lukVBELev3ALCBzsLs-2Fa5sjs=
+4eorV5sDalOzP0pWvLthVHM70SnulRSZ-2FabE71WbZmGIogRnv-2FZ4iq1yNPW6YwjR9dZVG97=
+u7zRodNBfuv7blL3g6VTMte2icIbFSeCc7TwSEdTs3zuSg-3D-3DsYNI_6-2BBKni6sDtwyUScw=
+4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I=
+8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw54pnME64OOM=
+YcUIPF7nau24PE72uIXw4P7yG1bSLji8fR4Bk7GPd2Us3-2FEoGJjpT4GznTHJPWcuEcNEExXSQ=
+SeD29yr4QyEDTdYETh1b88uxXxMMLj-2BmNNPM3F-2FUAW0696V5FIlEPd0-2FddC-2BPWw7hE-=
+3D" style=3D"text-decoration:underline;color:#f9b28c!important" target=3D"_=
+blank"><img src=3D"https://cdn.shopify.com/s/files/1/1879/1395/files/Pabloa=
+ndCo_May2024_-9546_150x150.jpg?v=3D1720143101" height=3D"62" width=3D"62" a=
+lt=3D"Product Image" style=3D"max-width:100%;margin:17px 0"></a>
+                </td>
+                <td style=3D"border-collapse:collapse">
+                  <div>
+                    <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du001.=
+Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksKtdEajOH5U7VRmncocXEBBuZ5WTpsmaOJ=
+U8gMDB5I3PcA5BI7g34ecZNc660suAjwQuRyCjO63QyGM2pV83toMOPFUbHhuOSHfwJnYGxqE9L=
+DH1iLuG6Ikw2rCiF2lxyQp5nrRjjdR5jm8ZUfiXZ9FCGatf8Cr5lukVBELev3ALCBzsLs-2Fa5s=
+js4eorV5sDalOzP0pWvLthVHM70SnulRSZ-2FabE71WbZmGIogRnv-2FZ4iq1yNPW6YwjR9dZVG=
+97u7zRodNBfuv7blL3g6VTMte2icIbFSeCc7TwSEdTs3zuSg-3D-3DtDIW_6-2BBKni6sDtwyUS=
+cw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR=
+4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw8gK64lNkp=
+YzGTiB164R6lcmNsLY-2BKo-2BQ920LC2seqzhRey98uq0vKDYyk-2FdrT-2Fmm7m-2FK0rVuHs=
+GhFJk6rVTTWT3zq41Fr24xmA589AUea3v6j7UALA3JUAacdiu7Ogswc0C4ERg8hjLozwDHqYV2N=
+8-3D" style=3D"text-decoration:underline;color:#f9b28c!important" target=3D=
+"_blank">Pink Houndstooth: Adjustable ...</a>
+                  </div>
+
+                  <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" s=
+tyle=3D"table-layout:fixed;width:200px;line-height:1;margin-bottom:17px">
+                    <tbody><tr>
+                      <td valign=3D"bottom" align=3D"left" style=3D"border-=
+collapse:collapse;width:34px">
+                        <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du=
+001.Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksKtdEajOH5U7VRmncocXEBBuZ5WTps=
+maOJU8gMDB5I3PcA5BI7g34ecZNc660suAjwQuRyCjO63QyGM2pV83toMOPFUbHhuOSHfwJnYGx=
+qE9LDH1iLuG6Ikw2rCiF2lxyQp5nrRjjdR5jm8ZUfiXZ9FCGatf8Cr5lukVBELev3ALCBzsLs-2=
+Fa5sjs4eorV5sDalOzP0pWvLthVHM70SnulRSZ-2FabE71WbZmGIogRnv-2FZ4iq1yNPW6YwjR9=
+dZVG97u7zRodNBfuv7blL3g6VTMte2emXKo-2FxwrtChkoTH2W6qMP-2BXo4i6wlyNxRW6J58mQ=
+FE-3DTbEm_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtm=
+Lxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUh=
+WfPELDl61VWM5cSqw3ZWtUQzlLHPJYc11N4ErAcFV1amtFct-2BtMJ0oZNdwhOZ2J1CE0wfysFZ=
+pb2M14PJPF-2BP339OchRczQnCTIaxuS5OdbNsORTOqNO-2FG69iO0FeXUrjo4eN0xECjNayJVu=
+zM-2BjCJtSekna-2FDdlLj07YmI-3D" style=3D"text-decoration:none;color:#f9b28c=
+!important;font-size:35px" target=3D"_blank">
+                          <img src=3D"https://uploads.fera.ai/email/icons/r=
+eview-star.png" alt=3D"1 star" style=3D"max-width:100%;margin:17px 0">
+                        </a>
+                      </td>
+                      <td valign=3D"bottom" align=3D"left" style=3D"border-=
+collapse:collapse;width:34px">
+                        <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du=
+001.Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksKtdEajOH5U7VRmncocXEBBuZ5WTps=
+maOJU8gMDB5I3PcA5BI7g34ecZNc660suAjwQuRyCjO63QyGM2pV83toMOPFUbHhuOSHfwJnYGx=
+qE9LDH1iLuG6Ikw2rCiF2lxyQp5nrRjjdR5jm8ZUfiXZ9FCGatf8Cr5lukVBELev3ALCBzsLs-2=
+Fa5sjs4eorV5sDalOzP0pWvLthVHM70SnulRSZ-2FabE71WbZmGIogRnv-2FZ4iq1yNPW6YwjR9=
+dZVG97u7zRodNBfuv7blL3g6VTMte2emXKo-2FxwrtChkoTH2W6qMMswLgahFma9tbmN-2FIEHH=
+EI-3DGZ6E_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtm=
+Lxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUh=
+WfPELDl61VWM5cSqw2yowelmgbb1UKG-2Fwz-2BSVCh7qdxpXW8NyrcIbuNNWx39xNwM4r0B3ab=
+fX-2F9-2FJHTAFy-2FULMR6XltrY9eehvBYn3YE4TbTMZpvL3PrhcX-2FnTyYacbiqPdovfH3OF=
+A4DODzgASPscmxuJ2ToK8hfBrAzgk-3D" style=3D"text-decoration:none;color:#f9b2=
+8c!important;font-size:35px" target=3D"_blank">
+                          <img src=3D"https://uploads.fera.ai/email/icons/r=
+eview-star.png" alt=3D"2 stars" style=3D"max-width:100%;margin:17px 0">
+                        </a>
+                      </td>
+                      <td valign=3D"bottom" align=3D"left" style=3D"border-=
+collapse:collapse;width:34px">
+                        <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du=
+001.Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksKtdEajOH5U7VRmncocXEBBuZ5WTps=
+maOJU8gMDB5I3PcA5BI7g34ecZNc660suAjwQuRyCjO63QyGM2pV83toMOPFUbHhuOSHfwJnYGx=
+qE9LDH1iLuG6Ikw2rCiF2lxyQp5nrRjjdR5jm8ZUfiXZ9FCGatf8Cr5lukVBELev3ALCBzsLs-2=
+Fa5sjs4eorV5sDalOzP0pWvLthVHM70SnulRSZ-2FabE71WbZmGIogRnv-2FZ4iq1yNPW6YwjR9=
+dZVG97u7zRodNBfuv7blL3g6VTMte2emXKo-2FxwrtChkoTH2W6qMJ75GSSHk6XL-2BUF0a2WXw=
+ZA-3DcuKE_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtm=
+Lxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUh=
+WfPELDl61VWM5cSqw-2B0uXgGjXNpR48fbZnZYjJNLD1LxJqm9vHkovxmhty6zQBAgZDpdIZm8F=
+NGFMIwVctF26lOaibAelUH3vYvOr-2FMJPyDTq-2BRXkXwOz-2FO92CdClwduOmoVBX-2B2059I=
+mh3-2FASh29xOhmycrle-2Forfs-2BBBU-3D" style=3D"text-decoration:none;color:#=
+f9b28c!important;font-size:35px" target=3D"_blank">
+                          <img src=3D"https://uploads.fera.ai/email/icons/r=
+eview-star.png" alt=3D"3 stars" style=3D"max-width:100%;margin:17px 0">
+                        </a>
+                      </td>
+                      <td valign=3D"bottom" align=3D"left" style=3D"border-=
+collapse:collapse;width:34px">
+                        <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du=
+001.Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksKtdEajOH5U7VRmncocXEBBuZ5WTps=
+maOJU8gMDB5I3PcA5BI7g34ecZNc660suAjwQuRyCjO63QyGM2pV83toMOPFUbHhuOSHfwJnYGx=
+qE9LDH1iLuG6Ikw2rCiF2lxyQp5nrRjjdR5jm8ZUfiXZ9FCGatf8Cr5lukVBELev3ALCBzsLs-2=
+Fa5sjs4eorV5sDalOzP0pWvLthVHM70SnulRSZ-2FabE71WbZmGIogRnv-2FZ4iq1yNPW6YwjR9=
+dZVG97u7zRodNBfuv7blL3g6VTMte2emXKo-2FxwrtChkoTH2W6qMIGyzVKfQPn3Z-2Ftj2g63B=
+JY-3DkEEs_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtm=
+Lxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUh=
+WfPELDl61VWM5cSqwxyfkrAPFTKrf1DDiVMPJu-2BSywy1uYledL1jrd9fvxVACFPb69WFfB0It=
+xSH5pooEQerdQeO-2BILxC77t-2FWuPlEHaFII04NZhWjxwDkDO6cNWwRKbuFNbX-2F2GO0NyZH=
+GkAoMwfYEAy3g16h-2B-2BfC31No8-3D" style=3D"text-decoration:none;color:#f9b2=
+8c!important;font-size:35px" target=3D"_blank">
+                          <img src=3D"https://uploads.fera.ai/email/icons/r=
+eview-star.png" alt=3D"4 stars" style=3D"max-width:100%;margin:17px 0">
+                        </a>
+                      </td>
+                      <td valign=3D"bottom" align=3D"left" style=3D"border-=
+collapse:collapse;width:34px">
+                        <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du=
+001.Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksKtdEajOH5U7VRmncocXEBBuZ5WTps=
+maOJU8gMDB5I3PcA5BI7g34ecZNc660suAjwQuRyCjO63QyGM2pV83toMOPFUbHhuOSHfwJnYGx=
+qE9LDH1iLuG6Ikw2rCiF2lxyQp5nrRjjdR5jm8ZUfiXZ9FCGatf8Cr5lukVBELev3ALCBzsLs-2=
+Fa5sjs4eorV5sDalOzP0pWvLthVHM70SnulRSZ-2FabE71WbZmGIogRnv-2FZ4iq1yNPW6YwjR9=
+dZVG97u7zRodNBfuv7blL3g6VTMte2emXKo-2FxwrtChkoTH2W6qMPjQJfUE0-2FRFIf4aTvK7e=
+mQ-3DBCVB_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtm=
+Lxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUh=
+WfPELDl61VWM5cSqw3IsXybRRNLzQWTd2TlU82VEj-2FS9a3UoiGbjbyG4J6L9ybhu0OHSeWm2h=
+ctZ7cOiN8oAcd1dNkGSIVlM6XBEXwKrRS-2BPLY-2F-2BX1ed0zqoQFzJMXgLhNSl-2FjFpW2-2=
+BcDocCIEc3gjEuQXplxk8VIEdRtrU-3D" style=3D"text-decoration:none;color:#f9b2=
+8c!important;font-size:35px" target=3D"_blank">
+                          <img src=3D"https://uploads.fera.ai/email/icons/r=
+eview-star.png" alt=3D"5 stars" style=3D"max-width:100%;margin:17px 0">
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody></table>
+                </td>
+              </tr>
+            </tbody></table>
+          </td>
+        </tr>
+     =20
+        <tr>
+          <td style=3D"border-collapse:collapse">
+            <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" style=
+=3D"table-layout:fixed">
+              <tbody><tr>
+                <td valign=3D"middle" align=3D"left" style=3D"border-collap=
+se:collapse">
+                  <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du001.Rn=
+tv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksLbkMVVNi-2BQehlbWGNFxwfiRbe9UOnFcn5=
+ZMwsbvj9KLXj6bNT8KwZ-2BKVrteHHuA2fXQIrNaZYXfqWOwMyFfmo0qw-2Ffafj3PRBRQx1HM4=
+pu-2F8RMNTLceJe-2B6g9Pz7qH9BaVElOmo6fxl53cFoLVlyNBj7XPFhSwdWONn29WIV794Mq2X=
+yyDbG-2BvRjKJWeDyzW8jABu3h4zE-2F93hagES6sT5L-2F-2B37SSLo1zqPksapxiUnIrCp19g=
+TNqPxrWX8dkOS4cshkStvCbXSOHuz-2FmLax2xzE9D_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8r=
+b1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NK=
+he5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw5ionrCaKXMGNzp53T-2BmbqSj=
+8psV7OQJ3FyS09Z-2BAYsh2LkfZbmS8ROXat-2BsQXWAjfC0u95qvfjBS58Uozc5h-2F5IhCKqz=
+9Ja6wIoFoQHkpoPE-2FzDnTeYOGtQPO5cCzc35KC9UwNMem42wA8oN7kV6YY-3D" style=3D"t=
+ext-decoration:underline;color:#f9b28c!important" target=3D"_blank"><img sr=
+c=3D"https://cdn.shopify.com/s/files/1/1879/1395/files/PabloandCo_Jul2023_-=
+1641_150x150.jpg?v=3D1691642322" height=3D"62" width=3D"62" alt=3D"Product =
+Image" style=3D"max-width:100%;margin:17px 0"></a>
+                </td>
+                <td style=3D"border-collapse:collapse">
+                  <div>
+                    <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du001.=
+Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksLbkMVVNi-2BQehlbWGNFxwfiRbe9UOnFc=
+n5ZMwsbvj9KLXj6bNT8KwZ-2BKVrteHHuA2fXQIrNaZYXfqWOwMyFfmo0qw-2Ffafj3PRBRQx1H=
+M4pu-2F8RMNTLceJe-2B6g9Pz7qH9BaVElOmo6fxl53cFoLVlyNBj7XPFhSwdWONn29WIV794Mq=
+2XyyDbG-2BvRjKJWeDyzW8jABu3h4zE-2F93hagES6sT5L-2F-2B37SSLo1zqPksapxiUnIrCp1=
+9gTNqPxrWX8dkOS4cshkStvCbXSOHuz-2FmLax2xhurn_6-2BBKni6sDtwyUScw4c6eaYPUn7qE=
+8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5=
+NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqwwT9JTEg5QRicBAgngPo3kwM=
+YlEzjvVdKkkHXmbgMUOg-2B7-2FP37vpgiwSmVzUCGqtKKx4-2F6JbBgtC-2BC-2BnWXOgCKH9M=
+nSsvWxFpzy0IuagVJvOnoQzdWNRDBKs70KeQZ1-2F0zAYWtu82bE81GaC83-2FRnhw-3D" styl=
+e=3D"text-decoration:underline;color:#f9b28c!important" target=3D"_blank">B=
+ubblegum: Waterproof Collar - L</a>
+                  </div>
+
+                  <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" s=
+tyle=3D"table-layout:fixed;width:200px;line-height:1;margin-bottom:17px">
+                    <tbody><tr>
+                      <td valign=3D"bottom" align=3D"left" style=3D"border-=
+collapse:collapse;width:34px">
+                        <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du=
+001.Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksLbkMVVNi-2BQehlbWGNFxwfiRbe9U=
+OnFcn5ZMwsbvj9KLXj6bNT8KwZ-2BKVrteHHuA2fXQIrNaZYXfqWOwMyFfmo0qw-2Ffafj3PRBR=
+Qx1HM4pu-2F8RMNTLceJe-2B6g9Pz7qH9BaVElOmo6fxl53cFoLVlyNBj7XPFhSwdWONn29WIV7=
+94Mq2XyyDbG-2BvRjKJWeDyzW8jABu3h4zE-2F93hagES6sT5L-2F-2B37SSLo1zqPksapxiUnI=
+rCp19gTNqPxrWX8dkOS4fayUSMuFznxO2QfiZYsX9XJJ8U-2F5-2FwUT3AXYQIYAIqLg-3D-3Dx=
+KC8_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww=
+5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELD=
+l61VWM5cSqw8x4XrH1-2BTi8G6lYZzd8pumZ2mbFj75rZo7Jr9ia3RZYPgix8GdrOFDfZufSMrv=
+xvKyjqfIvZp8yTOyiGgESHpdjZ7JHKF1S7uia5EMhBnMaY6PedYKC-2FmOmC6CGKQ6mhn4R3SWx=
+B1YNNeEh8t5aEp0-3D" style=3D"text-decoration:none;color:#f9b28c!important;f=
+ont-size:35px" target=3D"_blank">
+                          <img src=3D"https://uploads.fera.ai/email/icons/r=
+eview-star.png" alt=3D"1 star" style=3D"max-width:100%;margin:17px 0">
+                        </a>
+                      </td>
+                      <td valign=3D"bottom" align=3D"left" style=3D"border-=
+collapse:collapse;width:34px">
+                        <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du=
+001.Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksLbkMVVNi-2BQehlbWGNFxwfiRbe9U=
+OnFcn5ZMwsbvj9KLXj6bNT8KwZ-2BKVrteHHuA2fXQIrNaZYXfqWOwMyFfmo0qw-2Ffafj3PRBR=
+Qx1HM4pu-2F8RMNTLceJe-2B6g9Pz7qH9BaVElOmo6fxl53cFoLVlyNBj7XPFhSwdWONn29WIV7=
+94Mq2XyyDbG-2BvRjKJWeDyzW8jABu3h4zE-2F93hagES6sT5L-2F-2B37SSLo1zqPksapxiUnI=
+rCp19gTNqPxrWX8dkOS4fayUSMuFznxO2QfiZYsX9XC7pE3t1fMiVIaqUAJOjD7Q-3D-3DFATr_=
+6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2=
+B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61V=
+WM5cSqwyfLAQXDIBeJAUyFlglo4Y0vwgb9szTdwRAJmAKju38d82v3lm-2B8L4yApCE278VmF8Y=
+5DNCR-2BArHJWjxUNkoJCNz67zOEopQCFyAx6kBnsRsqs7qJDxM5xdfuCJ2-2BOmFlOI7YeQKnJ=
+ygvt9911I1JTw-3D" style=3D"text-decoration:none;color:#f9b28c!important;fon=
+t-size:35px" target=3D"_blank">
+                          <img src=3D"https://uploads.fera.ai/email/icons/r=
+eview-star.png" alt=3D"2 stars" style=3D"max-width:100%;margin:17px 0">
+                        </a>
+                      </td>
+                      <td valign=3D"bottom" align=3D"left" style=3D"border-=
+collapse:collapse;width:34px">
+                        <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du=
+001.Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksLbkMVVNi-2BQehlbWGNFxwfiRbe9U=
+OnFcn5ZMwsbvj9KLXj6bNT8KwZ-2BKVrteHHuA2fXQIrNaZYXfqWOwMyFfmo0qw-2Ffafj3PRBR=
+Qx1HM4pu-2F8RMNTLceJe-2B6g9Pz7qH9BaVElOmo6fxl53cFoLVlyNBj7XPFhSwdWONn29WIV7=
+94Mq2XyyDbG-2BvRjKJWeDyzW8jABu3h4zE-2F93hagES6sT5L-2F-2B37SSLo1zqPksapxiUnI=
+rCp19gTNqPxrWX8dkOS4fayUSMuFznxO2QfiZYsX9XPUMNhWa033qOOr-2BuHfNUnA-3D-3DoYA=
+C_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s=
+-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl6=
+1VWM5cSqw7q-2FUBbnPoxOnGDLnht-2BKFkKZ83xa-2B2vLmXb9QtcND53nm-2FC7O9jbOZUGCT=
+60QjkNi-2F3khonPCn9WPnCyJtO-2FfEXB2yjt-2B15CEuhe1Psua-2F9SNDXDCQ37WVQYi4-2F=
+0JksqJc7eSHJUzojc6-2F8l3jBNZs-3D" style=3D"text-decoration:none;color:#f9b2=
+8c!important;font-size:35px" target=3D"_blank">
+                          <img src=3D"https://uploads.fera.ai/email/icons/r=
+eview-star.png" alt=3D"3 stars" style=3D"max-width:100%;margin:17px 0">
+                        </a>
+                      </td>
+                      <td valign=3D"bottom" align=3D"left" style=3D"border-=
+collapse:collapse;width:34px">
+                        <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du=
+001.Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksLbkMVVNi-2BQehlbWGNFxwfiRbe9U=
+OnFcn5ZMwsbvj9KLXj6bNT8KwZ-2BKVrteHHuA2fXQIrNaZYXfqWOwMyFfmo0qw-2Ffafj3PRBR=
+Qx1HM4pu-2F8RMNTLceJe-2B6g9Pz7qH9BaVElOmo6fxl53cFoLVlyNBj7XPFhSwdWONn29WIV7=
+94Mq2XyyDbG-2BvRjKJWeDyzW8jABu3h4zE-2F93hagES6sT5L-2F-2B37SSLo1zqPksapxiUnI=
+rCp19gTNqPxrWX8dkOS4fayUSMuFznxO2QfiZYsX9XdBBjgxoUJwumNLkNL4eg-2BQ-3D-3D5q6=
+c_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s=
+-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl6=
+1VWM5cSqwwo2Fgz23LvN-2F-2BhwXH69eEQDma6rQDb1LwTzqnt6jcalfcUaf0f-2Fm0-2F5A0s=
+QsIK5AH-2BsddsdrTIvhELbQyZiFJ2qK3Kmj2SbRHUXEf3Z7rorjuEO-2BCb4nTl5bm661qVAHJ=
+-2F4LL9Skv6Q14n0mmq3nZ8-3D" style=3D"text-decoration:none;color:#f9b28c!imp=
+ortant;font-size:35px" target=3D"_blank">
+                          <img src=3D"https://uploads.fera.ai/email/icons/r=
+eview-star.png" alt=3D"4 stars" style=3D"max-width:100%;margin:17px 0">
+                        </a>
+                      </td>
+                      <td valign=3D"bottom" align=3D"left" style=3D"border-=
+collapse:collapse;width:34px">
+                        <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du=
+001.Rntv6T3JgL0kFPhvINOTfERhSgIIOyWcFRy4tUVDksLbkMVVNi-2BQehlbWGNFxwfiRbe9U=
+OnFcn5ZMwsbvj9KLXj6bNT8KwZ-2BKVrteHHuA2fXQIrNaZYXfqWOwMyFfmo0qw-2Ffafj3PRBR=
+Qx1HM4pu-2F8RMNTLceJe-2B6g9Pz7qH9BaVElOmo6fxl53cFoLVlyNBj7XPFhSwdWONn29WIV7=
+94Mq2XyyDbG-2BvRjKJWeDyzW8jABu3h4zE-2F93hagES6sT5L-2F-2B37SSLo1zqPksapxiUnI=
+rCp19gTNqPxrWX8dkOS4fayUSMuFznxO2QfiZYsX9XrzgcUmSNGF3qdn2u3wECFg-3D-3D1Ed9_=
+6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2=
+B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61V=
+WM5cSqwzk-2FIYT-2F66AEKOUga2G-2FcEQ6SFVXQU7DaOA15sf-2F-2Fpu6pTYXnrGbWGJ-2FK=
+Bq0KkdLVbzh7TXjTnB2PXECXnhxYLIiW7TNNnI3eM78mEaNku2-2BrxSVKcPN6v1oDr7do5LiZ1=
+P2YWNJ-2Fpj-2FuWBjRAeanpo-3D" style=3D"text-decoration:none;color:#f9b28c!i=
+mportant;font-size:35px" target=3D"_blank">
+                          <img src=3D"https://uploads.fera.ai/email/icons/r=
+eview-star.png" alt=3D"5 stars" style=3D"max-width:100%;margin:17px 0">
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody></table>
+                </td>
+              </tr>
+            </tbody></table>
+          </td>
+        </tr>
+     =20
+    </tbody></table>
+<p style=3D"line-height:1.5;margin:0 0 17px">Submit your review, photos and=
+ videos <a href=3D"https://url7914.fera.ai/ls/click?upn=3Du001.Rntv6T3JgL0k=
+FPhvINOTfGUVUkEKHaFIPP8Xg-2Bes8vb23uneowbhdsateSY88txw9MiRgI3X96O5jd09PdZdi=
+ycUViJ-2BjeDGyX1oPR9LzwAgnNk-2Bpdwo-2BX9MV9OhIZ0PEFyw59fFJxP8M-2BaFfyNaF1bg=
+T9DA9oP7SvCOYgSKzgfo5TgvLbmQG1EKdBSthkdZbYaXCeEMAPZjA3Q2v6LZ36dOjsJzROm-2FX=
+UD3NXyILvwUk3rHzijiYOWsrdcKVvbkqg7-2B9sZahfEu7wKIKoieSQ-3D-3DVAmN_6-2BBKni6=
+sDtwyUScw4c6eaYPUn7qE8rb1kxQzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROe=
+aB-2FKR4I8pfL7-2FAfm5NKhe5TiqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqw6U=
+-2BF2wq2KZtbleUbHHDQa-2FRr13Pd03BBD5PLSh9BmijLe6XbQt89cO8kN7Q1RlJ0oxvncdfFm=
+Ly47yAKs9GFd-2F8lZHgh-2BttJypE-2BT0sqeyikD4MjFhzoIiDUfNEa6Vh6n9xzecn7hVw1ok=
+rgrWj9Jw-3D" style=3D"text-decoration:underline;color:#f9b28c!important" ta=
+rget=3D"_blank"><b style=3D"text-decoration:underline">here</b></a> please.=
+</p>
+<p style=3D"line-height:1.5;margin:0 0 17px">You&#39;ll get a 10%-off disco=
+unt when your submission is approved.</p>
+<p style=3D"line-height:1.5;margin:0 0 17px">Thanks!</p>
+</div>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+
+            <div style=3D"display:none;height:0;max-height:0;max-width:0;op=
+acity:0;overflow:hidden;width:0">
+              <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=
+=3D"center" style=3D"border-collapse:collapse;color:#545454;display:none;fo=
+nt-family:&#39;Helvetica Neue&#39;,Arial,sans-serif;font-size:13px;height:0=
+;line-height:20px;max-height:0;max-width:100%;opacity:0;overflow:hidden;wid=
+th:100%;table-layout:fixed;margin:0 auto">
+                <tbody>
+                <tr>
+                  <td valign=3D"top" width=3D"80" style=3D"color:#272727;he=
+ight:18px;padding-left:40px;border-collapse:collapse" align=3D"left">
+                    <img alt=3D"Triangle" height=3D"18" src=3D"https://uplo=
+ads.fera.ai/email/themes/default/triangle.png" style=3D"display:inline-bloc=
+k;max-width:100%;outline:none;text-decoration:none" width=3D"40">
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=
+=3D"center" style=3D"border-collapse:collapse;max-width:100%;width:100%;tab=
+le-layout:fixed;margin:0 auto">
+                <tbody>
+                <tr>
+                  <td valign=3D"top" width=3D"100%" style=3D"border-collaps=
+e:collapse">
+                    <img alt=3D"Arrow down" src=3D"https://uploads.fera.ai/=
+email/themes/default/arrow.png" style=3D"max-width:100%;width:100%">
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=
+=3D"center" style=3D"border-collapse:collapse;color:#545454;font-family:&#3=
+9;Helvetica Neue&#39;,Arial,sans-serif;font-size:13px;line-height:20px;max-=
+width:100%;width:100%;table-layout:fixed;margin:0 auto">
+              <tbody><tr>
+              </tr></tbody>
+            </table>
+            <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" borde=
+r=3D"0" style=3D"table-layout:fixed">
+              <tbody>
+              <tr>
+                <td width=3D"75%" style=3D"border-collapse:collapse">
+                  <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0"=
+ border=3D"0" style=3D"border-collapse:collapse;color:#545454;font-family:&=
+#39;Helvetica Neue&#39;,Arial,sans-serif;font-size:13px;line-height:20px;ma=
+x-width:100%;width:100%;table-layout:fixed;margin:0 auto">
+                    <tbody>
+                    <tr>
+                      <td width=3D"40" style=3D"border-collapse:collapse"><=
+/td>
+
+                      <td valign=3D"middle" width=3D"50" style=3D"color:#27=
+2727;border-collapse:collapse" align=3D"left">
+                          <img src=3D"https://cdn.pic1.co/19107578/images/0=
+00/083/027/original/widget_1.png?1701838490" alt=3D"Sender display picture"=
+ height=3D"40" width=3D"40" style=3D"background-clip:padding-box;border-rad=
+ius:20px;display:inline-block;height:40px;max-width:100%;outline:none;text-=
+decoration:none;width:40px;object-fit:cover">
+                      </td>
+
+                      <td style=3D"color:#999999;border-collapse:collapse">
+                        <span>Loren from Pablo &amp; Co. Boutique</span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan=3D"3" style=3D"height:50px;border-colla=
+pse:collapse"></td>
+                    </tr>
+                    <tr>
+                        <td colspan=3D"3" align=3D"center" style=3D"border-=
+collapse:collapse;color:#999999!important;opacity:0.8;font-size:10px">
+                          <a href=3D"https://url7914.fera.ai/ls/click?upn=
+=3Du001.Rntv6T3JgL0kFPhvINOTfIBbVzLDH7BFR8tjQbh30Iy0UUZl3sLSXGuOlKR2sK9QCUI=
+KhrIWyVgEAkTfPvo06dW-2B2DKxgGAvjb0yFDzFs8egDDA7mpgLgPBzd2pOlxIbUNRCY2sn6owL=
+7uwvQdK3sT3I9PgBP9IRAiQNPZbrE4s-3D2Hof_6-2BBKni6sDtwyUScw4c6eaYPUn7qE8rb1kx=
+QzQpzyym9Ct1Xf3bRdMLt5ApyXOtmLxfyww5s-2B8CsYsROeaB-2FKR4I8pfL7-2FAfm5NKhe5T=
+iqKcCF9iq4SzdXz8dgpNeBhOeaHUhWfPELDl61VWM5cSqwz45NGfGN4ayMrYm4VMy8NtIEiPdb6=
+RxLj-2FnYrYN84swyhjB34s2-2FJxaeLtroAc-2F1vWP9f-2BbHT5nyuyH7sWwLW4-2Ba7v76U1=
+Dph-2BmjKuQQ9hb-2Bqw1S5vXkNJ44wGEu0WA7pgwXHfWsw1wYtQDZhSbEOs-3D" style=3D"c=
+olor:#999999!important;opacity:0.8;font-size:10px" target=3D"_blank">Click =
+here</a> to stop receiving messages like this.
+                        </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td valign=3D"top" height=3D"20" style=3D"border-collapse:collapse"></t=
+d>
+  </tr>
+  </tbody>
+</table>
+
+
+
+
+<div id=3D"m_1690194708208775324m_2006327347330016995basicDesignOptions">
+
+</div>
+<img src=3D"https://url7914.fera.ai/wf/open?upn=3Du001.47O2DjJnszqz5BkLM6nt=
+PXrHRzQ3dgxOrFZcRkFiJqCV-2BEqZHzax3Cp15h0QAMtCJ-2FuwAraCk9sjdRAs8P4U-2FxhJp=
+EpezDMXLrOsDhpJ4bAbVlATYXIypMis6fypvqr2QKobQzAdWslpiwQP5GSC9KVV-2B1thZj-2Bh=
+mGNCBRPknwk8I2TjW8CuZfVZ06Qom9tsGh0Rz1KR6BbblHvNIiXtwzZP5wxdPs23RmS6gjVHb2X=
+BfqOjy5svUguiSPMBT4vCtfoQ8hVu5NeZY-2FH7fq0BJbxoBG6OCjpdGZx2gI-2FsjDA-3D" al=
+t=3D"" width=3D"1" height=3D"1" border=3D"0" style=3D"height:1px!important;=
+width:1px!important;border-width:0!important;margin-top:0!important;margin-=
+bottom:0!important;margin-right:0!important;margin-left:0!important;padding=
+-top:0!important;padding-bottom:0!important;padding-right:0!important;paddi=
+ng-left:0!important"></div>
+
+</div></div></div></div>
+</div></div>
+
+--000000000000ef097106239b79dc--
