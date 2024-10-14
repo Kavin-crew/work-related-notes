@@ -1,0 +1,14 @@
+{%- comment -%}
+  <!-- Unsubscribe section that appears in the email footer -->
+{%- endcomment -%}
+
+{%- if unsubscribe_url -%}
+  <div class="unsubscribe gray-text-centered">
+    <p> 
+    <a href="https://hub.flashy.app/lp.html?hash=MzM0NDoyNzYxNg==">להסרה מרשימת הדיוור על <b> הטבות ומבצעים</b> לחצו כאן</a> 
+      </p>
+    <p class="unsub-footer">
+      להסרה ממיילים אוטומטיים {{'לביקורת מוצר' | link_to: unsubscribe_url }} לחצו כאן.
+    </p>
+  </div>
+{%- endif -%}

@@ -18,7 +18,8 @@
 
 [class*="yotpo-reviews-seo-page"][class*="yotpo-display-mobile"][class*="yotpo-display-"]
   .yotpo-reviews-seo-pagination-item,
-#yotpo-modal
+[class*="yotpo-reviews-seo-page"]
+  #yotpo-modal
   .yotpo-modal-body
   .form-footer
   .yotpo-review-form-footer-container
@@ -33,7 +34,10 @@
   color: rgb(255, 255, 255);
 }
 
-.yotpo-modal-body .form-footer .yotpo-checkbox-label {
+[class*="yotpo-reviews-seo-page"]
+  .yotpo-modal-body
+  .form-footer
+  .yotpo-checkbox-label {
   text-transform: initial;
   font-size: inherit;
 }
@@ -106,28 +110,36 @@
   margin-bottom: 50px;
 }
 
-#yotpo-modal .yotpo-modal-body .yotpo-star-rating-icons {
+[class*="yotpo-reviews-seo-page"]
+  #yotpo-modal
+  .yotpo-modal-body
+  .yotpo-star-rating-icons {
   flex-direction: column;
 }
 [class*="yotpo-reviews-seo-page"][class*="yotpo-display-mobile"][class*="yotpo-display-"]
   .sr-only {
   display: none;
 }
-#yotpo-modal .yotpo-modal-body .yotpo-star-rating-text {
+[class*="yotpo-reviews-seo-page"]
+  #yotpo-modal
+  .yotpo-modal-body
+  .yotpo-star-rating-text {
   margin-right: auto;
 }
-#yotpo-modal :is(textarea, input):not([type="checkbox"]),
-#yotpo-modal .yotpo-input-wrapper {
+[class*="yotpo-reviews-seo-page"]
+  #yotpo-modal
+  :is(textarea, input):not([type="checkbox"]),
+[class*="yotpo-reviews-seo-page"] #yotpo-modal .yotpo-input-wrapper {
   box-sizing: border-box;
   width: 100%;
   overflow-x: hidden;
 }
 
-#yotpo-modal .yotpo-checkbox-container {
+[class*="yotpo-reviews-seo-page"] #yotpo-modal .yotpo-checkbox-container {
   flex-wrap: wrap;
 }
 
-#yotpo-modal .yotpo-modal-body {
+[class*="yotpo-reviews-seo-page"] #yotpo-modal .yotpo-modal-body {
   margin: 0 auto;
   padding: 0;
 }

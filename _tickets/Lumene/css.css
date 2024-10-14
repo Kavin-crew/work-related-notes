@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Neutraface 2 Text";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/Neutraface2Text-Book.woff?v=1728918175")
+    format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neutraface 2 Text";
+  font-style: normal;
+  font-weight: 600;
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/Neutraface2Text-Demi.woff?v=1728918175")
+    format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neutraface 2 Text";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/Neutraface2Text-Bold.woff?v=1728918175")
+    format("woff");
+  font-display: swap;
+}
