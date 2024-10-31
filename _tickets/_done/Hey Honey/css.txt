@@ -1,3 +1,0 @@
-.rte:not(.non-page-rte) div {
-    margin: initial;
-}

@@ -1,5 +1,0 @@
-before working on account
-staging - is turn on, got it turned off
-relevant appkey - already turn off
-
-  	<img src="https://yotpo-stool.s3.amazonaws.com/images/TrinnyLondon/banner-img.jpg" alt="banner">

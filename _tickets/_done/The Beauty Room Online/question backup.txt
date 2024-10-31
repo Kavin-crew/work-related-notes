@@ -1,3 +1,0 @@
-[class*="yotpo-questions-and-answers"][class*="yotpo-display-"] #yotpo-widget-btn {background: #fff; border: 1px solid #e3e3e3; border-radius: 2px; width: 160px;}
-[class*="yotpo-questions-and-answers"][class*="yotpo-display-"] #yotpo-widget-btn:hover{ border: 1px solid #646368;}
-[class*="yotpo-questions-and-answers"][class*="yotpo-display-"] #yotpo-widget-btn span { font-weight: 700; padding: 12px 20px; text-transform: uppercase; color: #6B6D76;} 

@@ -1,5 +1,0 @@
-/*change color star rating, and submit button*/
-[class*="yotpo-display-"][class*="yotpo-device-"][style] #yotpo-main-widget-btn {background-color: #faffff; color: #38afad;}
-[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-star-distribution-index,
-[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-bottom-line .yotpo-bottom-line-left-panel,
-[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-star-distribution-value{color: #faffff;}

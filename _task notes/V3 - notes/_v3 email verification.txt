@@ -1,4 +1,4 @@
-/*always use Website FONTS*/
+/* Your custom CSS overrides for emails */
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -22,21 +22,10 @@ label {
     font-family: 'Montserrat', sans-serif !important;
 }
 
-.stars-rating-container.es-table,
-#review_content,
-#review-title-input,
-textarea.textarea {
-    width: 100% !important;
-    box-sizing: border-box;
-}
+.main-td {background-color: #fff;}
 
-#review_content,
-#review-title-input{
-    border-radius: 5px;
-    border-color: #85888a !important;
-}
-
-a,
-.es-table a {
-    color: #accentColor !important;
-}
+body, a, p, td {color: #000;}
+table a,
+.content-bottom a{text-decoration: underline;}
+button,
+button.submit {background-color: #89939F; border-radius: 0; font-weight: normal;}

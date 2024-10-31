@@ -1,3 +1,0 @@
-/*smaller stars and vertically center*/
-[class*="yotpo"] svg:not(.yotpo-anonymous-person-icon) {width: auto;height: 17px;} 
-.yotpo-header-container .yotpo-bottom-line .yotpo-bottom-line-right-panel {padding-top: 15px;}

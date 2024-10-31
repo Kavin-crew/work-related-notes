@@ -1,3 +1,0 @@
-.index h2.yotpo-lightbox-product-name {
-    font-size: inherit !important;
-}

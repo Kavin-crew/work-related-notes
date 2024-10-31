@@ -1,2 +1,0 @@
-enabled ARR since its live store
-live was v2 and updated it to v3 to copy all the exact design of the staging site
