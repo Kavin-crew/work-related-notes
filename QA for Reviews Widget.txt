@@ -1,1 +1,0 @@
-Check popup desktop and mobile view better smaller devices
