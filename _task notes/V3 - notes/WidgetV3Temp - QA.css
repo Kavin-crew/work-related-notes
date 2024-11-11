@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "RRollieThin";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://www.artofskincare.com/on/demandware.static/Sites-ArtOfSkincare-Site/-/default/v1716451280153/fonts/RRollieThin.otf)
+    format("woff2");
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] *,
+[class*="yotpo-display-"][class*="yotpo-device-"][style] input::placeholder,
+[class*="yotpo-display-"][class*="yotpo-device-"][style] textarea::placeholder {
+  font-family: "Gotham", sans-serif !important;
+}
+
+/*for vercel only*/
+.accordion [class*="yotpo-questions-and-answers"] .yotpo-main-layout {
+  width: 100% !important;
+}
+
+#yotpo-questions-and-answers[class*="yotpo-display-"][class*="yotpo-device-"]
+  [id*="-widget-btn"]
+  span {
+  text-decoration: none;
+  border-bottom: none;
+  color: var(--text-color);
+  font-weight: normal;
+}
+
+[class*="yotpo-questions-and-answers"][class*="yotpo-display-"][class*="yotpo-device-"][style]
+  .modal-body {
+  padding-bottom: 20px;
+}
+
+[class*="yotpo-questions-and-answers"][class*="yotpo-display-"][class*="yotpo-device-"][style]
+  .yotpo-name-email-wrapper {
+  width: 100%;
+}
+
+[class*="yotpo-questions-and-answers"][class*="yotpo-display-"][class*="yotpo-device-"][style]
+  .yotpo-question-form
+  textarea {
+  width: 100%;
+}
+
+[class*="yotpo-questions-and-answers"][class*="yotpo-display-"][class*="yotpo-device-"][style]
+  .yotpo-question-form
+  .yotpo-new-input-validation {
+  color: #cb2222;
+}
+
+[class*="yotpo-questions-and-answers"][class*="yotpo-display-"][class*="yotpo-device-"][style]
+  #yotpo-widget-btn.yotpo-question-btn
+  span {
+  color: inherit;
+  padding-inline: 10px;
+}
+
+[class*="yotpo-questions-and-answers"][class*="yotpo-display-"][class*="yotpo-device-"][style]
+  #yotpo-widget-btn.yotpo-question-btn {
+  text-decoration: none;
+}
+
+[class*="yotpo-questions-and-answers"][class*="yotpo-display-"][class*="yotpo-device-"][style]
+  .yotpo-qna-empty-state {
+  margin-top: 30px;
+}
+
+[class*="yotpo-questions-and-answers"][class*="yotpo-display-"][class*="yotpo-device-"].yotpo-device-mobile
+  .yotpo-question-form
+  .yotpo-name-email-wrapper
+  .yotpo-question-name,
+[class*="yotpo-questions-and-answers"][class*="yotpo-display-"][class*="yotpo-device-"].yotpo-device-mobile
+  .yotpo-question-form
+  .yotpo-name-email-wrapper
+  .yotpo-question-email {
+  width: 100%;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"].yotpo-device-mobile
+  .yotpo-question-content
+  textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+[class*="yotpo-questions-and-answers"][class*="yotpo-display-"][class*="yotpo-device-"].yotpo-device-mobile
+  .yotpo-qna-modal
+  .modal-body {
+  padding-bottom: 20px;
+}
+
+[class*="yotpo-questions-and-answers"][class*="yotpo-display-"][class*="yotpo-device-"]
+  .yotpo-ask-question-btn-wrapper
+  #yotpo-widget-btn
+  span {
+  color: inherit;
+}
+
+[class*="yotpo-questions-and-answers"][class*="yotpo-display-"][class*="yotpo-device-"]
+  .yotpo-qna-empty-state {
+  margin-top: 30px;
+}
+
+[class*="yotpo-questions-and-answers"] .ugc-storefront-widgets-tabs-container {
+  margin-bottom: 50px;
+}
