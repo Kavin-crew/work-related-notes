@@ -796,11 +796,27 @@
 /*custom question*/
 [class*="yotpo-display-"][class*="yotpo-device-"][style]
   .yotpo-custom-questions-wrapper {
-  /* grid-template-columns: max-content max-content; */
+  grid-template-columns: max-content max-content;
 }
 
 [class*="yotpo-display-"][class*="yotpo-device-"][style]:not([class*="mobile"])
   .yotpo-review
-  .yotpo-review-left-panel {
-  /* min-width: 250px; */
+  .yotpo-review-left-panel,
+[class*="yotpo-display-"][class*="yotpo-device-"][style]:not([class*="mobile"])
+  .yotpo-review-customer-questions-container {
+  min-width: 250px;
+}
+
+/*11-25-2024*/
+[class*="yotpo-display-"][class*="yotpo-device-"][style]
+  .yotpo-star-rating-icons-wrapper
+  > legend:not(:first-child) {
+  display: inline-block;
+  width: auto;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style]
+  .yotpo-modal
+  .yotpo-read-more {
+  font-size: inherit;
 }

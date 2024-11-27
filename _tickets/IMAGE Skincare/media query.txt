@@ -1,0 +1,16 @@
+/* Your custom CSS media queries for emails  */
+
+@media only screen and (max-width: 768px) {
+    .content-bottom {padding:20px !important;}
+    .hello-user {font-size:20px !important;}
+    .content-header {font-size:16px !important;}
+    .header-logo img.logo-img {max-width:170px !important;}
+    .product-image img {width:130px !important;}
+    .banner img {width:100% !important;}
+  	.content-header {padding:20px 5px !important;}
+  }
+  
+  @media only screen and (max-width:600px) {
+    .main-table {max-width:100% !important;width:100% !important;}
+    .social-icons table {width:100% !important;max-width:100% !important;}
+  }
