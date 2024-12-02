@@ -146,6 +146,11 @@
   color: #fff;
 }
 
+[class*="yotpo-display-"][class*="yotpo-device-"]
+  .yotpo-head:has(.yotpo-reviews-wrapper:empty) {
+  display: none;
+}
+
 /* score rating */
 [class*="yotpo-display-"][class*="yotpo-device-"][style]
   .yotpo-header-container
