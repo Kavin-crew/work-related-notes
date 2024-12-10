@@ -1,14 +1,19 @@
-[class*="yotpo-reviews-tab"][class*="yotpo-device-"][style] *,
-[class*="yotpo-reviews-tab"][class*="yotpo-device-"][style] input::placeholder,
-[class*="yotpo-reviews-tab"][class*="yotpo-device-"][style]
-  textarea::placeholder {
+@font-face {
+  font-family: "Rutan";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://www.philipkingsley.co.uk/static/version1718090759/frontend/philipkingsley/default/en_GB/fonts/rutan.woff2)
+    format("woff2");
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style] *,
+[class*="yotpo-display-"][class*="yotpo-device-"][style] input::placeholder,
+[class*="yotpo-display-"][class*="yotpo-device-"][style] textarea::placeholder {
   font-family: "Rutan", sans-serif !important;
 }
 
-[class*="yotpo-reviews-tab"][class*="yotpo-display-"][class*="yotpo-display-"]
-  .yotpo-comment-title {
-  font-size: 0;
-}
+/*store name*/
 [class*="yotpo-reviews-tab"][class*="yotpo-display-"][class*="yotpo-display-"]
   .yotpo-comment-title::before {
   content: "Account Name";
@@ -32,14 +37,22 @@
   .yotpo-read-more {
   color: var(--tab-background-color);
   font-family: inherit;
-}
-[class*="yotpo-reviews-tab"][class*="yotpo-display-"][class*="yotpo-display-"]
-  .yotpo-reviews-tab-icon
-  path {
-  fill: var(--tab-background-color);
+  text-decoration: underline;
 }
 
 [class*="yotpo-reviews-tab"][class*="yotpo-display-"][class*="yotpo-display-"]
-  .yotpo-headline {
-  margin-inline: auto;
+  .yotpo-comment-title {
+  font-size: 0;
+}
+
+[class*="yotpo-reviews-tab"][class*="yotpo-display-"][class*="yotpo-display-"]
+  .yotpo-reviews-tab-review-comment
+  .yotpo-comment-avatar {
+  max-width: 40px;
+  width: 100%;
+}
+
+[class*="yotpo-reviews-tab"][class*="yotpo-display-"][class*="yotpo-display-"]
+  .yotpo-reviews-tab-review-comment {
+  width: 100%;
 }

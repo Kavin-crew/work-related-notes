@@ -32,7 +32,7 @@ textarea.textarea {
 
 #review_content,
 #review-title-input{
-    border-radius: 5px;
+    border-radius: 5px !important;
     border-color: #85888a !important;
 }
 

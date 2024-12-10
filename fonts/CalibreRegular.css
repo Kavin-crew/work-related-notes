@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "CalibreRegular";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/CalibreWeb-Regular.woff2?v=1733400799")
+    format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* calibre - bold */
+@font-face {
+  font-family: "CalibreRegular";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/CalibreWeb-Regular.woff2?v=1733400799")
+    format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* calibre - bolder */
+@font-face {
+  font-family: "CalibreRegular";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/CalibreWeb-Regular.woff2?v=1733400799")
+    format("woff2");
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
