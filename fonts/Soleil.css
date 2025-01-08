@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Soleil Bk";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/Soleil-Book.woff?v=1736338338")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Soleil";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/Soleil-Bold.woff?v=1736338338")
+    format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Soleil Lt";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/Soleil-Light.woff?v=1736338338")
+    format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Soleil";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/Soleil-Regular.woff?v=1736338338")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

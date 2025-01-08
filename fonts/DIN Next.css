@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "DIN Next";
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/dinnext_n4.438c249fdbceeefafa64221353c5ece2fdb8ae14_1.woff2?v=1729564729")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "DIN Next";
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/dinnext_n7.57888b0b2051a4dba7d02aad7ca64db99eca3cf1.woff2?v=1729564734");
+}
