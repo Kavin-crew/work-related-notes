@@ -24,3 +24,48 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Avenir LT Std";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/AvenirLTStd-Book.woff?v=1737529976")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir LT Std";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/AvenirLTStd-Oblique.woff?v=1737530340")
+    format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir LT Std";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/AvenirLTStd-Roman.woff?v=1737530340")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir LT Std";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/AvenirLTStd-Medium_4350aea6-77aa-4ce5-bd90-5c4102fec519.woff?v=1737530340")
+    format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir LT Std";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/AvenirLTStd-Heavy.woff?v=1726413593")
+    format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

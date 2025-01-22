@@ -825,3 +825,15 @@
   .yotpo-read-more {
   font-size: inherit;
 }
+
+/*1-22-2025*/
+[class*="yotpo-display-"][class*="yotpo-device-"][style]
+  .yotpo-text-container
+  span[id*="read-more"][aria-hidden="true"] {
+  font-size: inherit;
+}
+
+[class*="yotpo-display-"][class*="yotpo-device-"][style]
+  .yotpo-review-thumbnail-container {
+  margin-top: 20px;
+}

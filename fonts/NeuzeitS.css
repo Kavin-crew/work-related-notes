@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "NeuzeitS";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/NeuzeitS-BookHeavy.otf?v=1736775436")
+    format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NeuzeitS";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/NeuzeitS-Book.otf?v=1736775436")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

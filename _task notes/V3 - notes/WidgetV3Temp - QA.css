@@ -59,6 +59,9 @@
 [class*="yotpo-questions-and-answers"][class*="yotpo-display-"][class*="yotpo-device-"][style]
   #yotpo-widget-btn.yotpo-question-btn {
   text-decoration: none;
+  border-radius: 3px;
+  border: solid 1px #e3e3e3;
+  background-color: transparent;
 }
 
 [class*="yotpo-questions-and-answers"][class*="yotpo-display-"][class*="yotpo-device-"][style]

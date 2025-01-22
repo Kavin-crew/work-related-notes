@@ -6,6 +6,13 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "AktivGrotesk-Regular";
+  src: url(https://cdn.shopify.com/s/files/1/0708/4605/4708/files/AktivGrotesk-Regular.woff2?v=1736963971)
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
   font-family: "neue-haas-grotesk-display";
   src: url(https://cdn.shopify.com/s/files/1/0265/5171/3841/files/neue-haas-grotesk-display400.woff?v=1670571854)
     format("woff");

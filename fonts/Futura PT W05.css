@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "FuturaPTW05";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/FuturaPTW05-Bold.woff?v=1737024172")
+    format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FuturaPTW05-Book";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/FuturaPTW05-Book.woff?v=1737024172")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

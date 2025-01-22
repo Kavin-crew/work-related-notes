@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Trade Gothic Next LT Pro Lt";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/TradeGothicNextLTPro-Bd.woff?v=1736959425")
+    format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Trade Gothic Next LT Pro";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/TradeGothicNextLTPro-BdCm.woff?v=1736959425")
+    format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Trade Gothic Next LT Pro";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/TradeGothicNextLTPro-Rg.woff?v=1736959425")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/Inconsolata-Regular.woff?v=1736959425")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
