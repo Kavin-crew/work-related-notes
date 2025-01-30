@@ -108,3 +108,8 @@
 [class*="yotpo-questions-and-answers"] .ugc-storefront-widgets-tabs-container {
   margin-bottom: 50px;
 }
+
+[class*="yotpo-questions-and-answers"][class*="yotpo-display-"][class*="yotpo-device-"][style]
+  .yotpo-question-btn {
+  text-decoration: none;
+}

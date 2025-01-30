@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "AvantGarde LT";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/AvantGardeLT-Medium.woff?v=1731400368")
+    format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvantGarde LT Book";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/AvantGardeLT-Book.woff?v=1731400367")
+    format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AvantGarde LT Book";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/AvantGardeLT-Demi.woff?v=1731400368")
+    format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

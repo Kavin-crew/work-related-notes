@@ -837,3 +837,9 @@
   .yotpo-review-thumbnail-container {
   margin-top: 20px;
 }
+
+/* 1-30-2025 */
+[class*="yotpo-display-"][class*="yotpo-device-"][style]
+  .yotpo-reviewer-details {
+  margin-bottom: auto;
+}

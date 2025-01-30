@@ -1,0 +1,25 @@
+/*hide disclaimer in LP, display only on Shareable link*/
+.review-form-container:not(:has([name="display_name"])) .disclaimer {
+  display: none;
+}
+
+.disclaimer {
+  font-size: 9px !important;
+  color: #34312e;
+}
+
+.review-form-container:has([name="display_name"]) {
+  padding: 7px 10px 12px !important;
+}
+
+.review-form-container:has([name="display_name"]) .form {
+  max-width: 100%;
+}
+
+.review-form-container:has([name="display_name"])
+  .review-header
+  .header-container,
+.review-form-container:has([name="display_name"]) .title-and-content {
+  padding-inline: 8%;
+}
+/**/

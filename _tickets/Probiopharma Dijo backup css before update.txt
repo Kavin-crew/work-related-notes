@@ -1,0 +1,17 @@
+ #modalDescription .yotpo-review-form .yotpo-star-rating-wrapper.yotpo-new-review-star-rating:before {
+    content: "A lire avant la rédaction de votre avis : Conformément à la règlementation, certains termes ne peuvent pas être utilisés sur notre site internet. Si des bienfaits ressentis suite à la prise d'un produit DIJO ne figurent pas sur la page du produit, il n'est pas possible de les utiliser. Néanmoins, vos avis sont précieux et inestimables pour nous, c'est pourquoi nous vous conseillons de laisser des avis très généraux (ex: "super produit", "j'ai adoré", etc.) et/ou de vous référer aux bienfaits mentionnés sur la page du produit en question afin que nous puissions publier votre retour :scintillements: \A Un grand merci pour vos avis !\A L'équipe DIJO";
+    text-align: justify;
+    font-family: var(--secondary-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    width: 98%;
+    color:#757575;
+   	word-spacing:-1px;
+   	white-space:pre-wrap;
+   	line-height:1.4;
+}
+@media only screen and (max-width: 600px) {
+ #modalDescription .yotpo-review-form .yotpo-star-rating-wrapper.yotpo-new-review-star-rating:before{letter-spacing:unset;}
+}
