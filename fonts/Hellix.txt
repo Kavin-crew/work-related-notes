@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Hellix';
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/Hellix-Regular.woff2?v=1738849118") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Hellix';
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/Hellix-Bold.woff2?v=1738849118") format("woff2");
+  font-weight: bold;
+  font-style: normal; }

@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Akkurat';
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/akkuratstd-regular.woff2?v=1738847782") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Akkurat';
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/akkuratstd-bold.woff2?v=1738847782") format("woff2");
+  font-weight: bold;
+  font-style: normal; }
