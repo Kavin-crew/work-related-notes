@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "SofiaPro";
+  font-display: swap;
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/SofiaPro-Regular.woff?v=1740492960")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SofiaProBold";
+  font-display: swap;
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/SofiaPro-Bold_981b1863-c892-4d26-ac65-d0b43d5b2bee.woff?v=1740492960")
+    format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
