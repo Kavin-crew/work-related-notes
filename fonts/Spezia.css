@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Spezia Web";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/SpeziaWeb-SemiBold.woff?v=1739548948")
+    format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spezia Web";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/SpeziaWeb-Medium.woff?v=1739548948")
+    format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spezia";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/Spezia-Medium.woff?v=1739548947")
+    format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spezia";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/Spezia-Regular.woff?v=1739548947")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spezia";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/Spezia-Bold.woff?v=1739548948")
+    format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spezia";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/Spezia-SemiBold.woff?v=1739548946")
+    format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SpeziaSemiMonoWeb";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/SpeziaSemiMonoWeb-Medium.woff?v=1739548948")
+    format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spezia Wide Web";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/SpeziaWideWeb-SemiBold.woff?v=1739548948")
+    format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
