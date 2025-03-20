@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/BrandonGrotesque-Black.woff?v=1742394111")
+    format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/BrandonGrotesque-Medium.woff?v=1742394113")
+    format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/BrandonGrotesque-Bold_8ba9054f-269a-468c-85a6-19105d9d3cdb.woff?v=1742394111")
+    format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/BrandonGrotesque-Light.woff?v=1742394112")
+    format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/BrandonGrotesque-Regular.woff?v=1742394111")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

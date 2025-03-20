@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Unity Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/unity-sans-medium.woff2?v=1742417946")
+    format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Unity Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/unity-sans-bold.woff2?v=1742417946")
+    format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Unity Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/unity-sans-regular.woff2?v=1742417946")
+    format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Unity Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/unity-sans-light.woff2?v=1742417946")
+    format("woff2");
+  font-display: swap;
+}

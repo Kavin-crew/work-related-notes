@@ -1,6 +1,6 @@
-[class*="yotpo-reviews-tab"][class*="yotpo-device-"][style] *,
-[class*="yotpo-reviews-tab"][class*="yotpo-device-"][style] input::placeholder,
-[class*="yotpo-reviews-tab"][class*="yotpo-device-"][style]
+[class*="yotpo-reviews-tab"][class*="yotpo-display-"][style] *,
+[class*="yotpo-reviews-tab"][class*="yotpo-display-"][style] input::placeholder,
+[class*="yotpo-reviews-tab"][class*="yotpo-display-"][style]
   textarea::placeholder {
   font-family: "Rutan", sans-serif !important;
 }
