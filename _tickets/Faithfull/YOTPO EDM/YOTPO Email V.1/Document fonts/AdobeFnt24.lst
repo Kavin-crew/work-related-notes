@@ -1,0 +1,67 @@
+%!Adobe-FontList 1.24
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:ABCDiatype-Medium
+FamilyName:ABC Diatype
+StyleName:Medium
+MenuName:ABC Diatype Medium
+StyleBits:0
+WeightClass:500
+WidthClass:5
+AngleClass:0
+FullName:ABC Diatype Medium
+WritingScript:Roman
+OutlineFileName:/Users/alixmcdonough/ONE AND ONE Dropbox/ONE AND ONE/CLIENTS/11. Faithfull The Brand/25- 2025/01 MARCH/EDM/YOTPO Email/Reviews Invite Email/Working/YOTPO Email V.1/Document fonts/ABCDiatype-Medium.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasSBIX:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:119476
+FileModTime:763938748
+NameArray:0,Mac,4,ABC Diatype Medium
+NameArray:0,Win,1,ABC Diatype Medium
+NameArray:0,Win,16,ABC Diatype
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:ABCDiatype-Regular
+FamilyName:ABC Diatype
+StyleName:Regular
+MenuName:ABC Diatype
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:ABC Diatype Regular
+WritingScript:Roman
+OutlineFileName:/Users/alixmcdonough/ONE AND ONE Dropbox/ONE AND ONE/CLIENTS/11. Faithfull The Brand/25- 2025/01 MARCH/EDM/YOTPO Email/Reviews Invite Email/Working/YOTPO Email V.1/Document fonts/ABCDiatype-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasSBIX:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:108976
+FileModTime:763019735
+NameArray:0,Mac,4,ABC Diatype Regular
+NameArray:0,Win,1,ABC Diatype
+NameArray:0,Win,16,ABC Diatype
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Users/alixmcdonough/ONE AND ONE Dropbox/ONE AND ONE/CLIENTS/11. Faithfull The Brand/25- 2025/01 MARCH/EDM/YOTPO Email/Reviews Invite Email/Working/YOTPO Email V.1/Document fonts/AdobeFnt24.lst
+FileLength:768
+FileModTime:764128535
+%EndFont
+

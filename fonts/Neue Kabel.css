@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Neue Kabel";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/NeueKabel-Bold.woff?v=1744148977")
+    format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Kabel";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/NeueKabel-Regular.woff?v=1744148977")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

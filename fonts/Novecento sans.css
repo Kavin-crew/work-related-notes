@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Novecento sans wide Book";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/Novecentosanswide-Bold.woff?v=1743722214")
+    format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Novecento sans wide Book";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/Novecentosanswide-Book.woff?v=1743722214")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

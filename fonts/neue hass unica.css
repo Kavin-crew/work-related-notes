@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Neue Haas Unica";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/NeueHaasUnica-Medium.woff?v=1744129251")
+    format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Haas Unica";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/NeueHaasUnica-Regular.woff?v=1744129251")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

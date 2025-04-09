@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Suisse Int'l";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/SuisseIntl-Bold.woff?v=1744047031")
+    format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Suisse Int'l Book";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/SuisseIntl-Book.woff?v=1744047030")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Suisse Int'l";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/SuisseIntl-Medium.woff?v=1744047032")
+    format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Suisse Int'l";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/SuisseIntl-Regular_2fe698e1-910d-4b6f-b57b-5e6ef8bd2c43.woff?v=1744047031")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Suisse Int'l Semi";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/SuisseIntl-SemiBold.woff?v=1744047031")
+    format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

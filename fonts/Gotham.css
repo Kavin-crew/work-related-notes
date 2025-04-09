@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Gotham";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/Gotham-Medium_45458847-4cb4-4c28-8085-1c182fef201b.woff?v=1744203730")
+    format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gotham Book";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/Gotham-Book_e46ff9d2-c4e9-43db-8152-9efe27400b27.woff?v=1744203730")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

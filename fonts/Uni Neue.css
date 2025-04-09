@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Uni Neue";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/uni-neue-bold.woff2?v=1743698744")
+    format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Uni Neue";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/uni-neue-book.woff2?v=1743698744")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+td,
+input,
+textarea,
+button,
+div,
+label {
+  font-family: "Uni Neue", sans-serif !important;
+}
+
+.stars-rating-container.es-table,
+#review_content,
+#review-title-input,
+textarea.textarea {
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+#review_content,
+#review-title-input {
+  border-radius: 5px !important;
+  border-color: #85888a !important;
+}

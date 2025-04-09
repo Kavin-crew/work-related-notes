@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "ABC Diatype";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/ABCDiatype-Medium.woff?v=1743550046")
+    format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "ABC Diatype";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/ABCDiatype-Regular.woff?v=1743550047")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
