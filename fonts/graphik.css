@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Graphik";
   src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/Graphik-Bold_c2a89591-4bc4-4fb0-b1bc-95e16cf7c3bc.woff?v=1741282110")
-    format("opentype");
+    format("woff");
   font-display: swap;
   font-style: normal;
   font-weight: 700;
@@ -10,7 +10,7 @@
 @font-face {
   font-family: "Graphik";
   src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/Graphik-Regular_7730b2d2-5391-42ad-b6ef-3eed5d13f45e.woff?v=1741282110")
-    format("opentype");
+    format("woff");
   font-display: swap;
   font-style: normal;
   font-weight: 400;

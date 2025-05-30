@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Knockout-31";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/Knockout-31.woff?v=1748609015")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Knockout-30";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/Knockout-30.woff?v=1748609015")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Knockout-50";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/Knockout-50.woff?v=1748609014")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

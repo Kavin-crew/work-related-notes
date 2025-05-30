@@ -4,48 +4,155 @@ body,
 td,
 input,
 textarea,
-button { font-family: "Trebuchet MS", sans-serif; color: #000; } 
+button {
+  font-family: "Trebuchet MS", sans-serif;
+  color: #000;
+}
 table,
 tr,
-td { border: none !important; border-radius: 0 !important; } 
-a { color: #e74b58; } 
+td {
+  border: none !important;
+  border-radius: 0 !important;
+}
+a {
+  color: #e74b58;
+}
 
 textarea,
-input { border-radius: 3px; border: 2px solid #000 !important; } 
-textarea { min-height: 220px; } 
+input {
+  border-radius: 3px;
+  border: 2px solid #000 !important;
+}
+textarea {
+  min-height: 220px;
+}
 /* general styling */
 
-.main-table { border: none; border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; background: #ebebeb; } 
-.content-bottom { background-color: #ffffff; border-top: none; padding: 0 20px; } 
-.gray-text-centered { color: #000; } 
+.main-table {
+  border: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  background: #fff;
+}
+.content-bottom {
+  background-color: #ffffff;
+  border-top: none;
+  padding: 0 20px;
+}
+.gray-text-centered {
+  color: #000;
+}
 .form-container,
 .promoted-products-container,
-.header_banner_section { min-width: 300px; border-radius: 0; border: none; border-top: none; background-color: #fff; text-align: center; width: 90%; } 
-.promoted-products-container { max-width: 600px; } 
+.header_banner_section {
+  min-width: 300px;
+  border-radius: 0;
+  border: none;
+  border-top: none;
+  background-color: #fff;
+  text-align: center;
+  width: 90%;
+}
+.promoted-products-container {
+  max-width: 600px;
+}
 .stars-container,
 .formless-star-value,
-.coupon-expiration { color: #000; } 
-.header_banner_section { min-width: 300px; } 
-.header-logo { padding: 0; } 
-.header_con { background-color: #fff; } 
-.form-table.full-width { margin: 0; } 
-.form-review { width: 50%; } 
-.banner { text-align: center; } 
-.banner img { width: 620px; max-width: 100%; } 
-.content-header { line-height: 180%; padding: 0; } 
-.hello-user { font-size: 25px; font-weight: 500; } 
-.gallery-heading { text-align: center; font-size: 20px; line-height: 100%; } 
-.promoted-products-heading { text-align: center; font-size: 25px; line-height: 100%; padding: 0; margin: 0; font-weight: 500; } 
-.submit { background-color: #e74b58; border-radius: 0; text-transform: uppercase; max-width: 350px; margin: 0; font-weight: 600; } 
-.promoted-products-image { border: none; } 
-.promoted-product { padding: 0; border: none; } 
-.input-field-title { font-weight: 400; } 
-.foot_heading { font-size: 25px; font-weight: 500; line-height: 100%; } 
-.foot_gallery { max-width: 520px !important; width: 100%; height: 345px; } 
-.foot_gallery td { line-height: 0; } 
-.foot_gallery td img { max-width: 100%; } 
-.gallery { max-width: 570px; } 
-.promoted-products-wrapper { margin: 0; } 
-.comment { background-color: #fff; } 
-.form-container > p { line-height: 150%; margin: 0; } 
-.stars-input { font-size: 20px; color: #da5c5b; } 
+.coupon-expiration {
+  color: #000;
+}
+.header_banner_section {
+  min-width: 300px;
+}
+.header-logo {
+  padding: 0;
+}
+.header_con {
+  background-color: #fff;
+}
+.form-table.full-width {
+  margin: 0;
+}
+.form-review {
+  width: 50%;
+}
+.banner {
+  text-align: center;
+}
+.banner img {
+  width: 620px;
+  max-width: 100%;
+}
+.content-header {
+  line-height: 180%;
+  padding: 0;
+}
+.hello-user {
+  font-size: 25px;
+  font-weight: 500;
+}
+.gallery-heading {
+  text-align: center;
+  font-size: 20px;
+  line-height: 100%;
+}
+.promoted-products-heading {
+  text-align: center;
+  font-size: 25px;
+  line-height: 100%;
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+}
+.submit {
+  background-color: #e74b58;
+  border-radius: 0;
+  text-transform: uppercase;
+  max-width: 350px;
+  margin: 0;
+  font-weight: 600;
+}
+.promoted-products-image {
+  border: none;
+}
+.promoted-product {
+  padding: 0;
+  border: none;
+}
+.input-field-title {
+  font-weight: 400;
+}
+.foot_heading {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 100%;
+}
+.foot_gallery {
+  max-width: 520px !important;
+  width: 100%;
+  height: 345px;
+}
+.foot_gallery td {
+  line-height: 0;
+}
+.foot_gallery td img {
+  max-width: 100%;
+}
+.gallery {
+  max-width: 570px;
+}
+.promoted-products-wrapper {
+  margin: 0;
+}
+.comment {
+  background-color: #fff;
+}
+.form-container > p {
+  line-height: 150%;
+  margin: 0;
+}
+.stars-input {
+  font-size: 20px;
+  color: #da5c5b;
+}
