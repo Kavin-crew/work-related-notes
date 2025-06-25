@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Bebas Neue Book";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/BebasNeueBook.woff?v=1745238635")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/BebasNeueLight.woff?v=1745238635")
+    format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/BebasNeueBold.woff?v=1745238635")
+    format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/BebasNeue-Thin.woff?v=1745238635")
+    format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("https://cdn.shopify.com/s/files/1/0708/4605/4708/files/BebasNeueRegular.woff?v=1745238635")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
