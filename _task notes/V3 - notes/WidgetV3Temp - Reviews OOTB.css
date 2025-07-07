@@ -993,3 +993,27 @@
 
 [class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-verified-icon {
 }
+
+/* new search icon */
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-filters-container .yotpo-search-filter{
+    border-color: #575757 !important;
+    max-width: 455px;
+    width: 100%;
+    min-height: 40px;
+    border-radius: 3px;
+    flex-direction: row-reverse;
+    padding-inline: 10px;
+}
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-filters-container .yotpo-search-input,
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-filters-container .yotpo-search-input::placeholder{
+    font-size: 16px;
+    color: #737373;
+    padding: 0;
+    margin: 0;
+}
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-icon-button {
+  background-color: transparent !important;
+}
+[class*="yotpo-display-"][class*="yotpo-device-"][style] .yotpo-icon-button svg path {
+  fill: #6B6D76 !important;
+}
